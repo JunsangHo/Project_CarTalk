@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         // 용
         // Do any additional setup after loading the view.
     }
-
+    @IBOutlet weak var scroll: UIScrollView!
 
 }
 
