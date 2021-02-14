@@ -13,6 +13,7 @@
 		7ABE398D25D7ABAC00C47E54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ABE398B25D7ABAC00C47E54 /* Main.storyboard */; };
 		7ABE398F25D7ABB300C47E54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ABE398E25D7ABB300C47E54 /* Assets.xcassets */; };
 		7ABE399225D7ABB300C47E54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ABE399025D7ABB300C47E54 /* LaunchScreen.storyboard */; };
+		7ABE39A325D91C6B00C47E54 /* BrandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE39A225D91C6B00C47E54 /* BrandViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7ABE398E25D7ABB300C47E54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7ABE399125D7ABB300C47E54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7ABE399325D7ABB300C47E54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7ABE39A225D91C6B00C47E54 /* BrandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				7ABE398725D7ABAC00C47E54 /* SceneDelegate.swift */,
 				7ABE398925D7ABAC00C47E54 /* ViewController.swift */,
 				7ABE398B25D7ABAC00C47E54 /* Main.storyboard */,
+				7ABE39A225D91C6B00C47E54 /* BrandViewController.swift */,
 				7ABE398E25D7ABB300C47E54 /* Assets.xcassets */,
 				7ABE399025D7ABB300C47E54 /* LaunchScreen.storyboard */,
 				7ABE399325D7ABB300C47E54 /* Info.plist */,
@@ -139,6 +142,7 @@
 			files = (
 				7ABE398A25D7ABAC00C47E54 /* ViewController.swift in Sources */,
 				7ABE398625D7ABAC00C47E54 /* AppDelegate.swift in Sources */,
+				7ABE39A325D91C6B00C47E54 /* BrandViewController.swift in Sources */,
 				7ABE398825D7ABAC00C47E54 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
