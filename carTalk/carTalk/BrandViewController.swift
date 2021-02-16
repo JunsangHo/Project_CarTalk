@@ -7,23 +7,67 @@
 
 import UIKit
 
-class BrandViewController: UIViewController {
+class BrandViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    
+    //Model -> 지금은 임시지만 나중에는 서버와 연결
+    
+    // View -> carCell
+    // carCell에 필요한 정보를 ViewModel을 통해 받아야 함
+    // ViewModel로부터 받은 정보로 업데이트 되어야 함
+    
+    // ViewModel
+    // CarViewModel 을 만들고 View 레이어에서 필요한 메서드들을 담아야 한다.
+    
+    let viewModel = BrandViewModel()
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.brandCarList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "brandCarCell",for: indexPath) as? CarCell {
+            let tmp = viewModel.brandCarList[indexPath.row]
+            cell.name.text = tmp.name
+            cell.newPrice.text = "\(tmp.minNewCarPrice) ~ \(tmp.maxNewCarPrice) 만원"
+            cell.usedPrice.text = "\(tmp.minUsedCarPrice) ~ \(tmp.maxUsedCarPrice) 만원"
+            cell.imgView.image = tmp.image
+            return cell
+        }else{
+            return UITableViewCell()
+        }
+    }
+    
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        tableView.delegate = self
+        tableView.dataSource = self
         // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+class CarCell: UITableViewCell {
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var newPrice: UILabel!
+    @IBOutlet weak var usedPrice: UILabel!
+    @IBOutlet weak var imgView : UIImageView!
+    
+}
+
+class BrandViewModel {
+    let brandCarList: [BrandCarInfo] = [
+        BrandCarInfo(name: "그랜저", minNewCarPrice: 3172, maxNewCarPrice: 4349, minUsedCarPrice: 2200, maxUsedCarPrice: 4349),
+        BrandCarInfo(name: "소나타", minNewCarPrice: 2386, maxNewCarPrice: 3642, minUsedCarPrice: 2100, maxUsedCarPrice: 3400),
+        BrandCarInfo(name: "아반떼", minNewCarPrice: 1570, maxNewCarPrice: 2779, minUsedCarPrice: 1300, maxUsedCarPrice: 2432),
+        BrandCarInfo(name: "투싼", minNewCarPrice: 2435, maxNewCarPrice: 3567, minUsedCarPrice: 2264, maxUsedCarPrice: 3319)
+        
+    ]
+    
 
 }
