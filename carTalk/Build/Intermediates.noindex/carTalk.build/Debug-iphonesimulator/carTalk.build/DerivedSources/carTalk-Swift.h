@@ -190,6 +190,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import CoreGraphics;
 @import Foundation;
+@import ObjectiveC;
 @import UIKit;
 #endif
 
@@ -233,6 +234,13 @@ SWIFT_CLASS("_TtC7carTalk9BrandCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC7carTalk9BrandInfo")
+@interface BrandInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class UITableView;
 @class UITableViewCell;
 @class NSBundle;
@@ -241,6 +249,7 @@ SWIFT_CLASS("_TtC7carTalk19BrandViewController")
 @interface BrandViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified topBrandName;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -259,6 +268,7 @@ SWIFT_CLASS("_TtC7carTalk7CarCell")
 @end
 
 @class UIButton;
+@class UIStoryboardSegue;
 @class UICollectionView;
 @class UICollectionViewLayout;
 
@@ -266,8 +276,10 @@ SWIFT_CLASS("_TtC7carTalk18MainViewController")
 @interface MainViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified menuButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified searchButton;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

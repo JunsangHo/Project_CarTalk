@@ -1,9 +1,10 @@
 version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
 options: "a9b633340405a972fe05bfcffbcb6126"
-build_time: [1613505507, 779379000]
+build_time: [1613552261, 385118000]
 inputs:
-  "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/carTalk/MainViewController.swift": [1613465276, 466484703]
+  "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/carTalk/MainViewController.swift": [1613551130, 711759004]
+  "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/carTalk/BrandInfo.swift": [1613551130, 710409756]
   "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/carTalk/AppDelegate.swift": [1613198380, 742268138]
-  "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/carTalk/BrandViewController.swift": [1613505483, 31756453]
+  "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/carTalk/BrandViewController.swift": [1613552024, 908201391]
   "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/carTalk/SceneDelegate.swift": [1613198380, 747302366]
   "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/carTalk/BrandCarInfo.swift": [1613504247, 913274574]
