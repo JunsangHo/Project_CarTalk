@@ -38,7 +38,8 @@ class BrandViewController: UIViewController, UITableViewDataSource, UITableViewD
         }
     }
     
-
+    @IBOutlet weak var topBrandName: UILabel!
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -48,6 +49,20 @@ class BrandViewController: UIViewController, UITableViewDataSource, UITableViewD
         tableView.dataSource = self
         // Do any additional setup after loading the view.
         print(viewModel.brandName!) // 잘 전달됬는지 확인
+        switch (viewModel.brandName!) {
+        case "hyundai":
+            topBrandName.text = "현대"
+        case "kia":
+            topBrandName.text = "기아"
+        case "chevrolet":
+            topBrandName.text = "쉐보레"
+        case "renault":
+            topBrandName.text = "르노삼성"
+        case "ssangyong":
+            topBrandName.text = "쌍용"
+        default:
+            topBrandName.text = "오류"
+        }
     }
     
 
@@ -68,7 +83,7 @@ class BrandViewModel {
     func setName(model: String?) {
         brandName = model
     }
-    
+ 
     let brandCarList: [BrandCarInfo] = [
         BrandCarInfo(name: "그랜저", minNewCarPrice: 3172, maxNewCarPrice: 4349, minUsedCarPrice: 2200, maxUsedCarPrice: 4349),
         BrandCarInfo(name: "소나타", minNewCarPrice: 2386, maxNewCarPrice: 3642, minUsedCarPrice: 2100, maxUsedCarPrice: 3400),
