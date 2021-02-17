@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D13512725DCF62C00E19B30 /* BrandInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D13512625DCF62C00E19B30 /* BrandInfo.swift */; };
 		7A7C93AA25DC54F800D26A9E /* BrandCarInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C93A925DC54F800D26A9E /* BrandCarInfo.swift */; };
 		7ABE398625D7ABAC00C47E54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE398525D7ABAC00C47E54 /* AppDelegate.swift */; };
 		7ABE398825D7ABAC00C47E54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE398725D7ABAC00C47E54 /* SceneDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D13512625DCF62C00E19B30 /* BrandInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandInfo.swift; sourceTree = "<group>"; };
 		7A7C93A925DC54F800D26A9E /* BrandCarInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandCarInfo.swift; sourceTree = "<group>"; };
 		7ABE398225D7ABAC00C47E54 /* carTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ABE398525D7ABAC00C47E54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				7ABE398925D7ABAC00C47E54 /* MainViewController.swift */,
 				7ABE398B25D7ABAC00C47E54 /* Main.storyboard */,
 				7ABE39A225D91C6B00C47E54 /* BrandViewController.swift */,
+				2D13512625DCF62C00E19B30 /* BrandInfo.swift */,
 				7A7C93A925DC54F800D26A9E /* BrandCarInfo.swift */,
 				7ABE398E25D7ABB300C47E54 /* Assets.xcassets */,
 				7ABE399025D7ABB300C47E54 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7ABE398A25D7ABAC00C47E54 /* MainViewController.swift in Sources */,
+				2D13512725DCF62C00E19B30 /* BrandInfo.swift in Sources */,
 				7ABE398625D7ABAC00C47E54 /* AppDelegate.swift in Sources */,
 				7ABE39A325D91C6B00C47E54 /* BrandViewController.swift in Sources */,
 				7ABE398825D7ABAC00C47E54 /* SceneDelegate.swift in Sources */,
