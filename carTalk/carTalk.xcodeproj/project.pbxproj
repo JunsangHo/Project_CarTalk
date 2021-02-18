@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D13512725DCF62C00E19B30 /* BrandInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D13512625DCF62C00E19B30 /* BrandInfo.swift */; };
+		2D13512A25DE433100E19B30 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D13512925DE433100E19B30 /* GoogleService-Info.plist */; };
 		7A7C93AA25DC54F800D26A9E /* BrandCarInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C93A925DC54F800D26A9E /* BrandCarInfo.swift */; };
 		7ABE398625D7ABAC00C47E54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE398525D7ABAC00C47E54 /* AppDelegate.swift */; };
 		7ABE398825D7ABAC00C47E54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE398725D7ABAC00C47E54 /* SceneDelegate.swift */; };
@@ -16,10 +17,15 @@
 		7ABE398F25D7ABB300C47E54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ABE398E25D7ABB300C47E54 /* Assets.xcassets */; };
 		7ABE399225D7ABB300C47E54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ABE399025D7ABB300C47E54 /* LaunchScreen.storyboard */; };
 		7ABE39A325D91C6B00C47E54 /* BrandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE39A225D91C6B00C47E54 /* BrandViewController.swift */; };
+		8CFAF801AD1104856A1F5FDA /* Pods_carTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7B34CBD8F76E3A6388976D /* Pods_carTalk.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2D13512625DCF62C00E19B30 /* BrandInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandInfo.swift; sourceTree = "<group>"; };
+		2D13512925DE433100E19B30 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		47F65D235C002B96D15765FE /* Pods-carTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-carTalk.debug.xcconfig"; path = "Target Support Files/Pods-carTalk/Pods-carTalk.debug.xcconfig"; sourceTree = "<group>"; };
+		6D7B34CBD8F76E3A6388976D /* Pods_carTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_carTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76C5F6C08CF0AE613D4082AC /* Pods-carTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-carTalk.release.xcconfig"; path = "Target Support Files/Pods-carTalk/Pods-carTalk.release.xcconfig"; sourceTree = "<group>"; };
 		7A7C93A925DC54F800D26A9E /* BrandCarInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandCarInfo.swift; sourceTree = "<group>"; };
 		7ABE398225D7ABAC00C47E54 /* carTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ABE398525D7ABAC00C47E54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CFAF801AD1104856A1F5FDA /* Pods_carTalk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +55,8 @@
 			children = (
 				7ABE398425D7ABAC00C47E54 /* carTalk */,
 				7ABE398325D7ABAC00C47E54 /* Products */,
+				C26455FEFB040942515F0290 /* Pods */,
+				F6A9F1BC69C1781CE44F8D65 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,8 +81,27 @@
 				7ABE398E25D7ABB300C47E54 /* Assets.xcassets */,
 				7ABE399025D7ABB300C47E54 /* LaunchScreen.storyboard */,
 				7ABE399325D7ABB300C47E54 /* Info.plist */,
+				2D13512925DE433100E19B30 /* GoogleService-Info.plist */,
 			);
 			path = carTalk;
+			sourceTree = "<group>";
+		};
+		C26455FEFB040942515F0290 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47F65D235C002B96D15765FE /* Pods-carTalk.debug.xcconfig */,
+				76C5F6C08CF0AE613D4082AC /* Pods-carTalk.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F6A9F1BC69C1781CE44F8D65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D7B34CBD8F76E3A6388976D /* Pods_carTalk.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +111,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7ABE399625D7ABB300C47E54 /* Build configuration list for PBXNativeTarget "carTalk" */;
 			buildPhases = (
+				AE1FB094D920999492EC299A /* [CP] Check Pods Manifest.lock */,
 				7ABE397E25D7ABAC00C47E54 /* Sources */,
 				7ABE397F25D7ABAC00C47E54 /* Frameworks */,
 				7ABE398025D7ABAC00C47E54 /* Resources */,
+				F0E0CC30F04FC5F68A9F7C69 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,12 +164,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				7ABE399225D7ABB300C47E54 /* LaunchScreen.storyboard in Resources */,
+				2D13512A25DE433100E19B30 /* GoogleService-Info.plist in Resources */,
 				7ABE398F25D7ABB300C47E54 /* Assets.xcassets in Resources */,
 				7ABE398D25D7ABAC00C47E54 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AE1FB094D920999492EC299A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-carTalk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0E0CC30F04FC5F68A9F7C69 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-carTalk/Pods-carTalk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-carTalk/Pods-carTalk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-carTalk/Pods-carTalk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7ABE397E25D7ABAC00C47E54 /* Sources */ = {
@@ -295,6 +368,7 @@
 		};
 		7ABE399725D7ABB300C47E54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47F65D235C002B96D15765FE /* Pods-carTalk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -316,6 +390,7 @@
 		};
 		7ABE399825D7ABB300C47E54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76C5F6C08CF0AE613D4082AC /* Pods-carTalk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
