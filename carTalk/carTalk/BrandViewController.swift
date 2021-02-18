@@ -53,28 +53,23 @@ class BrandViewController: UIViewController, UITableViewDataSource, UITableViewD
         tableView.delegate = self
         tableView.dataSource = self
         // Do any additional setup after loading the view.
-        print(viewModel.brandName!) // 잘 전달됬는지 확인
-        switch (viewModel.brandName!) {
-        case "hyundai":
-            topBrandName.text = "현대"
-            brand.brandName = "현대"
-            // fetchBrandCar(viewModel.brandName)
-        case "kia":
-            topBrandName.text = "기아"
-            brand.brandName = "기아"
-        case "chevrolet":
-            topBrandName.text = "쉐보레"
-            brand.brandName = "쉐보레"
-        case "renault":
-            topBrandName.text = "르노삼성"
-            brand.brandName = "르노삼성"
-        case "ssangyong":
-            topBrandName.text = "쌍용"
-            brand.brandName = "쌍용"
-        default:
-            topBrandName.text = "오류"
-            brand.brandName = "오류"
-        }
+        //print(viewModel.brandName!) // 잘 전달됬는지 확인
+       // print(viewModel.brand.brandName!)
+//        switch (viewModel.brandName!) {
+//        case "hyundai":
+//            topBrandName.text = "현대"
+//            // fetchBrandCar(viewModel.brandName)
+//        case "kia":
+//            topBrandName.text = "기아"
+//        case "chevrolet":
+//            topBrandName.text = "쉐보레"
+//        case "renault":
+//            topBrandName.text = "르노삼성"
+//        case "ssangyong":
+//            topBrandName.text = "쌍용"
+//        default:
+//            topBrandName.text = "오류"
+//        }
         
         
     }
@@ -100,19 +95,19 @@ class BrandViewModel {
     func setName(model: String?) {
         brandName = model
     }
-    func setBrand(brand: BrandInfo?){
-        brand = brand
+    func setBrand(model: BrandInfo?){
+        brand = model
     }
  
-//    let brandCarList: [BrandCarInfo] = [
-//        BrandCarInfo(name: "그랜저", minNewCarPrice: 3172, maxNewCarPrice: 4349, minUsedCarPrice: 2200, maxUsedCarPrice: 4349),
-//        BrandCarInfo(name: "소나타", minNewCarPrice: 2386, maxNewCarPrice: 3642, minUsedCarPrice: 2100, maxUsedCarPrice: 3400),
-//        BrandCarInfo(name: "아반떼", minNewCarPrice: 1570, maxNewCarPrice: 2779, minUsedCarPrice: 1300, maxUsedCarPrice: 2432),
-//        BrandCarInfo(name: "투싼", minNewCarPrice: 2435, maxNewCarPrice: 3567, minUsedCarPrice: 2264, maxUsedCarPrice: 3319)
-//
-//    ]
+    let brandCarList: [BrandCarInfo] = [
+        BrandCarInfo(name: "그랜저", minNewCarPrice: 3172, maxNewCarPrice: 4349, minUsedCarPrice: 2200, maxUsedCarPrice: 4349),
+        BrandCarInfo(name: "소나타", minNewCarPrice: 2386, maxNewCarPrice: 3642, minUsedCarPrice: 2100, maxUsedCarPrice: 3400),
+        BrandCarInfo(name: "아반떼", minNewCarPrice: 1570, maxNewCarPrice: 2779, minUsedCarPrice: 1300, maxUsedCarPrice: 2432),
+        BrandCarInfo(name: "투싼", minNewCarPrice: 2435, maxNewCarPrice: 3567, minUsedCarPrice: 2264, maxUsedCarPrice: 3319)
+
+    ]
     
-    let brandCarList : [BrandCarInfo] = brand?.cars
+    //let brandCarList : [BrandCarInfo]
     
     
 
