@@ -26,4 +26,10 @@ struct BrandCarInfo {
         self.maxUsedCarPrice = maxUsedCarPrice
     }
     
+    var toDictionary:[String:Any] {
+        let dict: [String:Any] = ["name": name, "minNewCarPrice": minNewCarPrice, "maxNewCarPrice": maxNewCarPrice, "minUsedCarPrice": minUsedCarPrice, "maxUsedCarPrice": maxUsedCarPrice, ]
+        
+        return dict
+    }
+    
 }
