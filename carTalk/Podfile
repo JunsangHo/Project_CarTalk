@@ -8,4 +8,6 @@ target 'carTalk' do
   # Pods for carTalk
   pod 'Firebase/Analytics'
   pod 'Firebase/Database'
+  pod 'Firebase/Storage'
+  pod 'FirebaseUI/Storage'
 end
