@@ -6,13 +6,13 @@
 //
 
 import UIKit
-import Firebase
+
 
 class BrandViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    let db = Database.database().reference()
+
     
-    var brand: BrandInfo
+    
     
     //MARK: 권준상이 건든것 : BrandViewModel 안에 brandName, setName , viewDidLoad 안에 있는 print() (잘 전달됬는지 확인용)
     //Model -> 지금은 임시지만 나중에는 서버와 연결
@@ -95,19 +95,24 @@ class CarCell: UITableViewCell {
 class BrandViewModel {
     
     // MARK: String?으로 brandName 전달
+    var brand: BrandInfo?
     var brandName: String?
     func setName(model: String?) {
         brandName = model
     }
+    func setBrand(brand: BrandInfo?){
+        brand = brand
+    }
  
-    let brandCarList: [BrandCarInfo] = [
-        BrandCarInfo(name: "그랜저", minNewCarPrice: 3172, maxNewCarPrice: 4349, minUsedCarPrice: 2200, maxUsedCarPrice: 4349),
-        BrandCarInfo(name: "소나타", minNewCarPrice: 2386, maxNewCarPrice: 3642, minUsedCarPrice: 2100, maxUsedCarPrice: 3400),
-        BrandCarInfo(name: "아반떼", minNewCarPrice: 1570, maxNewCarPrice: 2779, minUsedCarPrice: 1300, maxUsedCarPrice: 2432),
-        BrandCarInfo(name: "투싼", minNewCarPrice: 2435, maxNewCarPrice: 3567, minUsedCarPrice: 2264, maxUsedCarPrice: 3319)
-        
-    ]
-
+//    let brandCarList: [BrandCarInfo] = [
+//        BrandCarInfo(name: "그랜저", minNewCarPrice: 3172, maxNewCarPrice: 4349, minUsedCarPrice: 2200, maxUsedCarPrice: 4349),
+//        BrandCarInfo(name: "소나타", minNewCarPrice: 2386, maxNewCarPrice: 3642, minUsedCarPrice: 2100, maxUsedCarPrice: 3400),
+//        BrandCarInfo(name: "아반떼", minNewCarPrice: 1570, maxNewCarPrice: 2779, minUsedCarPrice: 1300, maxUsedCarPrice: 2432),
+//        BrandCarInfo(name: "투싼", minNewCarPrice: 2435, maxNewCarPrice: 3567, minUsedCarPrice: 2264, maxUsedCarPrice: 3319)
+//
+//    ]
+    
+    let brandCarList : [BrandCarInfo] = brand?.cars
     
     
 
