@@ -53,6 +53,7 @@ class BrandViewController: UIViewController, UITableViewDataSource, UITableViewD
         tableView.delegate = self
         tableView.dataSource = self
         // Do any additional setup after loading the view.
+
         //print(viewModel.brandName!) // 잘 전달됬는지 확인
        // print(viewModel.brand.brandName!)
 //        switch (viewModel.brandName!) {
@@ -70,6 +71,7 @@ class BrandViewController: UIViewController, UITableViewDataSource, UITableViewD
 //        default:
 //            topBrandName.text = "오류"
 //        }
+
         
         
     }
@@ -90,24 +92,29 @@ class CarCell: UITableViewCell {
 class BrandViewModel {
     
     // MARK: String?으로 brandName 전달
-    var brand: BrandInfo?
+    var brand: Brand?
     var brandName: String?
     func setName(model: String?) {
         brandName = model
     }
-    func setBrand(model: BrandInfo?){
+
+    func setBrand(model: Brand?){
         brand = model
     }
- 
-    let brandCarList: [BrandCarInfo] = [
-        BrandCarInfo(name: "그랜저", minNewCarPrice: 3172, maxNewCarPrice: 4349, minUsedCarPrice: 2200, maxUsedCarPrice: 4349),
-        BrandCarInfo(name: "소나타", minNewCarPrice: 2386, maxNewCarPrice: 3642, minUsedCarPrice: 2100, maxUsedCarPrice: 3400),
-        BrandCarInfo(name: "아반떼", minNewCarPrice: 1570, maxNewCarPrice: 2779, minUsedCarPrice: 1300, maxUsedCarPrice: 2432),
-        BrandCarInfo(name: "투싼", minNewCarPrice: 2435, maxNewCarPrice: 3567, minUsedCarPrice: 2264, maxUsedCarPrice: 3319)
-
-    ]
     
-    //let brandCarList : [BrandCarInfo]
+    init(){
+        self.brandCarList = []
+    }
+//    let brandCarList: [BrandCarInfo] = [
+//        BrandCarInfo(name: "그랜저", minNewCarPrice: 3172, maxNewCarPrice: 4349, minUsedCarPrice: 2200, maxUsedCarPrice: 4349),
+//        BrandCarInfo(name: "소나타", minNewCarPrice: 2386, maxNewCarPrice: 3642, minUsedCarPrice: 2100, maxUsedCarPrice: 3400),
+//        BrandCarInfo(name: "아반떼", minNewCarPrice: 1570, maxNewCarPrice: 2779, minUsedCarPrice: 1300, maxUsedCarPrice: 2432),
+//        BrandCarInfo(name: "투싼", minNewCarPrice: 2435, maxNewCarPrice: 3567, minUsedCarPrice: 2264, maxUsedCarPrice: 3319)
+//
+//    ]
+    
+    let brandCarList : [BrandCarInfo]
+
     
     
 

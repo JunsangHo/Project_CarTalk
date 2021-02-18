@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct BrandCarInfo {
+struct BrandCarInfo :Codable {
     let name: String
     let minNewCarPrice: Int
     let maxNewCarPrice: Int
@@ -27,8 +27,7 @@ struct BrandCarInfo {
     }
     
     var toDictionary:[String:Any] {
-        let dict: [String:Any] = ["name": name, "minNewCarPrice": minNewCarPrice, "maxNewCarPrice": maxNewCarPrice, "minUsedCarPrice": minUsedCarPrice, "maxUsedCarPrice": maxUsedCarPrice, ]
-        
+        let dict: [String:Any] = ["name": name, "minNewCarPrice": minNewCarPrice, "maxNewCarPrice": maxNewCarPrice, "minUsedCarPrice": minUsedCarPrice, "maxUsedCarPrice": maxUsedCarPrice]
         return dict
     }
     
