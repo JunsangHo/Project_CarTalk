@@ -32,7 +32,7 @@ class BrandViewController: UIViewController, UITableViewDataSource, UITableViewD
             cell.name.text = tmp!.name
             cell.newPrice.text = "\(tmp!.minNewCarPrice) ~ \(tmp!.maxNewCarPrice) 만원"
             cell.usedPrice.text = "\(tmp!.minUsedCarPrice) ~ \(tmp!.maxUsedCarPrice) 만원"
-            cell.imgView.image = tmp!.image
+            cell.imgView.image = UIImage(named: "\(tmp!.name).jpg")
             return cell
         }else{
             return UITableViewCell()
@@ -40,8 +40,10 @@ class BrandViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     @IBOutlet weak var topBrandName: UILabel!
-    
     @IBOutlet weak var tableView: UITableView!
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,7 +84,6 @@ class CarCell: UITableViewCell {
     @IBOutlet weak var newPrice: UILabel!
     @IBOutlet weak var usedPrice: UILabel!
     @IBOutlet weak var imgView : UIImageView!
-    
 }
 
 class BrandViewModel {

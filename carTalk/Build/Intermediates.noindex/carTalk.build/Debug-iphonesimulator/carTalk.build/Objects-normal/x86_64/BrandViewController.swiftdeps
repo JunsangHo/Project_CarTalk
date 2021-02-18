@@ -12,6 +12,7 @@ provides-member:
 - ["7carTalk7CarCellC", ""]
 - ["7carTalk14BrandViewModelC", ""]
 provides-dynamic-lookup:
+- "back"
 - "brand"
 - "brandCarList"
 - "imgView"
@@ -26,6 +27,7 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "Array"
 - "AssignmentPrecedence"
+- !private "BooleanLiteralType"
 - "Brand"
 - "BrandCarInfo"
 - "BrandViewController"
@@ -37,6 +39,7 @@ depends-top-level:
 - "Int"
 - !private "IntegerLiteralType"
 - !private "StringLiteralType"
+- !private "UIImage"
 - "UIImageView"
 - "UILabel"
 - "UITableView"
@@ -60,7 +63,6 @@ depends-member:
 - !private ["SK", "subscript"]
 - !private ["7carTalk5BrandV", "brandName"]
 - !private ["7carTalk5BrandV", "cars"]
-- !private ["7carTalk12BrandCarInfoV", "image"]
 - !private ["7carTalk12BrandCarInfoV", "maxNewCarPrice"]
 - !private ["7carTalk12BrandCarInfoV", "maxUsedCarPrice"]
 - !private ["7carTalk12BrandCarInfoV", "minNewCarPrice"]
@@ -70,11 +72,14 @@ depends-member:
 - !private ["7carTalk19BrandViewControllerC", "CarCell"]
 - ["7carTalk19BrandViewControllerC", "IndexPath"]
 - ["7carTalk19BrandViewControllerC", "Int"]
+- !private ["7carTalk19BrandViewControllerC", "UIImage"]
 - ["7carTalk19BrandViewControllerC", "UILabel"]
 - ["7carTalk19BrandViewControllerC", "UITableView"]
 - ["7carTalk19BrandViewControllerC", "UITableViewCell"]
 - ["7carTalk19BrandViewControllerC", ""]
+- ["7carTalk19BrandViewControllerC", "back"]
 - ["7carTalk19BrandViewControllerC", "deinit"]
+- !private ["7carTalk19BrandViewControllerC", "dismiss"]
 - ["7carTalk19BrandViewControllerC", "indexPathForPreferredFocusedView"]
 - ["7carTalk19BrandViewControllerC", "indexPathForPreferredFocusedViewInTableView"]
 - ["7carTalk19BrandViewControllerC", "init"]
@@ -125,12 +130,15 @@ depends-member:
 - !private ["So15CALayerDelegateP", "text"]
 - ["So15CALayerDelegateP", "usedPrice"]
 - ["s7CVarArgP", "BrandViewModel"]
+- !private ["s7CVarArgP", "UIImage"]
 - !private ["s7CVarArgP", "UITableViewCell"]
 - ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "back"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "dataSource"]
 - !private ["s7CVarArgP", "delegate"]
 - !private ["s7CVarArgP", "dequeueReusableCell"]
+- !private ["s7CVarArgP", "dismiss"]
 - !private ["s7CVarArgP", "image"]
 - !private ["s7CVarArgP", "imgView"]
 - ["s7CVarArgP", "indexPathForPreferredFocusedView"]
@@ -184,12 +192,15 @@ depends-member:
 - !private ["10Foundation15ContiguousBytesP", "count"]
 - !private ["10Foundation15ContiguousBytesP", "subscript"]
 - ["s28CustomDebugStringConvertibleP", "BrandViewModel"]
+- !private ["s28CustomDebugStringConvertibleP", "UIImage"]
 - !private ["s28CustomDebugStringConvertibleP", "UITableViewCell"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "back"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "dataSource"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
 - !private ["s28CustomDebugStringConvertibleP", "dequeueReusableCell"]
+- !private ["s28CustomDebugStringConvertibleP", "dismiss"]
 - !private ["s28CustomDebugStringConvertibleP", "image"]
 - !private ["s28CustomDebugStringConvertibleP", "imgView"]
 - ["s28CustomDebugStringConvertibleP", "indexPathForPreferredFocusedView"]
@@ -234,14 +245,17 @@ depends-member:
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "text"]
 - ["s23CustomStringConvertibleP", "BrandViewModel"]
+- !private ["s23CustomStringConvertibleP", "UIImage"]
 - !private ["s23CustomStringConvertibleP", "UITableViewCell"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "appendInterpolation"]
 - !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "back"]
 - !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "dataSource"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
 - !private ["s23CustomStringConvertibleP", "dequeueReusableCell"]
+- !private ["s23CustomStringConvertibleP", "dismiss"]
 - !private ["s23CustomStringConvertibleP", "image"]
 - !private ["s23CustomStringConvertibleP", "imgView"]
 - ["s23CustomStringConvertibleP", "indexPathForPreferredFocusedView"]
@@ -312,12 +326,15 @@ depends-member:
 - !private ["SE", "subscript"]
 - !private ["SE", "text"]
 - ["SQ", "BrandViewModel"]
+- !private ["SQ", "UIImage"]
 - !private ["SQ", "UITableViewCell"]
 - ["SQ", ""]
+- !private ["SQ", "back"]
 - !private ["SQ", "count"]
 - !private ["SQ", "dataSource"]
 - !private ["SQ", "delegate"]
 - !private ["SQ", "dequeueReusableCell"]
+- !private ["SQ", "dismiss"]
 - !private ["SQ", "image"]
 - !private ["SQ", "imgView"]
 - ["SQ", "indexPathForPreferredFocusedView"]
@@ -369,12 +386,15 @@ depends-member:
 - !private ["s32ExpressibleByStringInterpolationP", "init"]
 - !private ["SF", ""]
 - ["SH", "BrandViewModel"]
+- !private ["SH", "UIImage"]
 - !private ["SH", "UITableViewCell"]
 - ["SH", ""]
+- !private ["SH", "back"]
 - !private ["SH", "count"]
 - !private ["SH", "dataSource"]
 - !private ["SH", "delegate"]
 - !private ["SH", "dequeueReusableCell"]
+- !private ["SH", "dismiss"]
 - !private ["SH", "image"]
 - !private ["SH", "imgView"]
 - ["SH", "indexPathForPreferredFocusedView"]
@@ -422,16 +442,19 @@ depends-member:
 - !private ["So8NSCodingP", "CarCell"]
 - ["So8NSCodingP", "IndexPath"]
 - ["So8NSCodingP", "Int"]
+- !private ["So8NSCodingP", "UIImage"]
 - ["So8NSCodingP", "UIImageView"]
 - ["So8NSCodingP", "UILabel"]
 - ["So8NSCodingP", "UITableView"]
 - ["So8NSCodingP", "UITableViewCell"]
 - ["So8NSCodingP", ""]
+- ["So8NSCodingP", "back"]
 - !private ["So8NSCodingP", "dataSource"]
 - ["So8NSCodingP", "deinit"]
 - !private ["So8NSCodingP", "delegate"]
 - !private ["So8NSCodingP", "dequeueReusableCell"]
 - !private ["So8NSCodingP", "dequeueReusableCellWithIdentifier"]
+- !private ["So8NSCodingP", "dismiss"]
 - !private ["So8NSCodingP", "image"]
 - ["So8NSCodingP", "imgView"]
 - ["So8NSCodingP", "indexPathForPreferredFocusedView"]
@@ -470,11 +493,14 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "CarCell"]
 - ["So26NSExtensionRequestHandlingP", "IndexPath"]
 - ["So26NSExtensionRequestHandlingP", "Int"]
+- !private ["So26NSExtensionRequestHandlingP", "UIImage"]
 - ["So26NSExtensionRequestHandlingP", "UILabel"]
 - ["So26NSExtensionRequestHandlingP", "UITableView"]
 - ["So26NSExtensionRequestHandlingP", "UITableViewCell"]
 - ["So26NSExtensionRequestHandlingP", ""]
+- ["So26NSExtensionRequestHandlingP", "back"]
 - ["So26NSExtensionRequestHandlingP", "deinit"]
+- !private ["So26NSExtensionRequestHandlingP", "dismiss"]
 - ["So26NSExtensionRequestHandlingP", "indexPathForPreferredFocusedView"]
 - ["So26NSExtensionRequestHandlingP", "indexPathForPreferredFocusedViewInTableView"]
 - ["So26NSExtensionRequestHandlingP", "init"]
@@ -503,28 +529,41 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "viewForZooming"]
 - ["So26NSExtensionRequestHandlingP", "viewForZoomingInScrollView"]
 - ["So26NSExtensionRequestHandlingP", "viewModel"]
+- !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderWritingP", "init"]
 - ["So8NSObjectC", "BrandViewModel"]
 - !private ["So8NSObjectC", "CarCell"]
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "Int"]
+- !private ["So8NSObjectC", "UIImage"]
 - ["So8NSObjectC", "UIImageView"]
 - ["So8NSObjectC", "UILabel"]
 - ["So8NSObjectC", "UITableView"]
 - ["So8NSObjectC", "UITableViewCell"]
 - ["So8NSObjectC", ""]
+- ["So8NSObjectC", "back"]
 - !private ["So8NSObjectC", "dataSource"]
 - !private ["So8NSObjectC", "delegate"]
 - !private ["So8NSObjectC", "dequeueReusableCell"]
 - !private ["So8NSObjectC", "dequeueReusableCellWithIdentifier"]
+- !private ["So8NSObjectC", "dismiss"]
+- !private ["So8NSObjectC", "dismissViewControllerAnimated"]
 - !private ["So8NSObjectC", "image"]
+- !private ["So8NSObjectC", "imageNamed"]
+- !private ["So8NSObjectC", "imageWithCGImage"]
+- !private ["So8NSObjectC", "imageWithCIImage"]
+- !private ["So8NSObjectC", "imageWithContentsOfFile"]
+- !private ["So8NSObjectC", "imageWithData"]
 - ["So8NSObjectC", "imgView"]
 - ["So8NSObjectC", "indexPathForPreferredFocusedView"]
 - ["So8NSObjectC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "jpegData"]
 - ["So8NSObjectC", "name"]
 - ["So8NSObjectC", "newPrice"]
 - ["So8NSObjectC", "numberOfSections"]
 - ["So8NSObjectC", "numberOfSectionsInTableView"]
+- !private ["So8NSObjectC", "pngData"]
 - !private ["So8NSObjectC", "print"]
 - ["So8NSObjectC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So8NSObjectC", "scrollViewDidEndDecelerating"]
@@ -541,6 +580,7 @@ depends-member:
 - ["So8NSObjectC", "scrollViewWillEndDragging"]
 - ["So8NSObjectC", "sectionIndexTitles"]
 - ["So8NSObjectC", "sectionIndexTitlesForTableView"]
+- !private ["So8NSObjectC", "systemImageNamed"]
 - ["So8NSObjectC", "tableView"]
 - ["So8NSObjectC", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["So8NSObjectC", "text"]
@@ -554,25 +594,36 @@ depends-member:
 - !private ["So8NSObjectP", "CarCell"]
 - ["So8NSObjectP", "IndexPath"]
 - ["So8NSObjectP", "Int"]
+- !private ["So8NSObjectP", "UIImage"]
 - ["So8NSObjectP", "UIImageView"]
 - ["So8NSObjectP", "UILabel"]
 - ["So8NSObjectP", "UITableView"]
 - ["So8NSObjectP", "UITableViewCell"]
 - ["So8NSObjectP", ""]
+- ["So8NSObjectP", "back"]
 - !private ["So8NSObjectP", "dataSource"]
 - ["So8NSObjectP", "deinit"]
 - !private ["So8NSObjectP", "delegate"]
 - !private ["So8NSObjectP", "dequeueReusableCell"]
 - !private ["So8NSObjectP", "dequeueReusableCellWithIdentifier"]
+- !private ["So8NSObjectP", "dismiss"]
+- !private ["So8NSObjectP", "dismissViewControllerAnimated"]
 - !private ["So8NSObjectP", "image"]
+- !private ["So8NSObjectP", "imageNamed"]
+- !private ["So8NSObjectP", "imageWithCGImage"]
+- !private ["So8NSObjectP", "imageWithCIImage"]
+- !private ["So8NSObjectP", "imageWithContentsOfFile"]
+- !private ["So8NSObjectP", "imageWithData"]
 - ["So8NSObjectP", "imgView"]
 - ["So8NSObjectP", "indexPathForPreferredFocusedView"]
 - ["So8NSObjectP", "indexPathForPreferredFocusedViewInTableView"]
 - ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "jpegData"]
 - ["So8NSObjectP", "name"]
 - ["So8NSObjectP", "newPrice"]
 - ["So8NSObjectP", "numberOfSections"]
 - ["So8NSObjectP", "numberOfSectionsInTableView"]
+- !private ["So8NSObjectP", "pngData"]
 - !private ["So8NSObjectP", "print"]
 - ["So8NSObjectP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So8NSObjectP", "scrollViewDidEndDecelerating"]
@@ -589,6 +640,7 @@ depends-member:
 - ["So8NSObjectP", "scrollViewWillEndDragging"]
 - ["So8NSObjectP", "sectionIndexTitles"]
 - ["So8NSObjectP", "sectionIndexTitlesForTableView"]
+- !private ["So8NSObjectP", "systemImageNamed"]
 - ["So8NSObjectP", "tableView"]
 - ["So8NSObjectP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["So8NSObjectP", "text"]
@@ -598,6 +650,7 @@ depends-member:
 - ["So8NSObjectP", "viewForZooming"]
 - ["So8NSObjectP", "viewForZoomingInScrollView"]
 - ["So8NSObjectP", "viewModel"]
+- !private ["So14NSSecureCodingP", "init"]
 - !private ["Sj", ""]
 - !private ["Sq", "dataSource"]
 - !private ["Sq", "delegate"]
@@ -655,16 +708,19 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "CarCell"]
 - ["So21UIAppearanceContainerP", "IndexPath"]
 - ["So21UIAppearanceContainerP", "Int"]
+- !private ["So21UIAppearanceContainerP", "UIImage"]
 - ["So21UIAppearanceContainerP", "UIImageView"]
 - ["So21UIAppearanceContainerP", "UILabel"]
 - ["So21UIAppearanceContainerP", "UITableView"]
 - ["So21UIAppearanceContainerP", "UITableViewCell"]
 - ["So21UIAppearanceContainerP", ""]
+- ["So21UIAppearanceContainerP", "back"]
 - !private ["So21UIAppearanceContainerP", "dataSource"]
 - ["So21UIAppearanceContainerP", "deinit"]
 - !private ["So21UIAppearanceContainerP", "delegate"]
 - !private ["So21UIAppearanceContainerP", "dequeueReusableCell"]
 - !private ["So21UIAppearanceContainerP", "dequeueReusableCellWithIdentifier"]
+- !private ["So21UIAppearanceContainerP", "dismiss"]
 - !private ["So21UIAppearanceContainerP", "image"]
 - ["So21UIAppearanceContainerP", "imgView"]
 - ["So21UIAppearanceContainerP", "indexPathForPreferredFocusedView"]
@@ -703,11 +759,14 @@ depends-member:
 - !private ["So18UIContentContainerP", "CarCell"]
 - ["So18UIContentContainerP", "IndexPath"]
 - ["So18UIContentContainerP", "Int"]
+- !private ["So18UIContentContainerP", "UIImage"]
 - ["So18UIContentContainerP", "UILabel"]
 - ["So18UIContentContainerP", "UITableView"]
 - ["So18UIContentContainerP", "UITableViewCell"]
 - ["So18UIContentContainerP", ""]
+- ["So18UIContentContainerP", "back"]
 - ["So18UIContentContainerP", "deinit"]
+- !private ["So18UIContentContainerP", "dismiss"]
 - ["So18UIContentContainerP", "indexPathForPreferredFocusedView"]
 - ["So18UIContentContainerP", "indexPathForPreferredFocusedViewInTableView"]
 - ["So18UIContentContainerP", "init"]
@@ -773,16 +832,19 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "CarCell"]
 - ["So18UIFocusEnvironmentP", "IndexPath"]
 - ["So18UIFocusEnvironmentP", "Int"]
+- !private ["So18UIFocusEnvironmentP", "UIImage"]
 - ["So18UIFocusEnvironmentP", "UIImageView"]
 - ["So18UIFocusEnvironmentP", "UILabel"]
 - ["So18UIFocusEnvironmentP", "UITableView"]
 - ["So18UIFocusEnvironmentP", "UITableViewCell"]
 - ["So18UIFocusEnvironmentP", ""]
+- ["So18UIFocusEnvironmentP", "back"]
 - !private ["So18UIFocusEnvironmentP", "dataSource"]
 - ["So18UIFocusEnvironmentP", "deinit"]
 - !private ["So18UIFocusEnvironmentP", "delegate"]
 - !private ["So18UIFocusEnvironmentP", "dequeueReusableCell"]
 - !private ["So18UIFocusEnvironmentP", "dequeueReusableCellWithIdentifier"]
+- !private ["So18UIFocusEnvironmentP", "dismiss"]
 - !private ["So18UIFocusEnvironmentP", "image"]
 - ["So18UIFocusEnvironmentP", "imgView"]
 - ["So18UIFocusEnvironmentP", "indexPathForPreferredFocusedView"]
@@ -858,7 +920,9 @@ depends-member:
 - ["So27UIGestureRecognizerDelegateP", "name"]
 - ["So27UIGestureRecognizerDelegateP", "newPrice"]
 - ["So27UIGestureRecognizerDelegateP", "usedPrice"]
+- !private ["So7UIImageC", "init"]
 - !private ["So11UIImageViewC", "image"]
+- !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
 - !private ["So7UILabelC", "text"]
 - ["So24UILargeContentViewerItemP", "UIImageView"]
 - ["So24UILargeContentViewerItemP", "UILabel"]
@@ -878,16 +942,20 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "CarCell"]
 - ["So30UIPasteConfigurationSupportingP", "IndexPath"]
 - ["So30UIPasteConfigurationSupportingP", "Int"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
 - ["So30UIPasteConfigurationSupportingP", "UIImageView"]
 - ["So30UIPasteConfigurationSupportingP", "UILabel"]
 - ["So30UIPasteConfigurationSupportingP", "UITableView"]
 - ["So30UIPasteConfigurationSupportingP", "UITableViewCell"]
 - ["So30UIPasteConfigurationSupportingP", ""]
+- ["So30UIPasteConfigurationSupportingP", "back"]
 - !private ["So30UIPasteConfigurationSupportingP", "dataSource"]
 - ["So30UIPasteConfigurationSupportingP", "deinit"]
 - !private ["So30UIPasteConfigurationSupportingP", "delegate"]
 - !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCell"]
 - !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCellWithIdentifier"]
+- !private ["So30UIPasteConfigurationSupportingP", "dismiss"]
+- !private ["So30UIPasteConfigurationSupportingP", "dismissViewControllerAnimated"]
 - !private ["So30UIPasteConfigurationSupportingP", "image"]
 - ["So30UIPasteConfigurationSupportingP", "imgView"]
 - ["So30UIPasteConfigurationSupportingP", "indexPathForPreferredFocusedView"]
@@ -926,15 +994,19 @@ depends-member:
 - !private ["So11UIResponderC", "CarCell"]
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "Int"]
+- !private ["So11UIResponderC", "UIImage"]
 - ["So11UIResponderC", "UIImageView"]
 - ["So11UIResponderC", "UILabel"]
 - ["So11UIResponderC", "UITableView"]
 - ["So11UIResponderC", "UITableViewCell"]
 - ["So11UIResponderC", ""]
+- ["So11UIResponderC", "back"]
 - !private ["So11UIResponderC", "dataSource"]
 - !private ["So11UIResponderC", "delegate"]
 - !private ["So11UIResponderC", "dequeueReusableCell"]
 - !private ["So11UIResponderC", "dequeueReusableCellWithIdentifier"]
+- !private ["So11UIResponderC", "dismiss"]
+- !private ["So11UIResponderC", "dismissViewControllerAnimated"]
 - !private ["So11UIResponderC", "image"]
 - ["So11UIResponderC", "imgView"]
 - ["So11UIResponderC", "indexPathForPreferredFocusedView"]
@@ -973,16 +1045,20 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "CarCell"]
 - ["So30UIResponderStandardEditActionsP", "IndexPath"]
 - ["So30UIResponderStandardEditActionsP", "Int"]
+- !private ["So30UIResponderStandardEditActionsP", "UIImage"]
 - ["So30UIResponderStandardEditActionsP", "UIImageView"]
 - ["So30UIResponderStandardEditActionsP", "UILabel"]
 - ["So30UIResponderStandardEditActionsP", "UITableView"]
 - ["So30UIResponderStandardEditActionsP", "UITableViewCell"]
 - ["So30UIResponderStandardEditActionsP", ""]
+- ["So30UIResponderStandardEditActionsP", "back"]
 - !private ["So30UIResponderStandardEditActionsP", "dataSource"]
 - ["So30UIResponderStandardEditActionsP", "deinit"]
 - !private ["So30UIResponderStandardEditActionsP", "delegate"]
 - !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCell"]
 - !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCellWithIdentifier"]
+- !private ["So30UIResponderStandardEditActionsP", "dismiss"]
+- !private ["So30UIResponderStandardEditActionsP", "dismissViewControllerAnimated"]
 - !private ["So30UIResponderStandardEditActionsP", "image"]
 - ["So30UIResponderStandardEditActionsP", "imgView"]
 - ["So30UIResponderStandardEditActionsP", "indexPathForPreferredFocusedView"]
@@ -1023,9 +1099,12 @@ depends-member:
 - !private ["So12UIScrollViewC", "dequeueReusableCell"]
 - !private ["So12UIScrollViewC", "dequeueReusableCellWithIdentifier"]
 - ["So20UIScrollViewDelegateP", "BrandViewModel"]
+- !private ["So20UIScrollViewDelegateP", "UIImage"]
 - !private ["So20UIScrollViewDelegateP", "UITableViewCell"]
 - ["So20UIScrollViewDelegateP", ""]
+- ["So20UIScrollViewDelegateP", "back"]
 - ["So20UIScrollViewDelegateP", "deinit"]
+- !private ["So20UIScrollViewDelegateP", "dismiss"]
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedView"]
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedViewInTableView"]
 - ["So20UIScrollViewDelegateP", "init"]
@@ -1061,11 +1140,14 @@ depends-member:
 - !private ["So16UIStateRestoringP", "CarCell"]
 - ["So16UIStateRestoringP", "IndexPath"]
 - ["So16UIStateRestoringP", "Int"]
+- !private ["So16UIStateRestoringP", "UIImage"]
 - ["So16UIStateRestoringP", "UILabel"]
 - ["So16UIStateRestoringP", "UITableView"]
 - ["So16UIStateRestoringP", "UITableViewCell"]
 - ["So16UIStateRestoringP", ""]
+- ["So16UIStateRestoringP", "back"]
 - ["So16UIStateRestoringP", "deinit"]
+- !private ["So16UIStateRestoringP", "dismiss"]
 - ["So16UIStateRestoringP", "indexPathForPreferredFocusedView"]
 - ["So16UIStateRestoringP", "indexPathForPreferredFocusedViewInTableView"]
 - ["So16UIStateRestoringP", "init"]
@@ -1106,9 +1188,12 @@ depends-member:
 - ["So15UITableViewCellC", "newPrice"]
 - ["So15UITableViewCellC", "usedPrice"]
 - ["So21UITableViewDataSourceP", "BrandViewModel"]
+- !private ["So21UITableViewDataSourceP", "UIImage"]
 - !private ["So21UITableViewDataSourceP", "UITableViewCell"]
 - ["So21UITableViewDataSourceP", ""]
+- ["So21UITableViewDataSourceP", "back"]
 - ["So21UITableViewDataSourceP", "deinit"]
+- !private ["So21UITableViewDataSourceP", "dismiss"]
 - ["So21UITableViewDataSourceP", "indexPathForPreferredFocusedView"]
 - ["So21UITableViewDataSourceP", "indexPathForPreferredFocusedViewInTableView"]
 - ["So21UITableViewDataSourceP", "init"]
@@ -1138,9 +1223,12 @@ depends-member:
 - ["So21UITableViewDataSourceP", "viewForZoomingInScrollView"]
 - ["So21UITableViewDataSourceP", "viewModel"]
 - ["So19UITableViewDelegateP", "BrandViewModel"]
+- !private ["So19UITableViewDelegateP", "UIImage"]
 - !private ["So19UITableViewDelegateP", "UITableViewCell"]
 - ["So19UITableViewDelegateP", ""]
+- ["So19UITableViewDelegateP", "back"]
 - ["So19UITableViewDelegateP", "deinit"]
+- !private ["So19UITableViewDelegateP", "dismiss"]
 - ["So19UITableViewDelegateP", "indexPathForPreferredFocusedView"]
 - ["So19UITableViewDelegateP", "indexPathForPreferredFocusedViewInTableView"]
 - ["So19UITableViewDelegateP", "init"]
@@ -1173,16 +1261,19 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "CarCell"]
 - ["So18UITraitEnvironmentP", "IndexPath"]
 - ["So18UITraitEnvironmentP", "Int"]
+- !private ["So18UITraitEnvironmentP", "UIImage"]
 - ["So18UITraitEnvironmentP", "UIImageView"]
 - ["So18UITraitEnvironmentP", "UILabel"]
 - ["So18UITraitEnvironmentP", "UITableView"]
 - ["So18UITraitEnvironmentP", "UITableViewCell"]
 - ["So18UITraitEnvironmentP", ""]
+- ["So18UITraitEnvironmentP", "back"]
 - !private ["So18UITraitEnvironmentP", "dataSource"]
 - ["So18UITraitEnvironmentP", "deinit"]
 - !private ["So18UITraitEnvironmentP", "delegate"]
 - !private ["So18UITraitEnvironmentP", "dequeueReusableCell"]
 - !private ["So18UITraitEnvironmentP", "dequeueReusableCellWithIdentifier"]
+- !private ["So18UITraitEnvironmentP", "dismiss"]
 - !private ["So18UITraitEnvironmentP", "image"]
 - ["So18UITraitEnvironmentP", "imgView"]
 - ["So18UITraitEnvironmentP", "indexPathForPreferredFocusedView"]
@@ -1221,16 +1312,20 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "CarCell"]
 - ["So23UIUserActivityRestoringP", "IndexPath"]
 - ["So23UIUserActivityRestoringP", "Int"]
+- !private ["So23UIUserActivityRestoringP", "UIImage"]
 - ["So23UIUserActivityRestoringP", "UIImageView"]
 - ["So23UIUserActivityRestoringP", "UILabel"]
 - ["So23UIUserActivityRestoringP", "UITableView"]
 - ["So23UIUserActivityRestoringP", "UITableViewCell"]
 - ["So23UIUserActivityRestoringP", ""]
+- ["So23UIUserActivityRestoringP", "back"]
 - !private ["So23UIUserActivityRestoringP", "dataSource"]
 - ["So23UIUserActivityRestoringP", "deinit"]
 - !private ["So23UIUserActivityRestoringP", "delegate"]
 - !private ["So23UIUserActivityRestoringP", "dequeueReusableCell"]
 - !private ["So23UIUserActivityRestoringP", "dequeueReusableCellWithIdentifier"]
+- !private ["So23UIUserActivityRestoringP", "dismiss"]
+- !private ["So23UIUserActivityRestoringP", "dismissViewControllerAnimated"]
 - !private ["So23UIUserActivityRestoringP", "image"]
 - ["So23UIUserActivityRestoringP", "imgView"]
 - ["So23UIUserActivityRestoringP", "indexPathForPreferredFocusedView"]
@@ -1283,10 +1378,13 @@ depends-member:
 - !private ["So16UIViewControllerC", "CarCell"]
 - ["So16UIViewControllerC", "IndexPath"]
 - ["So16UIViewControllerC", "Int"]
+- !private ["So16UIViewControllerC", "UIImage"]
 - ["So16UIViewControllerC", "UILabel"]
 - ["So16UIViewControllerC", "UITableView"]
 - ["So16UIViewControllerC", "UITableViewCell"]
 - ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "back"]
+- !private ["So16UIViewControllerC", "dismiss"]
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedView"]
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So16UIViewControllerC", "init"]
@@ -1319,18 +1417,23 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s26_ExpressibleByImageLiteralP", "init"]
 - !private ["s19_HasContiguousBytesP", "count"]
 - !private ["s19_HasContiguousBytesP", "subscript"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "BrandViewModel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UITableViewCell"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "back"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dataSource"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dequeueReusableCell"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "imgView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "indexPathForPreferredFocusedView"]
@@ -1366,11 +1469,14 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZoomingInScrollView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewModel"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "BrandViewModel"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIImage"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UITableViewCell"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "back"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dataSource"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "delegate"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dequeueReusableCell"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dismiss"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "image"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "imgView"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "indexPathForPreferredFocusedView"]
@@ -1458,8 +1564,11 @@ depends-nominal:
 - !private "10Foundation19MutableDataProtocolP"
 - "So8NSCodingP"
 - "So26NSExtensionRequestHandlingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
+- !private "So14NSSecureCodingP"
 - !private "Sj"
 - !private "Sq"
 - !private "Sk"
@@ -1485,7 +1594,9 @@ depends-nominal:
 - "So20UIFocusItemContainerP"
 - !private "So30UIFocusItemScrollableContainerP"
 - "So27UIGestureRecognizerDelegateP"
+- !private "So7UIImageC"
 - !private "So11UIImageViewC"
+- !private "So39UIItemProviderPresentationSizeProvidingP"
 - !private "So7UILabelC"
 - "So24UILargeContentViewerItemP"
 - "So30UIPasteConfigurationSupportingP"
@@ -1505,8 +1616,10 @@ depends-nominal:
 - "So16UIViewControllerC"
 - !private "s14_ArrayProtocolP"
 - !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s26_ExpressibleByImageLiteralP"
 - !private "s19_HasContiguousBytesP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
@@ -1528,11 +1641,16 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
+- "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage-umbrella.h"
 - "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FirebaseDatabase-umbrella.h"
 - "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Headers/FirebaseInstallations-umbrella.h"
 - "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageReference.h"
 - "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FirebaseStorage.h"
 - "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
 - "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
 - "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabase.h"
@@ -1540,6 +1658,10 @@ depends-external:
 - "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/Firebase/CoreOnly/Sources/Firebase.h"
 - "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/XCFrameworkIntermediates/FirebaseAnalytics/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
 - "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
 - "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
 - "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRVersion.h"
 - "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
@@ -1553,13 +1675,17 @@ depends-external:
 - "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Headers/FirebaseInstallations.h"
 - "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Headers/FIRInstallationsErrors.h"
+- "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
 - "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseInstallations/FirebaseInstallations.framework/Headers/FIRInstallationsAuthTokenResult.h"
 - "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageListResult.h"
 - "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/XCFrameworkIntermediates/FirebaseAnalytics/FirebaseAnalytics.framework/Headers/FIRAnalytics+Consent.h"
 - "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
 - "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/include/mach-o/dyld.modulemap"
 - "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseStorage/FirebaseStorage.framework/Modules/module.modulemap"
 - "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/FirebaseDatabase/FirebaseDatabase.framework/Modules/module.modulemap"
 - "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/XCFrameworkIntermediates/FirebaseAnalytics/FirebaseAnalytics.framework/Modules/module.modulemap"
@@ -1578,4 +1704,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "496c451eabfe9f2c37fe24ec847a939b"
+interface-hash: "d354899f9ec0879869ccc09adfcbc2db"

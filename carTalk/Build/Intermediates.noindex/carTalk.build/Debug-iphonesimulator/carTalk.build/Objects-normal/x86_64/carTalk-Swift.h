@@ -253,6 +253,7 @@ SWIFT_CLASS("_TtC7carTalk19BrandViewController")
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified topBrandName;
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+- (IBAction)back:(id _Nonnull)sender;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;

@@ -58,6 +58,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
         self.viewModel.getBrand(index: indexPath.row) {  brand in
             self.performSegue(withIdentifier: SegueIdentifier.detailSegue.rawValue, sender: brand)
         }
+        
     }
     
     // 셀의 레이아웃을 어떻게 설정할 것인지?
@@ -128,13 +129,16 @@ class MainViewModel {
             print(snapshot.value)
             do{
                 let data = try JSONSerialization.data(withJSONObject: snapshot.value, options: [])
+                
                 let decoder = JSONDecoder()
                 
                 let brands: [Brand] = try decoder.decode([Brand].self, from: data)
-                
+//                let reference = storageRef.child(
 //                print("----> customers: \(customers.count)")
                 tmp.brandName = brands[index].brandName
                 tmp.cars = brands[index].cars
+                
+//                tmp.image = UIImage(named: <#T##String#>)
                 completion(tmp)
             } catch let error {
 //                print("error----:  \(error.localizedDescription)")
@@ -150,6 +154,7 @@ struct Brand: Codable{
     
     var brandName: String
     var cars: [BrandCarInfo]
+    //var image: [UIImage]
     
     enum CodingKeys : String, CodingKey{
         case brandName = "name"
