@@ -57,23 +57,17 @@ class BrandViewController: UIViewController, UITableViewDataSource, UITableViewD
         switch (viewModel.brandName!) {
         case "hyundai":
             topBrandName.text = "현대"
-            brand.brandName = "현대"
             // fetchBrandCar(viewModel.brandName)
         case "kia":
             topBrandName.text = "기아"
-            brand.brandName = "기아"
         case "chevrolet":
             topBrandName.text = "쉐보레"
-            brand.brandName = "쉐보레"
         case "renault":
             topBrandName.text = "르노삼성"
-            brand.brandName = "르노삼성"
         case "ssangyong":
             topBrandName.text = "쌍용"
-            brand.brandName = "쌍용"
         default:
             topBrandName.text = "오류"
-            brand.brandName = "오류"
         }
         
         
@@ -95,15 +89,18 @@ class CarCell: UITableViewCell {
 class BrandViewModel {
     
     // MARK: String?으로 brandName 전달
-    var brand: BrandInfo?
+    var brand: Brand?
     var brandName: String?
     func setName(model: String?) {
         brandName = model
     }
-    func setBrand(brand: BrandInfo?){
-        brand = brand
+    func setBrand(model: Brand?){
+        brand = model
     }
- 
+    
+    init(){
+        self.brandCarList = []
+    }
 //    let brandCarList: [BrandCarInfo] = [
 //        BrandCarInfo(name: "그랜저", minNewCarPrice: 3172, maxNewCarPrice: 4349, minUsedCarPrice: 2200, maxUsedCarPrice: 4349),
 //        BrandCarInfo(name: "소나타", minNewCarPrice: 2386, maxNewCarPrice: 3642, minUsedCarPrice: 2100, maxUsedCarPrice: 3400),
@@ -112,7 +109,7 @@ class BrandViewModel {
 //
 //    ]
     
-    let brandCarList : [BrandCarInfo] = brand?.cars
+    let brandCarList : [BrandCarInfo]
     
     
 
