@@ -53,22 +53,25 @@ class BrandViewController: UIViewController, UITableViewDataSource, UITableViewD
         tableView.delegate = self
         tableView.dataSource = self
         // Do any additional setup after loading the view.
-        print(viewModel.brandName!) // 잘 전달됬는지 확인
-        switch (viewModel.brandName!) {
-        case "hyundai":
-            topBrandName.text = "현대"
-            // fetchBrandCar(viewModel.brandName)
-        case "kia":
-            topBrandName.text = "기아"
-        case "chevrolet":
-            topBrandName.text = "쉐보레"
-        case "renault":
-            topBrandName.text = "르노삼성"
-        case "ssangyong":
-            topBrandName.text = "쌍용"
-        default:
-            topBrandName.text = "오류"
-        }
+
+        //print(viewModel.brandName!) // 잘 전달됬는지 확인
+       // print(viewModel.brand.brandName!)
+//        switch (viewModel.brandName!) {
+//        case "hyundai":
+//            topBrandName.text = "현대"
+//            // fetchBrandCar(viewModel.brandName)
+//        case "kia":
+//            topBrandName.text = "기아"
+//        case "chevrolet":
+//            topBrandName.text = "쉐보레"
+//        case "renault":
+//            topBrandName.text = "르노삼성"
+//        case "ssangyong":
+//            topBrandName.text = "쌍용"
+//        default:
+//            topBrandName.text = "오류"
+//        }
+
         
         
     }
@@ -94,6 +97,7 @@ class BrandViewModel {
     func setName(model: String?) {
         brandName = model
     }
+
     func setBrand(model: Brand?){
         brand = model
     }
@@ -110,6 +114,7 @@ class BrandViewModel {
 //    ]
     
     let brandCarList : [BrandCarInfo]
+
     
     
 

@@ -1,0 +1,55 @@
+dependencies: \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/FIRInstallations.m \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FirebaseInstallations.build/module.modulemap \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Public/FirebaseInstallations/FIRInstallations.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/include/mach-o/dyld.modulemap \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromises.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/PromisesObjC.build/module.modulemap \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Wrap.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Validate.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Timeout.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Then.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Testing.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Retry.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Reduce.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Recover.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Race.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Do.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Delay.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Catch.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Await.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Async.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Any.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+Always.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromiseError.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/PromisesObjC/FBLPromises.framework/Headers/FBLPromise+All.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/Target\ Support\ Files/PromisesObjC/PromisesObjC-umbrella.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseInstallations/FirebaseCore/Sources/Private/FirebaseCoreInternal.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FirebaseCore.build/module.modulemap \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRVersion.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIROptions.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FirebaseCore.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRLoggerLevel.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRConfiguration.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore/FIRApp.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/Target\ Support\ Files/FirebaseCore/FirebaseCore-umbrella.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseInstallations/FirebaseCore/Sources/Private/FIRAppInternal.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseInstallations/FirebaseCore/Sources/Private/FIRComponent.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseInstallations/FirebaseCore/Sources/Private/FIRComponentContainer.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseInstallations/FirebaseCore/Sources/Private/FIRComponentType.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseInstallations/FirebaseCore/Sources/Private/FIRDependency.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseInstallations/FirebaseCore/Sources/Private/FIRHeartbeatInfo.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseInstallations/FirebaseCore/Sources/Private/FIRLibrary.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseInstallations/FirebaseCore/Sources/Private/FIRLogger.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseInstallations/FirebaseCore/Sources/Private/FIROptionsInternal.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/FIRInstallationsAuthTokenResultInternal.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Public/FirebaseInstallations/FIRInstallationsAuthTokenResult.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Errors/FIRInstallationsErrorUtil.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/Public/FirebaseInstallations/FIRInstallationsErrors.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/FIRInstallationsItem.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsStatus.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/FIRInstallationsLogger.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsIDController/FIRInstallationsIDController.h \
+  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseInstallations/FirebaseInstallations/Source/Library/InstallationsStore/FIRInstallationsStoredAuthToken.h
