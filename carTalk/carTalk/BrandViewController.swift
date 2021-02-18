@@ -6,8 +6,13 @@
 //
 
 import UIKit
+import Firebase
 
 class BrandViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    let db = Database.database().reference()
+    
+    var brand: BrandInfo
     
     //MARK: 권준상이 건든것 : BrandViewModel 안에 brandName, setName , viewDidLoad 안에 있는 print() (잘 전달됬는지 확인용)
     //Model -> 지금은 임시지만 나중에는 서버와 연결
@@ -52,21 +57,32 @@ class BrandViewController: UIViewController, UITableViewDataSource, UITableViewD
         switch (viewModel.brandName!) {
         case "hyundai":
             topBrandName.text = "현대"
+            brand.brandName = "현대"
+            // fetchBrandCar(viewModel.brandName)
         case "kia":
             topBrandName.text = "기아"
+            brand.brandName = "기아"
         case "chevrolet":
             topBrandName.text = "쉐보레"
+            brand.brandName = "쉐보레"
         case "renault":
             topBrandName.text = "르노삼성"
+            brand.brandName = "르노삼성"
         case "ssangyong":
             topBrandName.text = "쌍용"
+            brand.brandName = "쌍용"
         default:
             topBrandName.text = "오류"
+            brand.brandName = "오류"
         }
+        
+        
     }
     
 
 }
+
+
 
 class CarCell: UITableViewCell {
     @IBOutlet weak var name: UILabel!

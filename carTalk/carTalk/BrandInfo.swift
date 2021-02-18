@@ -17,5 +17,11 @@ class BrandInfo: NSObject {
     init(brandName: String) {
         self.brandName = brandName
     }
+    let cars: [BrandCarInfo]
     
+    var toDictionary:[String:Any] {
+        let carsArray = cars.map{ $0.toDictionary }
+        let dict: [String:Any] = ["brandName" : brandName, "cars" : carsArray]
+        return dict
+    }
 }
