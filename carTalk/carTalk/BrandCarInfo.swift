@@ -14,6 +14,19 @@ struct BrandCarInfo :Codable {
     let minUsedCarPrice: Int
     let maxUsedCarPrice: Int
     
+    enum CodingKeys : String, CodingKey{
+        case name = "name"
+        
+        case minNewCarPrice = "minNewPrice"
+        
+        case maxNewCarPrice = "maxNewPrice"
+        
+        case minUsedCarPrice = "minUsedPrice"
+        
+        case maxUsedCarPrice = "maxUsedPrice"
+        
+    }
+    
     var image: UIImage? {
         return UIImage(named: "\(name).jpg")
     }

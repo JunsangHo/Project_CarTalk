@@ -14,21 +14,20 @@ provides-member:
 provides-dynamic-lookup:
 - "brand"
 - "brandCarList"
-- "brandName"
 - "imgView"
 - "name"
 - "newPrice"
 - "setBrand"
-- "setName"
 - "tableView"
 - "topBrandName"
 - "usedPrice"
 - "viewDidLoad"
 - "viewModel"
 depends-top-level:
+- !private "Array"
 - "AssignmentPrecedence"
+- "Brand"
 - "BrandCarInfo"
-- "BrandInfo"
 - "BrandViewController"
 - "BrandViewModel"
 - "CarCell"
@@ -37,7 +36,6 @@ depends-top-level:
 - "IndexPath"
 - "Int"
 - !private "IntegerLiteralType"
-- "String"
 - !private "StringLiteralType"
 - "UIImageView"
 - "UILabel"
@@ -47,14 +45,26 @@ depends-top-level:
 - "UITableViewDelegate"
 - "UIViewController"
 - !private "brand"
-- !private "brandName"
 - !private "print"
 - !private "tableView"
+- !private "topBrandName"
 - !private "viewModel"
+- !private "~="
 depends-member:
 - !private ["s18AdditiveArithmeticP", ""]
+- !private ["Sa", "count"]
+- !private ["Sa", "subscript"]
 - !private ["SK", ""]
+- !private ["SK", "count"]
 - !private ["SK", "row"]
+- !private ["SK", "subscript"]
+- !private ["7carTalk5BrandV", "brandName"]
+- !private ["7carTalk12BrandCarInfoV", "image"]
+- !private ["7carTalk12BrandCarInfoV", "maxNewCarPrice"]
+- !private ["7carTalk12BrandCarInfoV", "maxUsedCarPrice"]
+- !private ["7carTalk12BrandCarInfoV", "minNewCarPrice"]
+- !private ["7carTalk12BrandCarInfoV", "minUsedCarPrice"]
+- !private ["7carTalk12BrandCarInfoV", "name"]
 - ["7carTalk19BrandViewControllerC", "BrandViewModel"]
 - !private ["7carTalk19BrandViewControllerC", "CarCell"]
 - ["7carTalk19BrandViewControllerC", "IndexPath"]
@@ -92,16 +102,13 @@ depends-member:
 - ["7carTalk19BrandViewControllerC", "viewForZooming"]
 - ["7carTalk19BrandViewControllerC", "viewForZoomingInScrollView"]
 - ["7carTalk19BrandViewControllerC", "viewModel"]
+- ["7carTalk14BrandViewModelC", "Brand"]
 - ["7carTalk14BrandViewModelC", "BrandCarInfo"]
-- ["7carTalk14BrandViewModelC", "BrandInfo"]
-- ["7carTalk14BrandViewModelC", "String"]
 - ["7carTalk14BrandViewModelC", "brand"]
 - ["7carTalk14BrandViewModelC", "brandCarList"]
-- ["7carTalk14BrandViewModelC", "brandName"]
 - ["7carTalk14BrandViewModelC", "deinit"]
 - ["7carTalk14BrandViewModelC", "init"]
 - ["7carTalk14BrandViewModelC", "setBrand"]
-- ["7carTalk14BrandViewModelC", "setName"]
 - ["So15CALayerDelegateP", "UIImageView"]
 - ["So15CALayerDelegateP", "UILabel"]
 - ["So15CALayerDelegateP", ""]
@@ -109,6 +116,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "delegate"]
 - !private ["So15CALayerDelegateP", "dequeueReusableCell"]
 - !private ["So15CALayerDelegateP", "dequeueReusableCellWithIdentifier"]
+- !private ["So15CALayerDelegateP", "image"]
 - ["So15CALayerDelegateP", "imgView"]
 - ["So15CALayerDelegateP", "init"]
 - ["So15CALayerDelegateP", "name"]
@@ -118,9 +126,11 @@ depends-member:
 - ["s7CVarArgP", "BrandViewModel"]
 - !private ["s7CVarArgP", "UITableViewCell"]
 - ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "dataSource"]
 - !private ["s7CVarArgP", "delegate"]
 - !private ["s7CVarArgP", "dequeueReusableCell"]
+- !private ["s7CVarArgP", "image"]
 - !private ["s7CVarArgP", "imgView"]
 - ["s7CVarArgP", "indexPathForPreferredFocusedView"]
 - ["s7CVarArgP", "indexPathForPreferredFocusedViewInTableView"]
@@ -145,9 +155,11 @@ depends-member:
 - ["s7CVarArgP", "scrollViewWillEndDragging"]
 - ["s7CVarArgP", "sectionIndexTitles"]
 - ["s7CVarArgP", "sectionIndexTitlesForTableView"]
+- !private ["s7CVarArgP", "subscript"]
 - ["s7CVarArgP", "tableView"]
 - ["s7CVarArgP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "topBrandName"]
 - !private ["s7CVarArgP", "usedPrice"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - ["s7CVarArgP", "viewForZooming"]
@@ -163,15 +175,21 @@ depends-member:
 - ["7carTalk7CarCellC", "newPrice"]
 - ["7carTalk7CarCellC", "usedPrice"]
 - !private ["Sl", ""]
+- !private ["Sl", "count"]
 - !private ["Sl", "row"]
+- !private ["Sl", "subscript"]
 - !private ["SL", ""]
 - !private ["SL", "row"]
+- !private ["10Foundation15ContiguousBytesP", "count"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
 - ["s28CustomDebugStringConvertibleP", "BrandViewModel"]
 - !private ["s28CustomDebugStringConvertibleP", "UITableViewCell"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "dataSource"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
 - !private ["s28CustomDebugStringConvertibleP", "dequeueReusableCell"]
+- !private ["s28CustomDebugStringConvertibleP", "image"]
 - !private ["s28CustomDebugStringConvertibleP", "imgView"]
 - ["s28CustomDebugStringConvertibleP", "indexPathForPreferredFocusedView"]
 - ["s28CustomDebugStringConvertibleP", "indexPathForPreferredFocusedViewInTableView"]
@@ -197,26 +215,33 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "scrollViewWillEndDragging"]
 - ["s28CustomDebugStringConvertibleP", "sectionIndexTitles"]
 - ["s28CustomDebugStringConvertibleP", "sectionIndexTitlesForTableView"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - ["s28CustomDebugStringConvertibleP", "tableView"]
 - ["s28CustomDebugStringConvertibleP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "topBrandName"]
 - !private ["s28CustomDebugStringConvertibleP", "usedPrice"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - ["s28CustomDebugStringConvertibleP", "viewForZooming"]
 - ["s28CustomDebugStringConvertibleP", "viewForZoomingInScrollView"]
 - !private ["s28CustomDebugStringConvertibleP", "viewModel"]
+- !private ["s17CustomReflectableP", "count"]
 - !private ["s17CustomReflectableP", "dataSource"]
 - !private ["s17CustomReflectableP", "delegate"]
+- !private ["s17CustomReflectableP", "image"]
 - !private ["s17CustomReflectableP", "row"]
+- !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "text"]
 - ["s23CustomStringConvertibleP", "BrandViewModel"]
 - !private ["s23CustomStringConvertibleP", "UITableViewCell"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "appendInterpolation"]
 - !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "dataSource"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
 - !private ["s23CustomStringConvertibleP", "dequeueReusableCell"]
+- !private ["s23CustomStringConvertibleP", "image"]
 - !private ["s23CustomStringConvertibleP", "imgView"]
 - ["s23CustomStringConvertibleP", "indexPathForPreferredFocusedView"]
 - ["s23CustomStringConvertibleP", "indexPathForPreferredFocusedViewInTableView"]
@@ -242,30 +267,55 @@ depends-member:
 - ["s23CustomStringConvertibleP", "scrollViewWillEndDragging"]
 - ["s23CustomStringConvertibleP", "sectionIndexTitles"]
 - ["s23CustomStringConvertibleP", "sectionIndexTitlesForTableView"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
 - ["s23CustomStringConvertibleP", "tableView"]
 - ["s23CustomStringConvertibleP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "topBrandName"]
 - !private ["s23CustomStringConvertibleP", "usedPrice"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - ["s23CustomStringConvertibleP", "viewForZooming"]
 - ["s23CustomStringConvertibleP", "viewForZoomingInScrollView"]
 - !private ["s23CustomStringConvertibleP", "viewModel"]
+- !private ["10Foundation12DataProtocolP", ""]
+- !private ["10Foundation12DataProtocolP", "count"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
+- !private ["Se", "brandName"]
+- !private ["Se", "count"]
 - !private ["Se", "dataSource"]
 - !private ["Se", "delegate"]
+- !private ["Se", "image"]
+- !private ["Se", "maxNewCarPrice"]
+- !private ["Se", "maxUsedCarPrice"]
+- !private ["Se", "minNewCarPrice"]
+- !private ["Se", "minUsedCarPrice"]
+- !private ["Se", "name"]
 - !private ["Se", "row"]
+- !private ["Se", "subscript"]
 - !private ["Se", "text"]
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SE", "brandName"]
+- !private ["SE", "count"]
 - !private ["SE", "dataSource"]
 - !private ["SE", "delegate"]
+- !private ["SE", "image"]
+- !private ["SE", "maxNewCarPrice"]
+- !private ["SE", "maxUsedCarPrice"]
+- !private ["SE", "minNewCarPrice"]
+- !private ["SE", "minUsedCarPrice"]
+- !private ["SE", "name"]
 - !private ["SE", "row"]
+- !private ["SE", "subscript"]
 - !private ["SE", "text"]
 - ["SQ", "BrandViewModel"]
 - !private ["SQ", "UITableViewCell"]
 - ["SQ", ""]
+- !private ["SQ", "count"]
 - !private ["SQ", "dataSource"]
 - !private ["SQ", "delegate"]
 - !private ["SQ", "dequeueReusableCell"]
+- !private ["SQ", "image"]
 - !private ["SQ", "imgView"]
 - ["SQ", "indexPathForPreferredFocusedView"]
 - ["SQ", "indexPathForPreferredFocusedViewInTableView"]
@@ -291,19 +341,26 @@ depends-member:
 - ["SQ", "scrollViewWillEndDragging"]
 - ["SQ", "sectionIndexTitles"]
 - ["SQ", "sectionIndexTitlesForTableView"]
+- !private ["SQ", "subscript"]
 - ["SQ", "tableView"]
 - ["SQ", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["SQ", "text"]
+- !private ["SQ", "topBrandName"]
 - !private ["SQ", "usedPrice"]
 - !private ["SQ", "viewDidLoad"]
 - ["SQ", "viewForZooming"]
 - ["SQ", "viewForZoomingInScrollView"]
 - !private ["SQ", "viewModel"]
+- !private ["s25ExpressibleByArrayLiteralP", ""]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "row"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s25ExpressibleByFloatLiteralP", ""]
 - !private ["s27ExpressibleByIntegerLiteralP", ""]
 - !private ["s23ExpressibleByNilLiteralP", "dataSource"]
 - !private ["s23ExpressibleByNilLiteralP", "delegate"]
+- !private ["s23ExpressibleByNilLiteralP", "image"]
 - !private ["s23ExpressibleByNilLiteralP", "text"]
 - !private ["s32ExpressibleByStringInterpolationP", "StringInterpolation"]
 - !private ["s32ExpressibleByStringInterpolationP", "init"]
@@ -311,9 +368,11 @@ depends-member:
 - ["SH", "BrandViewModel"]
 - !private ["SH", "UITableViewCell"]
 - ["SH", ""]
+- !private ["SH", "count"]
 - !private ["SH", "dataSource"]
 - !private ["SH", "delegate"]
 - !private ["SH", "dequeueReusableCell"]
+- !private ["SH", "image"]
 - !private ["SH", "imgView"]
 - ["SH", "indexPathForPreferredFocusedView"]
 - ["SH", "indexPathForPreferredFocusedViewInTableView"]
@@ -339,16 +398,23 @@ depends-member:
 - ["SH", "scrollViewWillEndDragging"]
 - ["SH", "sectionIndexTitles"]
 - ["SH", "sectionIndexTitlesForTableView"]
+- !private ["SH", "subscript"]
 - ["SH", "tableView"]
 - ["SH", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["SH", "text"]
+- !private ["SH", "topBrandName"]
 - !private ["SH", "usedPrice"]
 - !private ["SH", "viewDidLoad"]
 - ["SH", "viewForZooming"]
 - ["SH", "viewForZoomingInScrollView"]
 - !private ["SH", "viewModel"]
 - !private ["10Foundation9IndexPathV", "row"]
+- !private ["SM", ""]
+- !private ["SM", "count"]
 - !private ["SM", "row"]
+- !private ["SM", "subscript"]
+- !private ["10Foundation19MutableDataProtocolP", "count"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
 - ["So8NSCodingP", "BrandViewModel"]
 - !private ["So8NSCodingP", "CarCell"]
 - ["So8NSCodingP", "IndexPath"]
@@ -363,6 +429,7 @@ depends-member:
 - !private ["So8NSCodingP", "delegate"]
 - !private ["So8NSCodingP", "dequeueReusableCell"]
 - !private ["So8NSCodingP", "dequeueReusableCellWithIdentifier"]
+- !private ["So8NSCodingP", "image"]
 - ["So8NSCodingP", "imgView"]
 - ["So8NSCodingP", "indexPathForPreferredFocusedView"]
 - ["So8NSCodingP", "indexPathForPreferredFocusedViewInTableView"]
@@ -446,6 +513,7 @@ depends-member:
 - !private ["So8NSObjectC", "delegate"]
 - !private ["So8NSObjectC", "dequeueReusableCell"]
 - !private ["So8NSObjectC", "dequeueReusableCellWithIdentifier"]
+- !private ["So8NSObjectC", "image"]
 - ["So8NSObjectC", "imgView"]
 - ["So8NSObjectC", "indexPathForPreferredFocusedView"]
 - ["So8NSObjectC", "indexPathForPreferredFocusedViewInTableView"]
@@ -478,7 +546,7 @@ depends-member:
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewForZooming"]
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
-- !private ["So8NSObjectC", "viewModel"]
+- ["So8NSObjectC", "viewModel"]
 - ["So8NSObjectP", "BrandViewModel"]
 - !private ["So8NSObjectP", "CarCell"]
 - ["So8NSObjectP", "IndexPath"]
@@ -493,6 +561,7 @@ depends-member:
 - !private ["So8NSObjectP", "delegate"]
 - !private ["So8NSObjectP", "dequeueReusableCell"]
 - !private ["So8NSObjectP", "dequeueReusableCellWithIdentifier"]
+- !private ["So8NSObjectP", "image"]
 - ["So8NSObjectP", "imgView"]
 - ["So8NSObjectP", "indexPathForPreferredFocusedView"]
 - ["So8NSObjectP", "indexPathForPreferredFocusedViewInTableView"]
@@ -529,11 +598,20 @@ depends-member:
 - !private ["Sj", ""]
 - !private ["Sq", "dataSource"]
 - !private ["Sq", "delegate"]
+- !private ["Sq", "image"]
 - !private ["Sq", "text"]
+- !private ["Sk", ""]
+- !private ["Sk", "count"]
 - !private ["Sk", "row"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", ""]
+- !private ["Sm", "count"]
+- !private ["Sm", "subscript"]
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
 - !private ["ST", ""]
+- !private ["ST", "count"]
 - !private ["ST", "row"]
+- !private ["ST", "subscript"]
 - !private ["s13SignedNumericP", ""]
 - !private ["Sx", ""]
 - !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
@@ -541,6 +619,7 @@ depends-member:
 - !private ["s27StringInterpolationProtocolP", "init"]
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
 - !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
 - ["So29UIAccessibilityIdentificationP", "UIImageView"]
 - ["So29UIAccessibilityIdentificationP", "UILabel"]
 - ["So29UIAccessibilityIdentificationP", ""]
@@ -548,6 +627,7 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "delegate"]
 - !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
 - !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCellWithIdentifier"]
+- !private ["So29UIAccessibilityIdentificationP", "image"]
 - ["So29UIAccessibilityIdentificationP", "imgView"]
 - ["So29UIAccessibilityIdentificationP", "init"]
 - ["So29UIAccessibilityIdentificationP", "name"]
@@ -561,6 +641,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "delegate"]
 - !private ["So12UIAppearanceP", "dequeueReusableCell"]
 - !private ["So12UIAppearanceP", "dequeueReusableCellWithIdentifier"]
+- !private ["So12UIAppearanceP", "image"]
 - ["So12UIAppearanceP", "imgView"]
 - ["So12UIAppearanceP", "init"]
 - ["So12UIAppearanceP", "name"]
@@ -581,6 +662,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "delegate"]
 - !private ["So21UIAppearanceContainerP", "dequeueReusableCell"]
 - !private ["So21UIAppearanceContainerP", "dequeueReusableCellWithIdentifier"]
+- !private ["So21UIAppearanceContainerP", "image"]
 - ["So21UIAppearanceContainerP", "imgView"]
 - ["So21UIAppearanceContainerP", "indexPathForPreferredFocusedView"]
 - ["So21UIAppearanceContainerP", "indexPathForPreferredFocusedViewInTableView"]
@@ -660,6 +742,7 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "delegate"]
 - !private ["So17UICoordinateSpaceP", "dequeueReusableCell"]
 - !private ["So17UICoordinateSpaceP", "dequeueReusableCellWithIdentifier"]
+- !private ["So17UICoordinateSpaceP", "image"]
 - ["So17UICoordinateSpaceP", "imgView"]
 - ["So17UICoordinateSpaceP", "init"]
 - ["So17UICoordinateSpaceP", "name"]
@@ -676,6 +759,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "delegate"]
 - !private ["So13UIDynamicItemP", "dequeueReusableCell"]
 - !private ["So13UIDynamicItemP", "dequeueReusableCellWithIdentifier"]
+- !private ["So13UIDynamicItemP", "image"]
 - ["So13UIDynamicItemP", "imgView"]
 - ["So13UIDynamicItemP", "init"]
 - ["So13UIDynamicItemP", "name"]
@@ -696,6 +780,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "delegate"]
 - !private ["So18UIFocusEnvironmentP", "dequeueReusableCell"]
 - !private ["So18UIFocusEnvironmentP", "dequeueReusableCellWithIdentifier"]
+- !private ["So18UIFocusEnvironmentP", "image"]
 - ["So18UIFocusEnvironmentP", "imgView"]
 - ["So18UIFocusEnvironmentP", "indexPathForPreferredFocusedView"]
 - ["So18UIFocusEnvironmentP", "indexPathForPreferredFocusedViewInTableView"]
@@ -736,6 +821,7 @@ depends-member:
 - !private ["So11UIFocusItemP", "delegate"]
 - !private ["So11UIFocusItemP", "dequeueReusableCell"]
 - !private ["So11UIFocusItemP", "dequeueReusableCellWithIdentifier"]
+- !private ["So11UIFocusItemP", "image"]
 - ["So11UIFocusItemP", "imgView"]
 - ["So11UIFocusItemP", "init"]
 - ["So11UIFocusItemP", "name"]
@@ -749,6 +835,7 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "delegate"]
 - !private ["So20UIFocusItemContainerP", "dequeueReusableCell"]
 - !private ["So20UIFocusItemContainerP", "dequeueReusableCellWithIdentifier"]
+- !private ["So20UIFocusItemContainerP", "image"]
 - ["So20UIFocusItemContainerP", "imgView"]
 - ["So20UIFocusItemContainerP", "init"]
 - ["So20UIFocusItemContainerP", "name"]
@@ -768,6 +855,7 @@ depends-member:
 - ["So27UIGestureRecognizerDelegateP", "name"]
 - ["So27UIGestureRecognizerDelegateP", "newPrice"]
 - ["So27UIGestureRecognizerDelegateP", "usedPrice"]
+- !private ["So11UIImageViewC", "image"]
 - !private ["So7UILabelC", "text"]
 - ["So24UILargeContentViewerItemP", "UIImageView"]
 - ["So24UILargeContentViewerItemP", "UILabel"]
@@ -776,6 +864,7 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "delegate"]
 - !private ["So24UILargeContentViewerItemP", "dequeueReusableCell"]
 - !private ["So24UILargeContentViewerItemP", "dequeueReusableCellWithIdentifier"]
+- !private ["So24UILargeContentViewerItemP", "image"]
 - ["So24UILargeContentViewerItemP", "imgView"]
 - ["So24UILargeContentViewerItemP", "init"]
 - ["So24UILargeContentViewerItemP", "name"]
@@ -796,6 +885,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "delegate"]
 - !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCell"]
 - !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCellWithIdentifier"]
+- !private ["So30UIPasteConfigurationSupportingP", "image"]
 - ["So30UIPasteConfigurationSupportingP", "imgView"]
 - ["So30UIPasteConfigurationSupportingP", "indexPathForPreferredFocusedView"]
 - ["So30UIPasteConfigurationSupportingP", "indexPathForPreferredFocusedViewInTableView"]
@@ -842,6 +932,7 @@ depends-member:
 - !private ["So11UIResponderC", "delegate"]
 - !private ["So11UIResponderC", "dequeueReusableCell"]
 - !private ["So11UIResponderC", "dequeueReusableCellWithIdentifier"]
+- !private ["So11UIResponderC", "image"]
 - ["So11UIResponderC", "imgView"]
 - ["So11UIResponderC", "indexPathForPreferredFocusedView"]
 - ["So11UIResponderC", "indexPathForPreferredFocusedViewInTableView"]
@@ -874,7 +965,7 @@ depends-member:
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewForZooming"]
 - ["So11UIResponderC", "viewForZoomingInScrollView"]
-- !private ["So11UIResponderC", "viewModel"]
+- ["So11UIResponderC", "viewModel"]
 - ["So30UIResponderStandardEditActionsP", "BrandViewModel"]
 - !private ["So30UIResponderStandardEditActionsP", "CarCell"]
 - ["So30UIResponderStandardEditActionsP", "IndexPath"]
@@ -889,6 +980,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "delegate"]
 - !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCell"]
 - !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCellWithIdentifier"]
+- !private ["So30UIResponderStandardEditActionsP", "image"]
 - ["So30UIResponderStandardEditActionsP", "imgView"]
 - ["So30UIResponderStandardEditActionsP", "indexPathForPreferredFocusedView"]
 - ["So30UIResponderStandardEditActionsP", "indexPathForPreferredFocusedViewInTableView"]
@@ -1088,6 +1180,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "delegate"]
 - !private ["So18UITraitEnvironmentP", "dequeueReusableCell"]
 - !private ["So18UITraitEnvironmentP", "dequeueReusableCellWithIdentifier"]
+- !private ["So18UITraitEnvironmentP", "image"]
 - ["So18UITraitEnvironmentP", "imgView"]
 - ["So18UITraitEnvironmentP", "indexPathForPreferredFocusedView"]
 - ["So18UITraitEnvironmentP", "indexPathForPreferredFocusedViewInTableView"]
@@ -1135,6 +1228,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "delegate"]
 - !private ["So23UIUserActivityRestoringP", "dequeueReusableCell"]
 - !private ["So23UIUserActivityRestoringP", "dequeueReusableCellWithIdentifier"]
+- !private ["So23UIUserActivityRestoringP", "image"]
 - ["So23UIUserActivityRestoringP", "imgView"]
 - ["So23UIUserActivityRestoringP", "indexPathForPreferredFocusedView"]
 - ["So23UIUserActivityRestoringP", "indexPathForPreferredFocusedViewInTableView"]
@@ -1175,6 +1269,7 @@ depends-member:
 - !private ["So6UIViewC", "delegate"]
 - !private ["So6UIViewC", "dequeueReusableCell"]
 - !private ["So6UIViewC", "dequeueReusableCellWithIdentifier"]
+- !private ["So6UIViewC", "image"]
 - ["So6UIViewC", "imgView"]
 - ["So6UIViewC", "init"]
 - ["So6UIViewC", "name"]
@@ -1216,15 +1311,24 @@ depends-member:
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "viewForZooming"]
 - ["So16UIViewControllerC", "viewForZoomingInScrollView"]
-- !private ["So16UIViewControllerC", "viewModel"]
+- ["So16UIViewControllerC", "viewModel"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s19_HasContiguousBytesP", "count"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "BrandViewModel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UITableViewCell"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dataSource"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dequeueReusableCell"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "imgView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "indexPathForPreferredFocusedView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "indexPathForPreferredFocusedViewInTableView"]
@@ -1252,6 +1356,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "tableView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "topBrandName"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "usedPrice"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewForZooming"]
@@ -1263,6 +1368,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dataSource"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "delegate"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dequeueReusableCell"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "image"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "imgView"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "indexPathForPreferredFocusedView"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "indexPathForPreferredFocusedViewInTableView"]
@@ -1290,20 +1396,25 @@ depends-member:
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tableView"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "text"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "topBrandName"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "usedPrice"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewDidLoad"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewForZooming"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewForZoomingInScrollView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewModel"]
 - !private ["s21_ObjectiveCBridgeableP", ""]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "dataSource"]
 - !private ["s21_ObjectiveCBridgeableP", "delegate"]
+- !private ["s21_ObjectiveCBridgeableP", "image"]
 - !private ["s21_ObjectiveCBridgeableP", "row"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "text"]
 - ["s38__DefaultCustomPlaygroundQuickLookableP", ""]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "dataSource"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "delegate"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "image"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "imgView"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "name"]
@@ -1312,7 +1423,10 @@ depends-member:
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "usedPrice"]
 depends-nominal:
 - !private "s18AdditiveArithmeticP"
+- !private "Sa"
 - !private "SK"
+- !private "7carTalk5BrandV"
+- !private "7carTalk12BrandCarInfoV"
 - "7carTalk19BrandViewControllerC"
 - "7carTalk14BrandViewModelC"
 - "So15CALayerDelegateP"
@@ -1320,9 +1434,11 @@ depends-nominal:
 - "7carTalk7CarCellC"
 - !private "Sl"
 - !private "SL"
+- !private "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
 - !private "Se"
 - !private "s26DefaultStringInterpolationV"
 - !private "SE"
@@ -1336,6 +1452,7 @@ depends-nominal:
 - "SH"
 - !private "10Foundation9IndexPathV"
 - !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
 - "So8NSCodingP"
 - "So26NSExtensionRequestHandlingP"
 - "So8NSObjectC"
@@ -1343,12 +1460,14 @@ depends-nominal:
 - !private "Sj"
 - !private "Sq"
 - !private "Sk"
+- !private "Sm"
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "ST"
 - !private "s13SignedNumericP"
 - !private "Sx"
 - !private "s27StringInterpolationProtocolP"
 - !private "s16TextOutputStreamP"
+- !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - "So29UIAccessibilityIdentificationP"
 - "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
@@ -1363,6 +1482,7 @@ depends-nominal:
 - "So20UIFocusItemContainerP"
 - !private "So30UIFocusItemScrollableContainerP"
 - "So27UIGestureRecognizerDelegateP"
+- !private "So11UIImageViewC"
 - !private "So7UILabelC"
 - "So24UILargeContentViewerItemP"
 - "So30UIPasteConfigurationSupportingP"
@@ -1380,8 +1500,12 @@ depends-nominal:
 - "So23UIUserActivityRestoringP"
 - "So6UIViewC"
 - "So16UIViewControllerC"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
 - !private "s21_ObjectiveCBridgeableP"
@@ -1451,4 +1575,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "552ebb92b0cb96c5b242713fa7a4d41d"
+interface-hash: "496c451eabfe9f2c37fe24ec847a939b"

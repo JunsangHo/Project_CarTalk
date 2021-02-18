@@ -8,6 +8,10 @@
 import UIKit
 import Firebase
 
+enum SegueIdentifier: String {
+    case detailSegue = "showBrandDetail"
+}
+
 class MainViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
     @IBOutlet weak var menuButton: UIButton! // 상위 메뉴 버튼
@@ -26,8 +30,7 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showBrandDetail" {
             let vc = segue.destination as? BrandViewController
-            if let index = sender as? Int {
-                let brand = viewModel.getBrand(index: index)
+            if let brand = sender as? Brand {
                 vc?.viewModel.setBrand(model: brand)
             }
         }
@@ -52,8 +55,9 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     // 클릭하면 어떻게 할 것인지?
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "showBrandDetail", sender: indexPath.item)
-        
+        self.viewModel.getBrand(index: indexPath.row) { [weak self] brand in
+            self?.performSegue(withIdentifier: SegueIdentifier.detailSegue.rawValue, sender: brand)
+        }
     }
     
     // 셀의 레이아웃을 어떻게 설정할 것인지?
@@ -115,29 +119,29 @@ class MainViewModel {
     }
  
 //    var tmpBrand : Brand
+    let db = Database.database().reference()
     
-    func getBrand(index: Int) -> Brand {
-        
-        let db = Database.database().reference()
-        var tmpBrand = Brand()
-        let tmp: BrandInfo = brandList[index]
+    func getBrand(index: Int, completion: @escaping (Brand) -> Void) {
+        var tmp = Brand()
         //tmp.brandName
-        db.child("\(tmp.brandName)").observeSingleEvent(of: .value) { snapshot in
+        db.child("brand").observeSingleEvent(of: .value) { snapshot in
+            print(snapshot.value)
             do{
                 let data = try JSONSerialization.data(withJSONObject: snapshot.value, options: [])
                 let decoder = JSONDecoder()
                 
-                let brands: [BrandCarInfo] = try decoder.decode([BrandCarInfo].self, from: data)
+                let brands: [Brand] = try decoder.decode([Brand].self, from: data)
                 
 //                print("----> customers: \(customers.count)")
-                tmpBrand.brandName = tmp.brandName
-                tmpBrand.cars = brands
+                tmp.brandName = brands[index].brandName
+                tmp.cars = brands[index].cars
+                completion(tmp)
             } catch let error {
-                print("error!!!")
+//                print("error----:  \(error.localizedDescription)")
+                print(error)
             }
         }
-        
-    return tmpBrand
+    
     }
 }
 
@@ -146,6 +150,13 @@ struct Brand: Codable{
     
     var brandName: String
     var cars: [BrandCarInfo]
+    
+    enum CodingKeys : String, CodingKey{
+        case brandName = "name"
+        
+        case cars = "cars"
+    }
+    
     
     init() {
         self.brandName = " "
