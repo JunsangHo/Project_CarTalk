@@ -10,10 +10,6 @@ import UIKit
 
 class BrandViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-
-    
-    
-    
     //MARK: 권준상이 건든것 : BrandViewModel 안에 brandName, setName , viewDidLoad 안에 있는 print() (잘 전달됬는지 확인용)
     //Model -> 지금은 임시지만 나중에는 서버와 연결
     
@@ -50,27 +46,27 @@ class BrandViewController: UIViewController, UITableViewDataSource, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let modelView : BrandViewModel?
         tableView.delegate = self
         tableView.dataSource = self
         // Do any additional setup after loading the view.
-
         //print(viewModel.brandName!) // 잘 전달됬는지 확인
-       // print(viewModel.brand.brandName!)
-//        switch (viewModel.brandName!) {
-//        case "hyundai":
-//            topBrandName.text = "현대"
-//            // fetchBrandCar(viewModel.brandName)
-//        case "kia":
-//            topBrandName.text = "기아"
-//        case "chevrolet":
-//            topBrandName.text = "쉐보레"
-//        case "renault":
-//            topBrandName.text = "르노삼성"
-//        case "ssangyong":
-//            topBrandName.text = "쌍용"
-//        default:
-//            topBrandName.text = "오류"
-//        }
+        print(viewModel.brand?.brandName)
+        switch (viewModel.brand?.brandName) {
+        case "hyundai":
+            topBrandName.text = "현대"
+            // fetchBrandCar(viewModel.brandName)
+        case "kia":
+            topBrandName.text = "기아"
+        case "chevrolet":
+            topBrandName.text = "쉐보레"
+        case "renault":
+            topBrandName.text = "르노삼성"
+        case "ssangyong":
+            topBrandName.text = "쌍용"
+        default:
+            topBrandName.text = "오류"
+        }
 
         
         
@@ -93,10 +89,10 @@ class BrandViewModel {
     
     // MARK: String?으로 brandName 전달
     var brand: Brand?
-    var brandName: String?
-    func setName(model: String?) {
-        brandName = model
-    }
+//    var brandName: String?
+//    func setName(model: String?) {
+//        brandName = model
+//    }
 
     func setBrand(model: Brand?){
         brand = model
