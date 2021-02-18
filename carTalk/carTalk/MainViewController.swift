@@ -55,8 +55,8 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     // 클릭하면 어떻게 할 것인지?
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.viewModel.getBrand(index: indexPath.row) { [weak self] brand in
-            self?.performSegue(withIdentifier: SegueIdentifier.detailSegue.rawValue, sender: brand)
+        self.viewModel.getBrand(index: indexPath.row) {  brand in
+            self.performSegue(withIdentifier: SegueIdentifier.detailSegue.rawValue, sender: brand)
         }
     }
     
