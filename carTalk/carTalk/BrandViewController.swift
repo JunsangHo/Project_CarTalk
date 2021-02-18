@@ -23,16 +23,16 @@ class BrandViewController: UIViewController, UITableViewDataSource, UITableViewD
     let viewModel = BrandViewModel()
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.brandCarList.count
+        return (viewModel.brand?.cars.count)!
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "brandCarCell",for: indexPath) as? CarCell {
-            let tmp = viewModel.brandCarList[indexPath.row]
-            cell.name.text = tmp.name
-            cell.newPrice.text = "\(tmp.minNewCarPrice) ~ \(tmp.maxNewCarPrice) 만원"
-            cell.usedPrice.text = "\(tmp.minUsedCarPrice) ~ \(tmp.maxUsedCarPrice) 만원"
-            cell.imgView.image = tmp.image
+            let tmp = viewModel.brand?.cars[indexPath.row]
+            cell.name.text = tmp!.name
+            cell.newPrice.text = "\(tmp!.minNewCarPrice) ~ \(tmp!.maxNewCarPrice) 만원"
+            cell.usedPrice.text = "\(tmp!.minUsedCarPrice) ~ \(tmp!.maxUsedCarPrice) 만원"
+            cell.imgView.image = tmp!.image
             return cell
         }else{
             return UITableViewCell()
@@ -46,7 +46,7 @@ class BrandViewController: UIViewController, UITableViewDataSource, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let modelView : BrandViewModel?
+        
         tableView.delegate = self
         tableView.dataSource = self
         // Do any additional setup after loading the view.
