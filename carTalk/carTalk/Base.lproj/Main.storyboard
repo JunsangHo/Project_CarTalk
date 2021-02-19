@@ -129,7 +129,7 @@
                                 <rect key="frame" x="20" y="70" width="374" height="792"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="brandCarCell" rowHeight="135" id="y69-d2-bvc" customClass="CarCell" customModule="carTalk" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="brandCarCell" rowHeight="135" id="y69-d2-bvc" customClass="CarCell" customModule="carTalk" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="374" height="135"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y69-d2-bvc" id="1wm-fh-lBN">
