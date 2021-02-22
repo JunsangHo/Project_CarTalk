@@ -1,11 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "카마로.png",
+      "filename" : "카마로-2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "카마로-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

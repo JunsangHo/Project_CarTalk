@@ -12,10 +12,16 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+
+
+    
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        if #available(iOS 14.4, *) {
+            UIWindow.appearance().overrideUserInterfaceStyle = .light
+        }
         return true
     }
     

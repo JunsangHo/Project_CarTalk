@@ -1,11 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "클리오.png",
+      "filename" : "클리오-2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "클리오-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

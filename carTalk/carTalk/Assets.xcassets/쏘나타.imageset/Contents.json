@@ -1,11 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "쏘나타.png",
+      "filename" : "쏘나타-2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "쏘나타-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

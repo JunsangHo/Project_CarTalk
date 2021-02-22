@@ -1,11 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "아반떼.png",
+      "filename" : "아반떼-2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "아반떼-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
