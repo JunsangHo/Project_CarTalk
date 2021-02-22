@@ -1,11 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "렉스턴.png",
+      "filename" : "렉스턴-2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "렉스턴-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

@@ -10,6 +10,8 @@ import Firebase
 
 enum SegueIdentifier: String {
     case detailSegue = "showBrandDetail"
+    
+    case cardetailSegue = "car"
 }
 
 class MainViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{

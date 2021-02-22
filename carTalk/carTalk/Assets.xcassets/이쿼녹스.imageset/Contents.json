@@ -1,11 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "이쿼녹스.png",
+      "filename" : "이쿼녹스-2.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "이쿼녹스-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
