@@ -120,17 +120,23 @@ class MainViewModel {
     func getInfo(index: Int) -> BrandInfo {
         return brandList[index]
     }
+    
+    
  
 //    var tmpBrand : Brand
     let db = Database.database().reference()
+    
+    func fetchHTMLCarData(url:String?, completion: @escaping (Brand) -> (Void)){
+        
+    }
     
     func getBrand(index: Int, completion: @escaping (Brand) -> Void) {
         var tmp = Brand()
         //tmp.brandName
         db.child("brand").observeSingleEvent(of: .value) { snapshot in
-            print(snapshot.value)
+//            print(snapshot.value)
             do{
-                let data = try JSONSerialization.data(withJSONObject: snapshot.value, options: [])
+                let data = try JSONSerialization.data(withJSONObject: snapshot.value!, options: [])
                 
                 let decoder = JSONDecoder()
                 
@@ -139,7 +145,7 @@ class MainViewModel {
 //                print("----> customers: \(customers.count)")
                 tmp.brandName = brands[index].brandName
                 tmp.cars = brands[index].cars
-                
+//                tmp.imgAddress = brands[index].imgAddress
 //                tmp.image = UIImage(named: <#T##String#>)
                 completion(tmp)
             } catch let error {
@@ -156,18 +162,22 @@ struct Brand: Codable{
     
     var brandName: String
     var cars: [BrandCarInfo]
+//    var imgAddress: String
     //var image: [UIImage]
     
     enum CodingKeys : String, CodingKey{
         case brandName = "name"
         
         case cars = "cars"
+        
+//        case imgAddress = "url"
     }
     
     
     init() {
         self.brandName = " "
         self.cars = []
+//        self.imgAddress = " "
     }
 
     var toDictionary:[String:Any] {
