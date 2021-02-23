@@ -9,21 +9,19 @@ import UIKit
 
 struct BrandCarInfo :Codable {
     let name: String
-    let minNewCarPrice: Int
-    let maxNewCarPrice: Int
-    let minUsedCarPrice: Int
-    let maxUsedCarPrice: Int
+    let address: String
+    let englishName : String
+    let era : String
+    
     
     enum CodingKeys : String, CodingKey{
         case name = "name"
         
-        case minNewCarPrice = "minNewPrice"
+        case address = "url"
         
-        case maxNewCarPrice = "maxNewPrice"
+        case englishName = "EngName"
         
-        case minUsedCarPrice = "minUsedPrice"
-        
-        case maxUsedCarPrice = "maxUsedPrice"
+        case era = "era"
         
     }
     
@@ -31,16 +29,15 @@ struct BrandCarInfo :Codable {
         return UIImage(named: "\(name).jpg")
     }
     
-    init(name:String, minNewCarPrice: Int, maxNewCarPrice: Int, minUsedCarPrice: Int, maxUsedCarPrice: Int){
+    init(name:String, englishName: String, era: String, url: String){
         self.name = name
-        self.minNewCarPrice = minNewCarPrice
-        self.maxNewCarPrice = maxNewCarPrice
-        self.minUsedCarPrice = minUsedCarPrice
-        self.maxUsedCarPrice = maxUsedCarPrice
+        self.address = url
+        self.englishName = englishName
+        self.era = era
     }
     
     var toDictionary:[String:Any] {
-        let dict: [String:Any] = ["name": name, "minNewCarPrice": minNewCarPrice, "maxNewCarPrice": maxNewCarPrice, "minUsedCarPrice": minUsedCarPrice, "maxUsedCarPrice": maxUsedCarPrice]
+        let dict: [String:Any] = ["name": name, "address": address, "englishName": englishName, "era": era]
         return dict
     }
     

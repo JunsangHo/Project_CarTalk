@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftSoup
 
 
 class BrandViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -20,6 +21,16 @@ class BrandViewController: UIViewController, UITableViewDataSource, UITableViewD
     // ViewModel
     // CarViewModel 을 만들고 View 레이어에서 필요한 메서드들을 담아야 한다.
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showCarDetail" {
+            let vc = segue.destination as? DetailViewController
+            if let temp = sender as? DetailCarInfo {
+                vc?.viewModel.setDetail(temp: temp)
+            }
+        }
+    }
+    
+    
     let viewModel = BrandViewModel()
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -30,12 +41,20 @@ class BrandViewController: UIViewController, UITableViewDataSource, UITableViewD
         if let cell = tableView.dequeueReusableCell(withIdentifier: "brandCarCell",for: indexPath) as? CarCell {
             let tmp = viewModel.brand?.cars[indexPath.row]
             cell.name.text = tmp!.name
-            cell.newPrice.text = "\(tmp!.minNewCarPrice) ~ \(tmp!.maxNewCarPrice) 만원"
-            cell.usedPrice.text = "\(tmp!.minUsedCarPrice) ~ \(tmp!.maxUsedCarPrice) 만원"
-            cell.imgView.image = UIImage(named: "\(tmp!.name).jpg")
+//            cell.newPrice.text = "\(tmp!.minNewCarPrice) ~ \(tmp!.maxNewCarPrice) 만원"
+//            cell.usedPrice.text = "\(tmp!.minUsedCarPrice) ~ \(tmp!.maxUsedCarPrice) 만원"
+            cell.era.text = tmp!.era
+            cell.imgView.image = UIImage(named: "\(tmp!.englishName).jpg")
             return cell
         }else{
             return UITableViewCell()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let tmp = viewModel.brand?.cars[indexPath.row]
+        self.viewModel.getCar(url: tmp!.address, carName: tmp!.name) { temp in
+            self.performSegue(withIdentifier: "showCarDetail", sender: temp)
         }
     }
     
@@ -81,8 +100,7 @@ class BrandViewController: UIViewController, UITableViewDataSource, UITableViewD
 
 class CarCell: UITableViewCell {
     @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var newPrice: UILabel!
-    @IBOutlet weak var usedPrice: UILabel!
+    @IBOutlet weak var era: UILabel!
     @IBOutlet weak var imgView : UIImageView!
 }
 
@@ -90,11 +108,67 @@ class BrandViewModel {
     
     // MARK: String?으로 brandName 전달
     var brand: Brand?
-//    var brandName: String?
-//    func setName(model: String?) {
-//        brandName = model
-//    }
 
+
+    
+    func getCar(url: String, carName: String, completion: @escaping (DetailCarInfo) -> ()){
+//        DispatchQueue.main.async {
+//            UIApplication.shared.isNetworkActivityIndicatorVisible = true
+//        }
+        let urlAddress = url
+        var detailCar = DetailCarInfo()
+        detailCar.carName = carName
+        guard let url = URL(string: urlAddress) else { return }
+        do{
+            let html = try String(contentsOf: url, encoding: .utf8)
+            let doc: Document = try SwiftSoup.parse(html)
+            
+            let price: Elements = try doc.select(".sale").select(".price").select("span")
+            var cnt = 0
+            for i in price{
+                if cnt == 1{
+                    detailCar.carPrice = try price.text()
+                    break
+                }
+                cnt += 1
+            }
+            
+            
+            
+//            let consumption: Elements = try doc.select(".spot_end new_end").select(".info_group").select(".sale").select(".price").select(".en")
+//            for i in consumption {
+//                detailCar.carPrice = try i.text()
+//            }
+            
+            let others: Elements = try doc.select(".detail_lst").select("dd")
+            var count = 0
+            for i in others {
+                if count == 0{
+                    detailCar.consumption = try i.text()
+                }
+                else if count == 1{
+                    detailCar.fuelType = try i.text()
+                }
+                else if count == 2 {
+                    detailCar.power = try i.text()
+                }
+                else if count == 3{
+                    detailCar.sale = try i.text()
+                }
+                count += 1
+            }
+            let mainImg: Elements = try doc.select("div#carMainImgArea.img_group").select("div.main_img").select("img[src]")
+                let imgAddress = try mainImg.attr("src").description
+                let url = URL(string: imgAddress)
+                let data = try Data(contentsOf: url!)
+                detailCar.carImg = UIImage(data: data)
+            
+            completion(detailCar)
+        } catch let error {
+            print(error)
+        }
+    }
+    
     func setBrand(model: Brand?){
         brand = model
     }
@@ -102,17 +176,8 @@ class BrandViewModel {
     init(){
         self.brandCarList = []
     }
-//    let brandCarList: [BrandCarInfo] = [
-//        BrandCarInfo(name: "그랜저", minNewCarPrice: 3172, maxNewCarPrice: 4349, minUsedCarPrice: 2200, maxUsedCarPrice: 4349),
-//        BrandCarInfo(name: "소나타", minNewCarPrice: 2386, maxNewCarPrice: 3642, minUsedCarPrice: 2100, maxUsedCarPrice: 3400),
-//        BrandCarInfo(name: "아반떼", minNewCarPrice: 1570, maxNewCarPrice: 2779, minUsedCarPrice: 1300, maxUsedCarPrice: 2432),
-//        BrandCarInfo(name: "투싼", minNewCarPrice: 2435, maxNewCarPrice: 3567, minUsedCarPrice: 2264, maxUsedCarPrice: 3319)
-//
-//    ]
-    
-    let brandCarList : [BrandCarInfo]
 
     
-    
+    let brandCarList : [BrandCarInfo]
 
 }

@@ -10,4 +10,5 @@ target 'carTalk' do
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
   pod 'FirebaseUI/Storage'
+  pod 'SwiftSoup'
 end
