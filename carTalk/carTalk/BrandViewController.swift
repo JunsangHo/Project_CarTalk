@@ -123,17 +123,24 @@ class BrandViewModel {
             let html = try String(contentsOf: url, encoding: .utf8)
             let doc: Document = try SwiftSoup.parse(html)
             
-            let price: Elements = try doc.select(".spot_end new_end").select(".info_group").select(".sale").select(".price").select("cont")
-            for i in price {
-                detailCar.carPrice = try i.text()
+            let price: Elements = try doc.select(".sale").select(".price").select("span")
+            var cnt = 0
+            for i in price{
+                if cnt == 1{
+                    detailCar.carPrice = try price.text()
+                    break
+                }
+                cnt += 1
             }
             
-            let consumption: Elements = try doc.select(".spot_end new_end").select(".info_group").select(".sale").select(".price").select(".en")
-            for i in consumption {
-                detailCar.carPrice = try i.text()
-            }
             
-            let others: Elements = try  doc.select(".spot_end new_end").select(".info_group").select(".detail_lst").select("dd")
+            
+//            let consumption: Elements = try doc.select(".spot_end new_end").select(".info_group").select(".sale").select(".price").select(".en")
+//            for i in consumption {
+//                detailCar.carPrice = try i.text()
+//            }
+            
+            let others: Elements = try doc.select(".detail_lst").select("dd")
             var count = 0
             for i in others {
                 if count == 0{
@@ -150,12 +157,12 @@ class BrandViewModel {
                 }
                 count += 1
             }
-            let mainImg: Elements = try doc.select("img_group").select("main_img").select("img").select("src")
-            for i in mainImg {
-                let url = URL(string: try i.text())
+            let mainImg: Elements = try doc.select("div#carMainImgArea.img_group").select("div.main_img").select("img[src]")
+                let imgAddress = try mainImg.attr("src").description
+                let url = URL(string: imgAddress)
                 let data = try Data(contentsOf: url!)
                 detailCar.carImg = UIImage(data: data)
-            }
+            
             completion(detailCar)
         } catch let error {
             print(error)

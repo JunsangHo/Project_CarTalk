@@ -19,6 +19,9 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var sale: UILabel!
     @IBOutlet weak var price: UILabel!
     @IBOutlet weak var fuelType: UILabel!
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     
     override func viewDidLoad() {
