@@ -25,7 +25,6 @@ provides-dynamic-lookup:
 - "brandList"
 - "collectionView"
 - "db"
-- "fetchHTMLCarData"
 - "getBrand"
 - "getInfo"
 - "menuButton"
@@ -43,10 +42,9 @@ depends-top-level:
 - !private "Array"
 - "AssignmentPrecedence"
 - "Brand"
-- "BrandCarInfo"
+- "BrandCarModels"
 - "BrandCell"
 - "BrandInfo"
-- "BrandViewController"
 - "CGFloat"
 - "CGSize"
 - "CastingPrecedence"
@@ -61,6 +59,7 @@ depends-top-level:
 - "JSONSerialization"
 - "MainViewController"
 - "MainViewModel"
+- "ModelsViewController"
 - "SegueIdentifier"
 - "String"
 - "StringLiteralType"
@@ -102,7 +101,7 @@ depends-member:
 - !private ["SK", "map"]
 - !private ["SK", "row"]
 - !private ["SK", "subscript"]
-- ["7carTalk5BrandV", "BrandCarInfo"]
+- ["7carTalk5BrandV", "BrandCarModels"]
 - ["7carTalk5BrandV", "CodingKey"]
 - ["7carTalk5BrandV", "CodingKeys"]
 - ["7carTalk5BrandV", "String"]
@@ -114,8 +113,8 @@ depends-member:
 - !private ["7carTalk5BrandV", "findStringSwitchCase"]
 - ["7carTalk5BrandV", "init"]
 - ["7carTalk5BrandV", "toDictionary"]
-- ["7carTalk12BrandCarInfoV", ""]
-- !private ["7carTalk12BrandCarInfoV", "toDictionary"]
+- ["7carTalk14BrandCarModelsV", ""]
+- !private ["7carTalk14BrandCarModelsV", "toDictionary"]
 - ["7carTalk9BrandCellC", "BrandInfo"]
 - ["7carTalk9BrandCellC", "UIImageView"]
 - ["7carTalk9BrandCellC", "UILabel"]
@@ -128,8 +127,6 @@ depends-member:
 - !private ["7carTalk9BrandInfoC", "brandName"]
 - !private ["7carTalk9BrandInfoC", "image"]
 - ["7carTalk9BrandInfoC", "init"]
-- !private ["7carTalk19BrandViewControllerC", "viewModel"]
-- !private ["7carTalk14BrandViewModelC", "setBrand"]
 - ["So15CALayerDelegateP", "BrandInfo"]
 - ["So15CALayerDelegateP", "UIImageView"]
 - ["So15CALayerDelegateP", "UILabel"]
@@ -629,12 +626,12 @@ depends-member:
 - ["s25LosslessStringConvertibleP", ""]
 - !private ["7carTalk18MainViewControllerC", "Brand"]
 - !private ["7carTalk18MainViewControllerC", "BrandCell"]
-- !private ["7carTalk18MainViewControllerC", "BrandViewController"]
 - !private ["7carTalk18MainViewControllerC", "CGFloat"]
 - ["7carTalk18MainViewControllerC", "CGSize"]
 - ["7carTalk18MainViewControllerC", "IndexPath"]
 - ["7carTalk18MainViewControllerC", "Int"]
 - ["7carTalk18MainViewControllerC", "MainViewModel"]
+- !private ["7carTalk18MainViewControllerC", "ModelsViewController"]
 - !private ["7carTalk18MainViewControllerC", "SegueIdentifier"]
 - ["7carTalk18MainViewControllerC", "UIButton"]
 - ["7carTalk18MainViewControllerC", "UICollectionView"]
@@ -679,17 +676,17 @@ depends-member:
 - ["7carTalk13MainViewModelC", "Int"]
 - !private ["7carTalk13MainViewModelC", "JSONDecoder"]
 - !private ["7carTalk13MainViewModelC", "JSONSerialization"]
-- ["7carTalk13MainViewModelC", "String"]
 - ["7carTalk13MainViewModelC", "Void"]
 - ["7carTalk13MainViewModelC", "brandList"]
 - ["7carTalk13MainViewModelC", "db"]
 - ["7carTalk13MainViewModelC", "deinit"]
-- ["7carTalk13MainViewModelC", "fetchHTMLCarData"]
 - ["7carTalk13MainViewModelC", "getBrand"]
 - ["7carTalk13MainViewModelC", "getInfo"]
 - ["7carTalk13MainViewModelC", "init"]
 - ["7carTalk13MainViewModelC", "numOfitem"]
 - !private ["7carTalk13MainViewModelC", "print"]
+- !private ["7carTalk20ModelsViewControllerC", "viewModel"]
+- !private ["7carTalk15ModelsViewModelC", "setBrand"]
 - !private ["SM", ""]
 - !private ["SM", "brandName"]
 - !private ["SM", "cars"]
@@ -704,12 +701,12 @@ depends-member:
 - !private ["So8NSCodingP", "Brand"]
 - !private ["So8NSCodingP", "BrandCell"]
 - ["So8NSCodingP", "BrandInfo"]
-- !private ["So8NSCodingP", "BrandViewController"]
 - !private ["So8NSCodingP", "CGFloat"]
 - ["So8NSCodingP", "CGSize"]
 - ["So8NSCodingP", "IndexPath"]
 - ["So8NSCodingP", "Int"]
 - ["So8NSCodingP", "MainViewModel"]
+- !private ["So8NSCodingP", "ModelsViewController"]
 - !private ["So8NSCodingP", "SegueIdentifier"]
 - ["So8NSCodingP", "UIButton"]
 - ["So8NSCodingP", "UICollectionView"]
@@ -760,12 +757,12 @@ depends-member:
 - ["So8NSCodingP", "viewModel"]
 - !private ["So26NSExtensionRequestHandlingP", "Brand"]
 - !private ["So26NSExtensionRequestHandlingP", "BrandCell"]
-- !private ["So26NSExtensionRequestHandlingP", "BrandViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "CGFloat"]
 - ["So26NSExtensionRequestHandlingP", "CGSize"]
 - ["So26NSExtensionRequestHandlingP", "IndexPath"]
 - ["So26NSExtensionRequestHandlingP", "Int"]
 - ["So26NSExtensionRequestHandlingP", "MainViewModel"]
+- !private ["So26NSExtensionRequestHandlingP", "ModelsViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "SegueIdentifier"]
 - ["So26NSExtensionRequestHandlingP", "UIButton"]
 - ["So26NSExtensionRequestHandlingP", "UICollectionView"]
@@ -807,12 +804,12 @@ depends-member:
 - !private ["So8NSObjectC", "Brand"]
 - !private ["So8NSObjectC", "BrandCell"]
 - ["So8NSObjectC", "BrandInfo"]
-- !private ["So8NSObjectC", "BrandViewController"]
 - !private ["So8NSObjectC", "CGFloat"]
 - ["So8NSObjectC", "CGSize"]
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "Int"]
 - ["So8NSObjectC", "MainViewModel"]
+- !private ["So8NSObjectC", "ModelsViewController"]
 - !private ["So8NSObjectC", "SegueIdentifier"]
 - ["So8NSObjectC", "UIButton"]
 - ["So8NSObjectC", "UICollectionView"]
@@ -880,12 +877,12 @@ depends-member:
 - !private ["So8NSObjectP", "Brand"]
 - !private ["So8NSObjectP", "BrandCell"]
 - ["So8NSObjectP", "BrandInfo"]
-- !private ["So8NSObjectP", "BrandViewController"]
 - !private ["So8NSObjectP", "CGFloat"]
 - ["So8NSObjectP", "CGSize"]
 - ["So8NSObjectP", "IndexPath"]
 - ["So8NSObjectP", "Int"]
 - ["So8NSObjectP", "MainViewModel"]
+- !private ["So8NSObjectP", "ModelsViewController"]
 - !private ["So8NSObjectP", "SegueIdentifier"]
 - ["So8NSObjectP", "UIButton"]
 - ["So8NSObjectP", "UICollectionView"]
@@ -1055,12 +1052,12 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "Brand"]
 - !private ["So21UIAppearanceContainerP", "BrandCell"]
 - ["So21UIAppearanceContainerP", "BrandInfo"]
-- !private ["So21UIAppearanceContainerP", "BrandViewController"]
 - !private ["So21UIAppearanceContainerP", "CGFloat"]
 - ["So21UIAppearanceContainerP", "CGSize"]
 - ["So21UIAppearanceContainerP", "IndexPath"]
 - ["So21UIAppearanceContainerP", "Int"]
 - ["So21UIAppearanceContainerP", "MainViewModel"]
+- !private ["So21UIAppearanceContainerP", "ModelsViewController"]
 - !private ["So21UIAppearanceContainerP", "SegueIdentifier"]
 - ["So21UIAppearanceContainerP", "UIButton"]
 - ["So21UIAppearanceContainerP", "UICollectionView"]
@@ -1237,12 +1234,12 @@ depends-member:
 - ["So34UICollectionViewDelegateFlowLayoutP", "viewModel"]
 - !private ["So18UIContentContainerP", "Brand"]
 - !private ["So18UIContentContainerP", "BrandCell"]
-- !private ["So18UIContentContainerP", "BrandViewController"]
 - !private ["So18UIContentContainerP", "CGFloat"]
 - ["So18UIContentContainerP", "CGSize"]
 - ["So18UIContentContainerP", "IndexPath"]
 - ["So18UIContentContainerP", "Int"]
 - ["So18UIContentContainerP", "MainViewModel"]
+- !private ["So18UIContentContainerP", "ModelsViewController"]
 - !private ["So18UIContentContainerP", "SegueIdentifier"]
 - ["So18UIContentContainerP", "UIButton"]
 - ["So18UIContentContainerP", "UICollectionView"]
@@ -1314,12 +1311,12 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "Brand"]
 - !private ["So18UIFocusEnvironmentP", "BrandCell"]
 - ["So18UIFocusEnvironmentP", "BrandInfo"]
-- !private ["So18UIFocusEnvironmentP", "BrandViewController"]
 - !private ["So18UIFocusEnvironmentP", "CGFloat"]
 - ["So18UIFocusEnvironmentP", "CGSize"]
 - ["So18UIFocusEnvironmentP", "IndexPath"]
 - ["So18UIFocusEnvironmentP", "Int"]
 - ["So18UIFocusEnvironmentP", "MainViewModel"]
+- !private ["So18UIFocusEnvironmentP", "ModelsViewController"]
 - !private ["So18UIFocusEnvironmentP", "SegueIdentifier"]
 - ["So18UIFocusEnvironmentP", "UIButton"]
 - ["So18UIFocusEnvironmentP", "UICollectionView"]
@@ -1415,12 +1412,12 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "Brand"]
 - !private ["So30UIPasteConfigurationSupportingP", "BrandCell"]
 - ["So30UIPasteConfigurationSupportingP", "BrandInfo"]
-- !private ["So30UIPasteConfigurationSupportingP", "BrandViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGFloat"]
 - ["So30UIPasteConfigurationSupportingP", "CGSize"]
 - ["So30UIPasteConfigurationSupportingP", "IndexPath"]
 - ["So30UIPasteConfigurationSupportingP", "Int"]
 - ["So30UIPasteConfigurationSupportingP", "MainViewModel"]
+- !private ["So30UIPasteConfigurationSupportingP", "ModelsViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "SegueIdentifier"]
 - ["So30UIPasteConfigurationSupportingP", "UIButton"]
 - ["So30UIPasteConfigurationSupportingP", "UICollectionView"]
@@ -1474,12 +1471,12 @@ depends-member:
 - !private ["So11UIResponderC", "Brand"]
 - !private ["So11UIResponderC", "BrandCell"]
 - ["So11UIResponderC", "BrandInfo"]
-- !private ["So11UIResponderC", "BrandViewController"]
 - !private ["So11UIResponderC", "CGFloat"]
 - ["So11UIResponderC", "CGSize"]
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "Int"]
 - ["So11UIResponderC", "MainViewModel"]
+- !private ["So11UIResponderC", "ModelsViewController"]
 - !private ["So11UIResponderC", "SegueIdentifier"]
 - ["So11UIResponderC", "UIButton"]
 - ["So11UIResponderC", "UICollectionView"]
@@ -1532,12 +1529,12 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "Brand"]
 - !private ["So30UIResponderStandardEditActionsP", "BrandCell"]
 - ["So30UIResponderStandardEditActionsP", "BrandInfo"]
-- !private ["So30UIResponderStandardEditActionsP", "BrandViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "CGFloat"]
 - ["So30UIResponderStandardEditActionsP", "CGSize"]
 - ["So30UIResponderStandardEditActionsP", "IndexPath"]
 - ["So30UIResponderStandardEditActionsP", "Int"]
 - ["So30UIResponderStandardEditActionsP", "MainViewModel"]
+- !private ["So30UIResponderStandardEditActionsP", "ModelsViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "SegueIdentifier"]
 - ["So30UIResponderStandardEditActionsP", "UIButton"]
 - ["So30UIResponderStandardEditActionsP", "UICollectionView"]
@@ -1632,12 +1629,12 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "dequeueReusableCell"]
 - !private ["So16UIStateRestoringP", "Brand"]
 - !private ["So16UIStateRestoringP", "BrandCell"]
-- !private ["So16UIStateRestoringP", "BrandViewController"]
 - !private ["So16UIStateRestoringP", "CGFloat"]
 - ["So16UIStateRestoringP", "CGSize"]
 - ["So16UIStateRestoringP", "IndexPath"]
 - ["So16UIStateRestoringP", "Int"]
 - ["So16UIStateRestoringP", "MainViewModel"]
+- !private ["So16UIStateRestoringP", "ModelsViewController"]
 - !private ["So16UIStateRestoringP", "SegueIdentifier"]
 - ["So16UIStateRestoringP", "UIButton"]
 - ["So16UIStateRestoringP", "UICollectionView"]
@@ -1683,12 +1680,12 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "Brand"]
 - !private ["So18UITraitEnvironmentP", "BrandCell"]
 - ["So18UITraitEnvironmentP", "BrandInfo"]
-- !private ["So18UITraitEnvironmentP", "BrandViewController"]
 - !private ["So18UITraitEnvironmentP", "CGFloat"]
 - ["So18UITraitEnvironmentP", "CGSize"]
 - ["So18UITraitEnvironmentP", "IndexPath"]
 - ["So18UITraitEnvironmentP", "Int"]
 - ["So18UITraitEnvironmentP", "MainViewModel"]
+- !private ["So18UITraitEnvironmentP", "ModelsViewController"]
 - !private ["So18UITraitEnvironmentP", "SegueIdentifier"]
 - ["So18UITraitEnvironmentP", "UIButton"]
 - ["So18UITraitEnvironmentP", "UICollectionView"]
@@ -1740,12 +1737,12 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "Brand"]
 - !private ["So23UIUserActivityRestoringP", "BrandCell"]
 - ["So23UIUserActivityRestoringP", "BrandInfo"]
-- !private ["So23UIUserActivityRestoringP", "BrandViewController"]
 - !private ["So23UIUserActivityRestoringP", "CGFloat"]
 - ["So23UIUserActivityRestoringP", "CGSize"]
 - ["So23UIUserActivityRestoringP", "IndexPath"]
 - ["So23UIUserActivityRestoringP", "Int"]
 - ["So23UIUserActivityRestoringP", "MainViewModel"]
+- !private ["So23UIUserActivityRestoringP", "ModelsViewController"]
 - !private ["So23UIUserActivityRestoringP", "SegueIdentifier"]
 - ["So23UIUserActivityRestoringP", "UIButton"]
 - ["So23UIUserActivityRestoringP", "UICollectionView"]
@@ -1811,12 +1808,12 @@ depends-member:
 - ["So6UIViewC", "updateUI"]
 - !private ["So16UIViewControllerC", "Brand"]
 - !private ["So16UIViewControllerC", "BrandCell"]
-- !private ["So16UIViewControllerC", "BrandViewController"]
 - !private ["So16UIViewControllerC", "CGFloat"]
 - ["So16UIViewControllerC", "CGSize"]
 - ["So16UIViewControllerC", "IndexPath"]
 - ["So16UIViewControllerC", "Int"]
 - ["So16UIViewControllerC", "MainViewModel"]
+- !private ["So16UIViewControllerC", "ModelsViewController"]
 - !private ["So16UIViewControllerC", "SegueIdentifier"]
 - ["So16UIViewControllerC", "UIButton"]
 - ["So16UIViewControllerC", "UICollectionView"]
@@ -2002,11 +1999,9 @@ depends-nominal:
 - !private "s10ArraySliceV"
 - "SK"
 - "7carTalk5BrandV"
-- "7carTalk12BrandCarInfoV"
+- "7carTalk14BrandCarModelsV"
 - "7carTalk9BrandCellC"
 - "7carTalk9BrandInfoC"
-- !private "7carTalk19BrandViewControllerC"
-- !private "7carTalk14BrandViewModelC"
 - "So15CALayerDelegateP"
 - !private "So6CGRectV"
 - !private "So6CGSizeV"
@@ -2051,6 +2046,8 @@ depends-nominal:
 - "s25LosslessStringConvertibleP"
 - "7carTalk18MainViewControllerC"
 - "7carTalk13MainViewModelC"
+- !private "7carTalk20ModelsViewControllerC"
+- !private "7carTalk15ModelsViewModelC"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
 - "So8NSCodingP"
@@ -2205,4 +2202,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "bd051d445926b34cdfa9c39e98e05169"
+interface-hash: "1b389bd7ace1cfb7e8f59ece47294719"
