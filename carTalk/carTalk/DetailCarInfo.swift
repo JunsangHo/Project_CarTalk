@@ -15,4 +15,14 @@ struct DetailCarInfo{
     var power: String!
     var sale: String!
     var fuelType: String!
+    
+    init() {
+        self.carName = "-"
+        self.carPrice = "-"
+        self.consumption = "-"
+        self.power = "-"
+        self.sale = "-"
+        self.fuelType = "-"
+        
+    }
 }
