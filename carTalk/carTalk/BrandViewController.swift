@@ -34,12 +34,13 @@ class BrandViewController: UIViewController, UITableViewDataSource, UITableViewD
     let viewModel = BrandViewModel()
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (viewModel.brand?.cars.count)!
+        return (viewModel.models?.models.count)!
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "brandCarCell",for: indexPath) as? CarCell {
-            let tmp = viewModel.brand?.cars[indexPath.row]
+//            let tmp = viewModel.brand?.cars[indexPath.row]
+            let tmp = viewModel.models?.models[indexPath.row]
             cell.name.text = tmp!.name
 //            cell.newPrice.text = "\(tmp!.minNewCarPrice) ~ \(tmp!.maxNewCarPrice) 만원"
 //            cell.usedPrice.text = "\(tmp!.minUsedCarPrice) ~ \(tmp!.maxUsedCarPrice) 만원"
@@ -68,7 +69,7 @@ class BrandViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let tmp = viewModel.brand?.cars[indexPath.row]
+        let tmp = viewModel.models?.models[indexPath.row]
         self.viewModel.getCar(url: tmp!.address, carName: tmp!.name) { temp in
             self.performSegue(withIdentifier: "showCarDetail", sender: temp)
         }
@@ -88,23 +89,23 @@ class BrandViewController: UIViewController, UITableViewDataSource, UITableViewD
         tableView.dataSource = self
         // Do any additional setup after loading the view.
         //print(viewModel.brandName!) // 잘 전달됬는지 확인
-        print(viewModel.brand?.brandName)
-        switch (viewModel.brand?.brandName) {
-        case "hyundai":
-            topBrandName.text = "현대"
-            // fetchBrandCar(viewModel.brandName)
-        case "kia":
-            topBrandName.text = "기아"
-        case "chevrolet":
-            topBrandName.text = "쉐보레"
-        case "renault":
-            topBrandName.text = "르노삼성"
-        case "ssangyong":
-            topBrandName.text = "쌍용"
-        default:
-            topBrandName.text = "오류"
-        }
-
+        //print(viewModel.brand?.brandName)
+//        switch (viewModel.models?.name) {
+//        case "hyundai":
+//            topBrandName.text = "현대"
+//            // fetchBrandCar(viewModel.brandName)
+//        case "kia":
+//            topBrandName.text = "기아"
+//        case "chevrolet":
+//            topBrandName.text = "쉐보레"
+//        case "renault":
+//            topBrandName.text = "르노삼성"
+//        case "ssangyong":
+//            topBrandName.text = "쌍용"
+//        default:
+//            topBrandName.text = "오류"
+//        }
+        topBrandName.text = viewModel.models?.name
         
         
     }
@@ -124,7 +125,8 @@ class BrandViewModel {
     
     // MARK: String?으로 brandName 전달
     var brand: Brand?
-
+    var models: BrandCarModels?
+    
     func getCarImg(url: String, carName: String, completion: @escaping (DetailCarInfo) -> ()){
 //        DispatchQueue.main.async {
 //            UIApplication.shared.isNetworkActivityIndicatorVisible = true
@@ -201,8 +203,8 @@ class BrandViewModel {
         }
     }
     
-    func setBrand(model: Brand?){
-        brand = model
+    func setModel(model: BrandCarModels?){
+        models = model
     }
     
     init(){

@@ -9,7 +9,7 @@ import UIKit
 import Firebase
 
 enum SegueIdentifier: String {
-    case detailSegue = "showBrandDetail"
+    case detailSegue = "ShowBrandModels"
     
     case cardetailSegue = "car"
 }
@@ -30,8 +30,8 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     // 데이터 전송 준비
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showBrandDetail" {
-            let vc = segue.destination as? BrandViewController
+        if segue.identifier == "ShowBrandModels" {
+            let vc = segue.destination as? ModelsViewController
             if let brand = sender as? Brand {
                 vc?.viewModel.setBrand(model: brand)
             }
@@ -126,9 +126,7 @@ class MainViewModel {
 //    var tmpBrand : Brand
     let db = Database.database().reference()
     
-    func fetchHTMLCarData(url:String?, completion: @escaping (Brand) -> (Void)){
-        
-    }
+
     
     func getBrand(index: Int, completion: @escaping (Brand) -> Void) {
         var tmp = Brand()
@@ -161,7 +159,7 @@ class MainViewModel {
 struct Brand: Codable{
     
     var brandName: String
-    var cars: [BrandCarInfo]
+    var cars: [BrandCarModels]
 //    var imgAddress: String
     //var image: [UIImage]
     
