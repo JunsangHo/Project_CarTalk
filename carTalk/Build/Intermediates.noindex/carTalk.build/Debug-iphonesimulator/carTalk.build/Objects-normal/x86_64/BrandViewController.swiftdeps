@@ -17,6 +17,7 @@ provides-dynamic-lookup:
 - "brandCarList"
 - "era"
 - "getCar"
+- "getCarImg"
 - "imgView"
 - "name"
 - "prepare"
@@ -143,6 +144,7 @@ depends-member:
 - ["7carTalk14BrandViewModelC", "brandCarList"]
 - ["7carTalk14BrandViewModelC", "deinit"]
 - ["7carTalk14BrandViewModelC", "getCar"]
+- ["7carTalk14BrandViewModelC", "getCarImg"]
 - ["7carTalk14BrandViewModelC", "init"]
 - !private ["7carTalk14BrandViewModelC", "print"]
 - ["7carTalk14BrandViewModelC", "setBrand"]
@@ -2001,4 +2003,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "3bf8a55ab5f0d2c7f0977445caf4dce5"
+interface-hash: "e6a41cd34e9c1350ac23c51b3ba6a8e4"
