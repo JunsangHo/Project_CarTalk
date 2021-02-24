@@ -26,7 +26,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		mUqYCdhOJ+SnNDv/270E901n1qQ=
+		zlDyUJ3uj0RlTqA+m/7sym4+BCQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -37,10 +37,6 @@
 	<dict>
 		<key>Headers/GTMSessionFetcher-umbrella.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			uk5tfn4+qFjgRMutCcPDErlSaiE=
-			</data>
 			<key>hash2</key>
 			<data>
 			3rne+xIEztt63voNklSVEM3UXM+Jkgc6ENNW5IKGMh8=
@@ -48,10 +44,6 @@
 		</dict>
 		<key>Headers/GTMSessionFetcher.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			g8ujR0r1yw/O5Xbno4KfDPzIwoA=
-			</data>
 			<key>hash2</key>
 			<data>
 			+euisO6Vh9FgcvV8ZtVT+1VPxwMNLgfTsTP7ULxg02I=
@@ -59,10 +51,6 @@
 		</dict>
 		<key>Headers/GTMSessionFetcherLogging.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			FjhCrytj4st1G6JV0ooyxKsJ0m0=
-			</data>
 			<key>hash2</key>
 			<data>
 			HfMIKNIbv/n1W8TGT4vY0fdDkEfidJOuB5w+x4EynjA=
@@ -70,10 +58,6 @@
 		</dict>
 		<key>Headers/GTMSessionFetcherService.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			JrNgGDqVOAgQA6zNDbcWPzMEtKY=
-			</data>
 			<key>hash2</key>
 			<data>
 			FimdiOid3vJFu0cjnT8xdACATLSgAV9/AT7XlRyE8ZA=
@@ -81,10 +65,6 @@
 		</dict>
 		<key>Headers/GTMSessionUploadFetcher.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			nJ4UnF2hOXcrJL53Rek863kmELM=
-			</data>
 			<key>hash2</key>
 			<data>
 			Qmup2iKdAftd/ajnOzSzM/Yy3F6xf3KnxY9uwK64RE0=
@@ -92,10 +72,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Zd+B+N1kD6ufOJwjEQ1h4yl/05s=
-			</data>
 			<key>hash2</key>
 			<data>
 			s/7Ay5SAF/AZJnsEfDo0km7Zw2aVRXsBLuyUjeZo7/Y=

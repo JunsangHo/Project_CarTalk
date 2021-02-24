@@ -44,6 +44,22 @@ class BrandViewController: UIViewController, UITableViewDataSource, UITableViewD
 //            cell.newPrice.text = "\(tmp!.minNewCarPrice) ~ \(tmp!.maxNewCarPrice) 만원"
 //            cell.usedPrice.text = "\(tmp!.minUsedCarPrice) ~ \(tmp!.maxUsedCarPrice) 만원"
             cell.era.text = tmp!.era
+//            let url = URL(string: tmp!.address)!
+//            do{
+//                let html = try String(contentsOf: url, encoding: .utf8)
+//                let doc: Document = try SwiftSoup.parse(html)
+//
+//
+//                let mainImg: Elements = try doc.select("div#carMainImgArea.img_group").select("div.main_img").select("img[src]")
+//                    let imgAddress = try mainImg.attr("src").description
+//                    let url = URL(string: imgAddress)
+//                    let data = try Data(contentsOf: url!)
+//                cell.imgView.image = UIImage(data: data)
+//            } catch let error {
+//                print(error)
+//            }
+            
+//            detailCar.carImg = UIImage(data: data)
             cell.imgView.image = UIImage(named: "\(tmp!.englishName).jpg")
             return cell
         }else{
@@ -109,7 +125,30 @@ class BrandViewModel {
     // MARK: String?으로 brandName 전달
     var brand: Brand?
 
-
+    func getCarImg(url: String, carName: String, completion: @escaping (DetailCarInfo) -> ()){
+//        DispatchQueue.main.async {
+//            UIApplication.shared.isNetworkActivityIndicatorVisible = true
+//        }
+        let urlAddress = url
+        var detailCar = DetailCarInfo()
+        detailCar.carName = carName
+        guard let url = URL(string: urlAddress) else { return }
+        do{
+            let html = try String(contentsOf: url, encoding: .utf8)
+            let doc: Document = try SwiftSoup.parse(html)
+            
+            
+            let mainImg: Elements = try doc.select("div#carMainImgArea.img_group").select("div.main_img").select("img[src]")
+                let imgAddress = try mainImg.attr("src").description
+                let url = URL(string: imgAddress)
+                let data = try Data(contentsOf: url!)
+                detailCar.carImg = UIImage(data: data)
+            
+            completion(detailCar)
+        } catch let error {
+            print(error)
+        }
+    }
     
     func getCar(url: String, carName: String, completion: @escaping (DetailCarInfo) -> ()){
 //        DispatchQueue.main.async {
@@ -132,14 +171,7 @@ class BrandViewModel {
                 }
                 cnt += 1
             }
-            
-            
-            
-//            let consumption: Elements = try doc.select(".spot_end new_end").select(".info_group").select(".sale").select(".price").select(".en")
-//            for i in consumption {
-//                detailCar.carPrice = try i.text()
-//            }
-            
+
             let others: Elements = try doc.select(".detail_lst").select("dd")
             var count = 0
             for i in others {

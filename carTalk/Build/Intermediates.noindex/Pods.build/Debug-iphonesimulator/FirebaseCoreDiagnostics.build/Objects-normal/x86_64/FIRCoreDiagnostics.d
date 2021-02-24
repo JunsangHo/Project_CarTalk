@@ -1,7 +1,6 @@
 dependencies: \
   /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseCoreDiagnostics/Firebase/CoreDiagnostics/FIRCDLibrary/FIRCoreDiagnostics.m \
   /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FirebaseCoreDiagnostics.build/module.modulemap \
-  /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/FirebaseCoreDiagnostics/GoogleDataTransport/GDTCORLibrary/Internal/GoogleDataTransportInternal.h \
   /Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/GoogleDataTransport.build/module.modulemap \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/usr/include/mach-o/dyld.modulemap \
