@@ -11,6 +11,8 @@ class ModelsViewController: UIViewController,UITableViewDataSource, UITableViewD
 
     var viewModel = ModelsViewModel()
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var topBrandLogo: UIImageView!
+    
     @IBAction func back(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
@@ -57,6 +59,7 @@ class ModelsViewController: UIViewController,UITableViewDataSource, UITableViewD
         // Do any additional setup after loading the view.
         self.tableView.dataSource = self
         self.tableView.delegate = self
+        topBrandLogo.image = UIImage(named: "\(String(describing: self.viewModel.brand?.brandName))Logo.png")
     }
     
 
