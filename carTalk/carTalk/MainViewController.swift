@@ -88,15 +88,15 @@ class BrandCell: UICollectionViewCell {
     func updateUI(brandInfo: BrandInfo) {
         brandImage.image = brandInfo.image
         switch (brandInfo.brandName) {
-        case "hyundai":
+        case "Hyundai":
             brandLabel.text = "현대"
-        case "kia":
+        case "Kia":
             brandLabel.text = "기아"
-        case "chevrolet":
+        case "Chevrolet":
             brandLabel.text = "쉐보레"
-        case "renault":
+        case "Renault":
             brandLabel.text = "르노삼성"
-        case "ssangyong":
+        case "Ssangyong":
             brandLabel.text = "쌍용"
         default:
             brandLabel.text = "오류"
@@ -106,11 +106,11 @@ class BrandCell: UICollectionViewCell {
 
 class MainViewModel {
     let brandList: [BrandInfo] = [
-        BrandInfo(brandName: "hyundai"),
-        BrandInfo(brandName: "kia"),
-        BrandInfo(brandName: "chevrolet"),
-        BrandInfo(brandName: "renault"),
-        BrandInfo(brandName: "ssangyong"),
+        BrandInfo(brandName: "Hyundai"),
+        BrandInfo(brandName: "Kia"),
+        BrandInfo(brandName: "Chevrolet"),
+        BrandInfo(brandName: "Renault"),
+        BrandInfo(brandName: "Ssangyong"),
     ]
     
     var numOfitem: Int {

@@ -1,0 +1,114 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Collector"
+provides-nominal:
+- "9SwiftSoup9CollectorC"
+provides-member:
+- ["9SwiftSoup9CollectorC", ""]
+provides-dynamic-lookup:
+- "collect"
+- "elements"
+- "eval"
+- "head"
+- "root"
+- "tail"
+depends-top-level:
+- !private "Accumulator"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- "Collector"
+- "Element"
+- "Elements"
+- "Evaluator"
+- "Int"
+- "Node"
+- !private "NodeTraversor"
+- "NodeVisitor"
+- !private "elements"
+- !private "eval"
+- !private "root"
+depends-member:
+- !private ["SK", ""]
+- !private ["SK", "add"]
+- !private ["SK", "init"]
+- !private ["Sl", ""]
+- !private ["Sl", "add"]
+- !private ["Sl", "init"]
+- !private ["9SwiftSoup9CollectorC", "Accumulator"]
+- ["9SwiftSoup9CollectorC", "Element"]
+- ["9SwiftSoup9CollectorC", "Elements"]
+- ["9SwiftSoup9CollectorC", "Evaluator"]
+- !private ["9SwiftSoup9CollectorC", "NodeTraversor"]
+- ["9SwiftSoup9CollectorC", "collect"]
+- ["9SwiftSoup9CollectorC", "deinit"]
+- ["9SwiftSoup9CollectorC", "init"]
+- !private ["9SwiftSoup7ElementC", ""]
+- !private ["9SwiftSoup8ElementsC", "add"]
+- !private ["9SwiftSoup8ElementsC", "init"]
+- !private ["SQ", "add"]
+- !private ["SQ", "init"]
+- !private ["9SwiftSoup9EvaluatorC", "matches"]
+- !private ["So9NSCopyingP", "add"]
+- !private ["So9NSCopyingP", "init"]
+- ["9SwiftSoup4NodeC", ""]
+- !private ["9SwiftSoup13NodeTraversorC", "init"]
+- !private ["9SwiftSoup13NodeTraversorC", "traverse"]
+- !private ["9SwiftSoup11NodeVisitorP", ""]
+- !private ["9SwiftSoup11NodeVisitorP", "elements"]
+- !private ["9SwiftSoup11NodeVisitorP", "eval"]
+- ["9SwiftSoup11NodeVisitorP", "head"]
+- !private ["9SwiftSoup11NodeVisitorP", "init"]
+- !private ["9SwiftSoup11NodeVisitorP", "root"]
+- ["9SwiftSoup11NodeVisitorP", "tail"]
+- !private ["Sk", "add"]
+- !private ["Sk", "init"]
+- !private ["ST", ""]
+- !private ["ST", "add"]
+- !private ["ST", "init"]
+depends-nominal:
+- !private "SK"
+- !private "Sl"
+- "9SwiftSoup9CollectorC"
+- !private "9SwiftSoup7ElementC"
+- !private "9SwiftSoup8ElementsC"
+- !private "SQ"
+- !private "9SwiftSoup9EvaluatorC"
+- !private "So9NSCopyingP"
+- "9SwiftSoup4NodeC"
+- !private "9SwiftSoup13NodeTraversorC"
+- "9SwiftSoup11NodeVisitorP"
+- !private "Sk"
+- !private "ST"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ObjectiveC.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreImage.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Combine.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/QuartzCore.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Dispatch.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Metal.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Darwin.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Foundation.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreFoundation.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreGraphics.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Swift.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/UIKit.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftOnoneSupport.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Pods/Target Support Files/SwiftSoup/SwiftSoup-umbrella.h"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/usr/include/mach-o/dyld.modulemap"
+- "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/SwiftSoup.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "d9eee3b4039dc73cf6d53f4155697cc3"
