@@ -12,7 +12,7 @@ struct BrandCarInfo :Codable {
     let address: String
     let englishName : String
     let era : String
-    
+    let detailAddress: String
     
     enum CodingKeys : String, CodingKey{
         case name = "name"
@@ -23,21 +23,24 @@ struct BrandCarInfo :Codable {
         
         case era = "era"
         
+        case detailAddress = "detailURL"
+        
     }
     
     var image: UIImage? {
         return UIImage(named: "\(name).jpg")
     }
     
-    init(name:String, englishName: String, era: String, url: String){
+    init(name:String, englishName: String, era: String, url: String, detailURL: String){
         self.name = name
         self.address = url
         self.englishName = englishName
         self.era = era
+        self.detailAddress = detailURL
     }
     
     var toDictionary:[String:Any] {
-        let dict: [String:Any] = ["name": name, "address": address, "englishName": englishName, "era": era]
+        let dict: [String:Any] = ["name": name, "address": address, "englishName": englishName, "era": era, "detailAddress": detailAddress]
         return dict
     }
     

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftSoup
 
 class DetailViewController: UIViewController {
 
@@ -23,17 +24,20 @@ class DetailViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "specification" {
-//            let destinationVC = segue.destination as? SpecificationViewController
-//            carSpecificationListViewController = destinationVC
-//            carSpecificationListViewController.viewModel.fetchItems()
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "specification" {
+            let destinationVC = segue.destination as? SpecificationViewController
+            carSpecificationListViewController = destinationVC
+            carSpecificationListViewController.viewModel.fetchItems()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
+        viewModel.getDetail(){ temp in
+            print(temp)
+        }
     }
 
     func updateUI(){
@@ -56,7 +60,68 @@ class DetailViewModel {
         self.detailCarInfo = temp
     }
     
+    func getDetail(completion: @escaping (SpecificationInfo) -> ()) {
+        let urlAddress = detailCarInfo.specificationURL!
+        var specInfo = SpecificationInfo()
+        guard let url = URL(string: urlAddress) else { return }
+        do{
+            
+//            let html = try String(contentsOf: url, encoding: .utf8)
+//            let doc: Document = try SwiftSoup.parse(html)
+//            let trimNum: Elements = try doc.select(".lineup_top_sliding").select(".tit").select(".desc").select("q").select("span")
+//            print(try trimNum.text())
+//            let trim: Elements = try doc.select(".lineup_top_sliding").select(".col_wrap").select(".col").select(".price_section").select("dl").select("dt")
+//            specInfo.trimName = try trim.text()
+
+
+            completion(specInfo)
+        } catch let error {
+            print(error)
+        }
+    }
     init(){
         address = " "
+    }
+}
+
+struct SpecificationInfo {
+    var trimNum: Int!
+    var trimName: String!
+    var trimPrice: String!
+    var engineType: String!
+    var displacement: String!
+    var fuelTypeDetail: String!
+    
+    var maximumPower: String!
+    var maximumTorque: String!
+    var overallLength: String!
+    var overallWidth: String!
+    var overallHeight: String!
+    
+    var wheelBase: String!
+    var curbWeight: String!
+    var occupancy: String!
+    var drivingSystem: String!
+    var transmission: String!
+    
+    init() {
+        self.trimNum = 0
+        self.trimName = "-"
+        self.trimPrice = "-"
+        self.engineType = "-"
+        self.displacement = "-"
+        self.fuelTypeDetail = "-"
+        
+        self.maximumPower = "-"
+        self.maximumTorque = "-"
+        self.overallLength = "-"
+        self.overallWidth = "-"
+        self.overallHeight = "-"
+        
+        self.wheelBase = "-"
+        self.curbWeight = "-"
+        self.occupancy = "-"
+        self.drivingSystem = "-"
+        self.transmission = "-"
     }
 }

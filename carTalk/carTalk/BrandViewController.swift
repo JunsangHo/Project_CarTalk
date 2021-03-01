@@ -70,7 +70,7 @@ class BrandViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let tmp = viewModel.models?.models[indexPath.row]
-        self.viewModel.getCar(url: tmp!.address, carName: tmp!.name) { temp in
+        self.viewModel.getCar(url: tmp!.address, detailURL: tmp!.detailAddress, carName: tmp!.name) { temp in
             self.performSegue(withIdentifier: "showCarDetail", sender: temp)
         }
     }
@@ -152,7 +152,7 @@ class BrandViewModel {
         }
     }
     
-    func getCar(url: String, carName: String, completion: @escaping (DetailCarInfo) -> ()){
+    func getCar(url: String, detailURL: String, carName: String, completion: @escaping (DetailCarInfo) -> ()){
 //        DispatchQueue.main.async {
 //            UIApplication.shared.isNetworkActivityIndicatorVisible = true
 //        }
@@ -198,7 +198,9 @@ class BrandViewModel {
                 let data = try Data(contentsOf: url!)
                 detailCar.carImg = UIImage(data: data)
             
-            //MARK: 제원 정보들
+            //MARK: 제원 정보 표시시 사용
+            detailCar.specificationURL = detailURL
+            
             
             completion(detailCar)
         } catch let error {
