@@ -59,7 +59,11 @@ class ModelsViewController: UIViewController,UITableViewDataSource, UITableViewD
         // Do any additional setup after loading the view.
         self.tableView.dataSource = self
         self.tableView.delegate = self
-        topBrandLogo.image = UIImage(named: "\(String(describing: self.viewModel.brand?.brandName))Logo.png")
+        if let name = self.viewModel.brand?.brandName {
+            let bn = String(describing: name)
+            print(bn)
+            topBrandLogo.image = UIImage(named: "\(bn)Logo.png")
+        }
     }
     
 

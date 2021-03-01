@@ -9,7 +9,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    
+    var carSpecificationListViewController: SpecificationViewController!
     let viewModel = DetailViewModel()
     
     @IBOutlet weak var carImg: UIImageView!
@@ -23,6 +23,13 @@ class DetailViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "specification" {
+//            let destinationVC = segue.destination as? SpecificationViewController
+//            carSpecificationListViewController = destinationVC
+//            carSpecificationListViewController.viewModel.fetchItems()
+//        }
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
