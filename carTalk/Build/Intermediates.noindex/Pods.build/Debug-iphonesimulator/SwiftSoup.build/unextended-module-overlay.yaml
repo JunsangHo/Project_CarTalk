@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Products/Debug-iphonesimulator/SwiftSoup/SwiftSoup.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/SwiftSoup.build/unextended-module.modulemap",
+    }]
+  }]
+}
