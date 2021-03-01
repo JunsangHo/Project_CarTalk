@@ -161,6 +161,7 @@ class BrandViewModel {
         detailCar.carName = carName
         guard let url = URL(string: urlAddress) else { return }
         do{
+            //MARK: 메인화면의 정보들
             let html = try String(contentsOf: url, encoding: .utf8)
             let doc: Document = try SwiftSoup.parse(html)
             
@@ -196,6 +197,8 @@ class BrandViewModel {
                 let url = URL(string: imgAddress)
                 let data = try Data(contentsOf: url!)
                 detailCar.carImg = UIImage(data: data)
+            
+            //MARK: 제원 정보들
             
             completion(detailCar)
         } catch let error {
