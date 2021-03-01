@@ -1,0 +1,407 @@
+{
+	"brand" : [ {
+		"cars": 
+		[{
+
+                "name" : "그랜저",
+                "models": [
+                    {
+                    "name" : "더 뉴 그랜저 IG ",
+                    "era" : "2019 ~ ",
+                    "EngName" : "GrandeurIG2",
+                    "url" : "https://auto.naver.com/car/main.nhn?yearsId=134453&importYn=N",
+                    "detailURL" :
+                    "https://auto.naver.com/car/lineup.nhn?yearsId=134453"
+                    },
+                    {
+                    "name" : "더 뉴 그랜저 IG 하이브리드",
+                               "era" : "2020 ~ ",
+                               "EngName" : "GrandeurIG2H",
+                               "url" : "https://auto.naver.com/car/main.nhn?yearsId=134461&importYn=N",
+                               "detailURL" :
+                               "https://auto.naver.com/car/lineup.nhn?yearsId=134461"
+
+                    }
+                ]
+            },
+            {
+                "name" : "쏘나타",
+                "models": [
+                    {
+                       "name" : "쏘나타 DN8",
+                               "era" : "2019 ~ ",
+                               "EngName" : "SonataDN8",
+                               "url" : "https://auto.naver.com/car/main.nhn?yearsId=138773&importYn=N",
+                               "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=138773"
+                },{
+                    "name" : "쏘나타 DN8 하이브리드",
+                               "era" : "2019 ~ ",
+                               "EngName" : "SonataDN8H",
+                               "url" : "https://auto.naver.com/car/main.nhn?yearsId=138783&importYn=N",
+                               "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=138783"
+
+                }
+                ]
+            },
+            {
+                "name" : "아반떼",
+                "models": [
+                    {
+                    "name" : "아반떼 CN7",
+                               "era" : "2020 ~ ",
+                               "EngName" : "AvanteCN7",
+                               "url" : "https://auto.naver.com/car/main.nhn?yearsId=138007",
+                               "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=138007"
+                    },{
+                    "name" : "아반떼 CN7 하이브리드",
+                               "era" : "2020 ~ ",
+                               "EngName" : "AvanteCN7H",
+                               "url" : "https://auto.naver.com/car/main.nhn?yearsId=140621&importYn=N",
+                               "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=140621"
+
+                    }
+                ]
+            },
+            {
+                "name" : "벨로스터",
+                "models": [
+                    {
+                    "name" : "벨로스터 N",
+                               "era" : "2018~",
+                               "EngName" : "VelosterN",
+                               "url" : "https://auto.naver.com/car/main.nhn?yearsId=138745&importYn=N",
+                               "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=138745"
+
+                    }
+                ]
+            },
+             {
+                "name" : "베뉴",
+                "models": [
+                    {
+                    "name" : "베뉴",
+                               "era" : "2019~",
+                               "EngName" : "Venue",
+                               "url" : "https://auto.naver.com/car/main.nhn?yearsId=141783&importYn=N",
+                               "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=141783"
+
+                    }
+                ]
+            },
+            {
+                "name" : "코나",
+                "models": [
+                    {
+                    "name" : "더 뉴 코나",
+                               "era" : "2020 ~ ",
+                               "EngName" : "TheNewKona",
+                               "url" : "https://auto.naver.com/car/main.nhn?yearsId=140897&importYn=N",
+                               "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=140897"
+
+                },{
+                    "name" : "코나 일렉트릭",
+                               "era" : "2018 ~ ",
+                               "EngName" : "KonaElectric",
+                               "url" : "https://auto.naver.com/car/main.nhn?yearsId=136029&importYn=N",
+                               "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=136029"
+
+                },{
+                    "name" : "더 뉴 코나 하이브리드",
+                               "era" : "2020~",
+                               "EngName" : "TheNewKonaH",
+                               "url" : "https://auto.naver.com/car/main.nhn?yearsId=141535&importYn=N",
+                               "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=141535"
+
+                }
+                ]
+            },
+            {
+                "name" : "투싼",
+                "models": [
+                    {
+                    "name" : "투싼 NX4",
+                               "era" : "2020~",
+                               "EngName" : "TucsonNX4",
+                               "url" : "https://auto.naver.com/car/main.nhn?yearsId=141111&importYn=N",
+                               "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=141111"
+
+                },{
+                    "name" : "투싼 NX4 하이브리드",
+                               "era" : "2020~",
+                               "EngName" : "TucsonNX4H",
+                               "url" : "https://auto.naver.com/car/main.nhn?yearsId=141123&importYn=N",
+                               "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=141123"
+
+                }
+                ]
+            },
+            {
+                "name" : "싼타페",
+                "models": [
+                    {
+                    "name" : "더 뉴 싼타페",
+                               "era" : "2020~",
+                               "EngName" : "TheNewSantafe",
+                               "url" : "https://auto.naver.com/car/main.nhn?yearsId=139601&importYn=N",
+                               "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=139601"
+
+                    }
+                ]
+            },
+             {
+                "name" : "팰리세이드",
+                "models": [
+                    {
+                     "name" : "팰리세이드",
+                                "era" : "2018 ~ ",
+                                "EngName" : "Palisade",
+                                "url" : "https://auto.naver.com/car/main.nhn?yearsId=138907&importYn=N",
+                                "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=138907"
+
+                 }
+                ]
+            },
+            {
+                "name" : "넥소",
+                "models": [
+                    {
+                     "name" : "넥쏘",
+                                "era" : "2018 ~ ",
+                                "EngName" : "Nexo",
+                                "url" : "https://auto.naver.com/car/main.nhn?yearsId=143541&importYn=N",
+                                "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=143541"
+
+                 }
+                ]
+            },
+            {
+                "name" : "아이오닉",
+                "models": [
+                    {
+                     "name" : "아이오닉5",
+                                "era" : "정보 없음",
+                                "EngName" : "ioniq5",
+                                "url" : "https://auto.naver.com/car/main.nhn?yearsId=144233&importYn=N",
+                                "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=144233"
+
+                 }
+                ]
+            },
+            {
+                "name" : "쏠라티",
+                "models": [
+                    {
+                     "name" : "쏠라티",
+                                "era" : "2015 ~ ",
+                                "EngName" : "Solati",
+                                "url" : "https://auto.naver.com/car/main.nhn?yearsId=130129&importYn=N",
+                                "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=130129"
+
+                 }
+                ]
+            },
+            {
+                "name" : "스타렉스",
+                "models": [
+                    {
+                     "name" : "더 뉴 그랜드 스타렉스",
+                                "era" : "2017 ~ ",
+                                "EngName" : "TheNewGrandStarex",
+                                "url" : "https://auto.naver.com/car/main.nhn?yearsId=132323&importYn=N",
+                                "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=132323"
+
+                 }
+                ]
+            }
+		],
+		"name" :"hyundai" 
+	},{
+		"cars": 
+		[{
+            "name" : "K3",
+            "models": [
+                {
+                "name" : "올 뉴 K3",
+                           "era" : "2018 ~ ",
+                           "EngName" : "AllNewK3",
+                           "url" : "https://auto.naver.com/car/main.nhn?yearsId=138723&importYn=N",
+                           "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=138723"
+            }
+            ]
+        },{
+            "name" : "K5",
+            "models": [
+                {
+                "name" : "K5 3세대",
+                           "era" : "2019 ~ ",
+                           "EngName" : "K5Gen3",
+                           "url" : "https://auto.naver.com/car/main.nhn?yearsId=141555&importYn=N",
+                           "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=141555"
+            }
+            ]
+        },{
+            "name" : "K7",
+            "models": [
+                {
+                 "name" : "K7 프리미어",
+                           "era" : "2019 ~ ",
+                           "EngName" : "K7Premier",
+                           "url" : "https://auto.naver.com/car/main.nhn?yearsId=141443&importYn=N",
+                           "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=141443"
+            }
+            ]
+        },{
+            "name" : "K9",
+            "models": [
+                {
+                "name" : "더 K9",
+                           "era" : "2018 ~ ",
+                           "EngName" : "TheK9",
+                           "url" : "https://auto.naver.com/car/main.nhn?yearsId=138409&importYn=N",
+                           "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=138409"
+            }
+            ]
+        }
+            
+			
+		],
+		"name" :"kia" 
+	},{
+	"cars": 
+		[{
+            "name" : "스파크",
+            "models": [
+                {
+                "name" : "더 뉴 스파크",
+                           "era" : "2018 ~ ",
+                           "EngName" : "TheNewSpark",
+                           "url" : "https://auto.naver.com/car/main.nhn?yearsId=139661&importYn=Y",
+                           "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=139661"
+            }
+            ]
+        },{
+            "name" : "말리부",
+            "models": [
+                {
+                "name" : "더 뉴 말리부",
+                           "era" : "2018 ~ ",
+                           "EngName" : "TheNewMalibu",
+                           "url" : "https://auto.naver.com/car/main.nhn?yearsId=141643&importYn=Y",
+                           "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=141643"
+            }
+            ]
+        },{
+            "name" : "이쿼녹스",
+            "models": [
+                {
+                  "name" : "이쿼녹스",
+                            "era" : "2018 ~ ",
+                            "EngName" : "Equinox",
+                            "url" : "https://auto.naver.com/car/main.nhn?yearsId=127651&importYn=Y",
+                            "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=127651"
+             }
+            ]
+        },{
+            "name" : "트레일블레이저",
+            "models": [
+                {
+                 "name" : "트레일블레이저",
+                            "era" : "2020 ~ ",
+                            "EngName" : "TrailBlazor",
+                            "url" : "https://auto.naver.com/car/main.nhn?yearsId=142873&importYn=Y",
+                            "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=142873"
+             }
+            ]
+        }
+		],
+		"name" :"chevrolet" 
+	},{
+	"cars": 
+		[{
+            "name" : "SM6",
+            "models": [
+                {
+                "name" : "더 뉴 SM6",
+                           "era" : "2020 ~ ",
+                           "EngName" : "TheNewSM6",
+                           "url" : "https://auto.naver.com/car/main.nhn?yearsId=140313&importYn=N",
+                           "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=140313"
+            }
+            ]
+        },{
+            "name" : "QM6",
+            "models": [
+                {
+                "name" : "더 뉴 QM6",
+                           "era" : "2019 ~ ",
+                           "EngName" : "TheNewQM6",
+                           "url" : "https://auto.naver.com/car/main.nhn?yearsId=142075&importYn=N",
+                           "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=142075"
+            }
+            ]
+        },{
+            "name" : "XM3",
+            "models": [
+                {
+                 "name" : "XM3",
+                           "era" : "2020 ~ ",
+                           "EngName" : "XM3",
+                           "url" : "https://auto.naver.com/car/main.nhn?yearsId=136883&importYn=N",
+                           "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=136883"
+            }
+            ]
+        }
+		],
+		"name" :"renault" 
+	},{
+	"cars": 
+		[{
+            "name" : "코란도",
+            "models": [
+                {
+                "name" : "뷰티풀 코란도",
+                           "era" : "2019 ~ ",
+                           "EngName" : "BeautifulKorando",
+                           "url" : "https://auto.naver.com/car/main.nhn?yearsId=138251&importYn=N",
+                           "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=138251"
+            }
+            ]
+        },{
+            "name" : "렉스턴",
+            "models": [
+                {
+                "name" : "올 뉴 렉스턴",
+                           "era" : "2020 ~ ",
+                           "EngName" : "AllNewRexton",
+                           "url" : "https://auto.naver.com/car/main.nhn?yearsId=141567&importYn=N",
+                           "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=141567"
+            }
+            ]
+        },{
+            "name" : "렉스턴 스포츠",
+            "models": [
+                {
+                   "name" : "렉스턴 스포츠",
+                            "era" : "2018 ~ ",
+                            "EngName" : "RextonSports",
+                            "url" : "https://auto.naver.com/car/main.nhn?yearsId=132565&importYn=N",
+                            "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=132565"
+             }
+            ]
+        },{
+            "name" : "티볼리",
+            "models": [
+                {
+                  "name" : "베리 뉴 티볼리",
+                            "era" : "2019 ~ ",
+                            "EngName" : "VeryNewTivoli",
+                            "url" : "https://auto.naver.com/car/main.nhn?yearsId=138261&importYn=N",
+                            "detailURL" : "https://auto.naver.com/car/lineup.nhn?yearsId=138261"
+             }
+            ]
+        }
+		],
+		"name" :"ssangyong" 
+	}
+	]
+}
