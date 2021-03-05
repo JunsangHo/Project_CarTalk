@@ -23,11 +23,24 @@ car talk
 
 
 
-## 3. 화면 구성
+## 3. 실행 영상
+![cartalk](https://user-images.githubusercontent.com/78997813/110084235-1216fd00-7dd3-11eb-9eb6-bea4928e62ba.gif)
 
 
 
-## 4. 개발 환경
+## 4. 화면 구성
+
+(1) 브랜드 선택 화면
+
+(2) 카테고리 선택 화면
+
+(3) 세부 모델 선택 화면
+
+(4) 차의 정보 화면
+
+
+
+## 5. 개발 환경
 
 - iOS Programming (Swift)
 
