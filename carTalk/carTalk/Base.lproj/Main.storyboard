@@ -832,6 +832,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHU-Wh-pgq">
                                 <rect key="frame" x="193.5" y="338" width="39" height="30"/>
                                 <state key="normal" title="로그인"/>
+                                <connections>
+                                    <action selector="loginButtonTouched:" destination="ee8-xO-nHp" eventType="touchUpInside" id="esw-hd-Tta"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5e-XU-cQK">
                                 <rect key="frame" x="187" y="411" width="52" height="30"/>
@@ -854,6 +857,11 @@
                             <constraint firstItem="ANg-30-W9C" firstAttribute="centerX" secondItem="owD-iN-PRn" secondAttribute="centerX" id="xxJ-1M-Tsj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="ANg-30-W9C" id="Sv8-pY-GF4"/>
+                        <outlet property="loginButton" destination="zHU-Wh-pgq" id="91r-S7-EwB"/>
+                        <outlet property="pwTextField" destination="e3h-eb-raF" id="AJh-UT-gXD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ZV-BF-plf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -133,6 +133,7 @@
 				7ABE397F25D7ABAC00C47E54 /* Frameworks */,
 				7ABE398025D7ABAC00C47E54 /* Resources */,
 				F0E0CC30F04FC5F68A9F7C69 /* [CP] Embed Pods Frameworks */,
+				14713A4183234C02B5FA25B6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,6 +191,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		14713A4183234C02B5FA25B6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-carTalk/Pods-carTalk-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-carTalk/Pods-carTalk-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-carTalk/Pods-carTalk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AE1FB094D920999492EC299A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
