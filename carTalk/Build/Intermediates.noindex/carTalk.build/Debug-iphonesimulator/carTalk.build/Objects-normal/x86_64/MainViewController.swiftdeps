@@ -87,13 +87,12 @@ depends-top-level:
 - !private "viewModel"
 - !private "~="
 depends-member:
-- !private ["s18AdditiveArithmeticP", ""]
 - !private ["Sa", "count"]
 - !private ["Sa", "map"]
 - !private ["Sa", "subscript"]
 - !private ["s10ArraySliceV", "brandName"]
 - !private ["s10ArraySliceV", "cars"]
-- ["SK", ""]
+- !private ["SK", ""]
 - !private ["SK", "brandName"]
 - !private ["SK", "cars"]
 - !private ["SK", "count"]
@@ -129,13 +128,11 @@ depends-member:
 - ["7carTalk9BrandInfoC", "init"]
 - ["So15CALayerDelegateP", "BrandInfo"]
 - ["So15CALayerDelegateP", "UIImageView"]
-- ["So15CALayerDelegateP", "UILabel"]
 - ["So15CALayerDelegateP", ""]
 - !private ["So15CALayerDelegateP", "bounds"]
 - ["So15CALayerDelegateP", "brandImage"]
 - ["So15CALayerDelegateP", "brandLabel"]
 - !private ["So15CALayerDelegateP", "dequeueReusableCell"]
-- !private ["So15CALayerDelegateP", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["So15CALayerDelegateP", "image"]
 - ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "text"]
@@ -228,7 +225,7 @@ depends-member:
 - ["7carTalk5BrandV10CodingKeysO", "intValue"]
 - ["7carTalk5BrandV10CodingKeysO", "rawValue"]
 - ["7carTalk5BrandV10CodingKeysO", "stringValue"]
-- ["Sl", ""]
+- !private ["Sl", ""]
 - !private ["Sl", "brandName"]
 - !private ["Sl", "cars"]
 - !private ["Sl", "count"]
@@ -236,7 +233,6 @@ depends-member:
 - !private ["Sl", "map"]
 - !private ["Sl", "row"]
 - !private ["Sl", "subscript"]
-- ["SL", ""]
 - !private ["SL", "item"]
 - !private ["SL", "row"]
 - !private ["10Foundation15ContiguousBytesP", "brandName"]
@@ -533,17 +529,10 @@ depends-member:
 - !private ["s30ExpressibleByDictionaryLiteralP", "Key"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "Value"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "init"]
-- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
-- !private ["s25ExpressibleByFloatLiteralP", ""]
 - !private ["s27ExpressibleByIntegerLiteralP", "IntegerLiteralType"]
-- !private ["s27ExpressibleByIntegerLiteralP", ""]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "image"]
 - !private ["s23ExpressibleByNilLiteralP", "text"]
-- ["s32ExpressibleByStringInterpolationP", ""]
-- ["s26ExpressibleByStringLiteralP", ""]
-- ["s33ExpressibleByUnicodeScalarLiteralP", ""]
-- !private ["SF", ""]
 - ["SH", "=="]
 - !private ["SH", "CGSize"]
 - ["SH", "Default_RawValue"]
@@ -623,7 +612,6 @@ depends-member:
 - !private ["s30KeyedDecodingContainerProtocolP", "decode"]
 - !private ["s22KeyedEncodingContainerV", "encode"]
 - !private ["s30KeyedEncodingContainerProtocolP", "encode"]
-- ["s25LosslessStringConvertibleP", ""]
 - !private ["7carTalk18MainViewControllerC", "Brand"]
 - !private ["7carTalk18MainViewControllerC", "BrandCell"]
 - !private ["7carTalk18MainViewControllerC", "CGFloat"]
@@ -703,17 +691,13 @@ depends-member:
 - ["So8NSCodingP", "BrandInfo"]
 - !private ["So8NSCodingP", "CGFloat"]
 - ["So8NSCodingP", "CGSize"]
-- ["So8NSCodingP", "IndexPath"]
-- ["So8NSCodingP", "Int"]
 - ["So8NSCodingP", "MainViewModel"]
 - !private ["So8NSCodingP", "ModelsViewController"]
 - !private ["So8NSCodingP", "SegueIdentifier"]
 - ["So8NSCodingP", "UIButton"]
-- ["So8NSCodingP", "UICollectionView"]
-- ["So8NSCodingP", "UICollectionViewCell"]
+- !private ["So8NSCodingP", "UICollectionViewCell"]
 - ["So8NSCodingP", "UICollectionViewLayout"]
 - ["So8NSCodingP", "UIImageView"]
-- ["So8NSCodingP", "UILabel"]
 - ["So8NSCodingP", "UIStoryboardSegue"]
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "bounds"]
@@ -723,7 +707,6 @@ depends-member:
 - ["So8NSCodingP", "collectionViewDidEndMultipleSelectionInteraction"]
 - ["So8NSCodingP", "deinit"]
 - !private ["So8NSCodingP", "dequeueReusableCell"]
-- !private ["So8NSCodingP", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["So8NSCodingP", "image"]
 - ["So8NSCodingP", "indexPathForPreferredFocusedView"]
 - ["So8NSCodingP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -759,14 +742,11 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "BrandCell"]
 - !private ["So26NSExtensionRequestHandlingP", "CGFloat"]
 - ["So26NSExtensionRequestHandlingP", "CGSize"]
-- ["So26NSExtensionRequestHandlingP", "IndexPath"]
-- ["So26NSExtensionRequestHandlingP", "Int"]
 - ["So26NSExtensionRequestHandlingP", "MainViewModel"]
 - !private ["So26NSExtensionRequestHandlingP", "ModelsViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "SegueIdentifier"]
 - ["So26NSExtensionRequestHandlingP", "UIButton"]
-- ["So26NSExtensionRequestHandlingP", "UICollectionView"]
-- ["So26NSExtensionRequestHandlingP", "UICollectionViewCell"]
+- !private ["So26NSExtensionRequestHandlingP", "UICollectionViewCell"]
 - ["So26NSExtensionRequestHandlingP", "UICollectionViewLayout"]
 - ["So26NSExtensionRequestHandlingP", "UIStoryboardSegue"]
 - ["So26NSExtensionRequestHandlingP", ""]
@@ -832,7 +812,6 @@ depends-member:
 - ["So8NSObjectC", "databaseForApp"]
 - ["So8NSObjectC", "databaseWithURL"]
 - !private ["So8NSObjectC", "dequeueReusableCell"]
-- !private ["So8NSObjectC", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["So8NSObjectC", "destination"]
 - !private ["So8NSObjectC", "identifier"]
 - !private ["So8NSObjectC", "image"]
@@ -879,17 +858,13 @@ depends-member:
 - ["So8NSObjectP", "BrandInfo"]
 - !private ["So8NSObjectP", "CGFloat"]
 - ["So8NSObjectP", "CGSize"]
-- ["So8NSObjectP", "IndexPath"]
-- ["So8NSObjectP", "Int"]
 - ["So8NSObjectP", "MainViewModel"]
 - !private ["So8NSObjectP", "ModelsViewController"]
 - !private ["So8NSObjectP", "SegueIdentifier"]
 - ["So8NSObjectP", "UIButton"]
-- ["So8NSObjectP", "UICollectionView"]
-- ["So8NSObjectP", "UICollectionViewCell"]
+- !private ["So8NSObjectP", "UICollectionViewCell"]
 - ["So8NSObjectP", "UICollectionViewLayout"]
 - ["So8NSObjectP", "UIImageView"]
-- ["So8NSObjectP", "UILabel"]
 - ["So8NSObjectP", "UIStoryboardSegue"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "bounds"]
@@ -906,7 +881,6 @@ depends-member:
 - ["So8NSObjectP", "databaseWithURL"]
 - ["So8NSObjectP", "deinit"]
 - !private ["So8NSObjectP", "dequeueReusableCell"]
-- !private ["So8NSObjectP", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["So8NSObjectP", "destination"]
 - !private ["So8NSObjectP", "identifier"]
 - !private ["So8NSObjectP", "image"]
@@ -948,7 +922,6 @@ depends-member:
 - ["So8NSObjectP", "viewForZooming"]
 - ["So8NSObjectP", "viewForZoomingInScrollView"]
 - ["So8NSObjectP", "viewModel"]
-- !private ["Sj", ""]
 - !private ["s9OptionSetP", "ArrayLiteralElement"]
 - !private ["s9OptionSetP", "Element"]
 - !private ["s9OptionSetP", "init"]
@@ -1004,7 +977,7 @@ depends-member:
 - ["7carTalk15SegueIdentifierO", "hashValue"]
 - ["7carTalk15SegueIdentifierO", "init"]
 - ["7carTalk15SegueIdentifierO", "rawValue"]
-- ["ST", ""]
+- !private ["ST", ""]
 - !private ["ST", "brandName"]
 - !private ["ST", "cars"]
 - !private ["ST", "count"]
@@ -1016,35 +989,27 @@ depends-member:
 - !private ["s10SetAlgebraP", "Element"]
 - !private ["s10SetAlgebraP", ""]
 - !private ["s10SetAlgebraP", "init"]
-- !private ["s13SignedNumericP", ""]
-- !private ["Sx", ""]
-- ["s16TextOutputStreamP", ""]
-- ["s20TextOutputStreamableP", ""]
 - !private ["7Combine15TopLevelDecoderP", "decode"]
 - !private ["7Combine15TopLevelDecoderP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
 - ["So29UIAccessibilityIdentificationP", "BrandInfo"]
 - ["So29UIAccessibilityIdentificationP", "UIImageView"]
-- ["So29UIAccessibilityIdentificationP", "UILabel"]
 - ["So29UIAccessibilityIdentificationP", ""]
 - !private ["So29UIAccessibilityIdentificationP", "bounds"]
 - ["So29UIAccessibilityIdentificationP", "brandImage"]
 - ["So29UIAccessibilityIdentificationP", "brandLabel"]
 - !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
-- !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["So29UIAccessibilityIdentificationP", "image"]
 - ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
 - ["So29UIAccessibilityIdentificationP", "updateUI"]
 - ["So12UIAppearanceP", "BrandInfo"]
 - ["So12UIAppearanceP", "UIImageView"]
-- ["So12UIAppearanceP", "UILabel"]
 - ["So12UIAppearanceP", ""]
 - !private ["So12UIAppearanceP", "bounds"]
 - ["So12UIAppearanceP", "brandImage"]
 - ["So12UIAppearanceP", "brandLabel"]
 - !private ["So12UIAppearanceP", "dequeueReusableCell"]
-- !private ["So12UIAppearanceP", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["So12UIAppearanceP", "image"]
 - ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "text"]
@@ -1054,17 +1019,13 @@ depends-member:
 - ["So21UIAppearanceContainerP", "BrandInfo"]
 - !private ["So21UIAppearanceContainerP", "CGFloat"]
 - ["So21UIAppearanceContainerP", "CGSize"]
-- ["So21UIAppearanceContainerP", "IndexPath"]
-- ["So21UIAppearanceContainerP", "Int"]
 - ["So21UIAppearanceContainerP", "MainViewModel"]
 - !private ["So21UIAppearanceContainerP", "ModelsViewController"]
 - !private ["So21UIAppearanceContainerP", "SegueIdentifier"]
 - ["So21UIAppearanceContainerP", "UIButton"]
-- ["So21UIAppearanceContainerP", "UICollectionView"]
-- ["So21UIAppearanceContainerP", "UICollectionViewCell"]
+- !private ["So21UIAppearanceContainerP", "UICollectionViewCell"]
 - ["So21UIAppearanceContainerP", "UICollectionViewLayout"]
 - ["So21UIAppearanceContainerP", "UIImageView"]
-- ["So21UIAppearanceContainerP", "UILabel"]
 - ["So21UIAppearanceContainerP", "UIStoryboardSegue"]
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "bounds"]
@@ -1074,7 +1035,6 @@ depends-member:
 - ["So21UIAppearanceContainerP", "collectionViewDidEndMultipleSelectionInteraction"]
 - ["So21UIAppearanceContainerP", "deinit"]
 - !private ["So21UIAppearanceContainerP", "dequeueReusableCell"]
-- !private ["So21UIAppearanceContainerP", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["So21UIAppearanceContainerP", "image"]
 - ["So21UIAppearanceContainerP", "indexPathForPreferredFocusedView"]
 - ["So21UIAppearanceContainerP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1236,14 +1196,11 @@ depends-member:
 - !private ["So18UIContentContainerP", "BrandCell"]
 - !private ["So18UIContentContainerP", "CGFloat"]
 - ["So18UIContentContainerP", "CGSize"]
-- ["So18UIContentContainerP", "IndexPath"]
-- ["So18UIContentContainerP", "Int"]
 - ["So18UIContentContainerP", "MainViewModel"]
 - !private ["So18UIContentContainerP", "ModelsViewController"]
 - !private ["So18UIContentContainerP", "SegueIdentifier"]
 - ["So18UIContentContainerP", "UIButton"]
-- ["So18UIContentContainerP", "UICollectionView"]
-- ["So18UIContentContainerP", "UICollectionViewCell"]
+- !private ["So18UIContentContainerP", "UICollectionViewCell"]
 - ["So18UIContentContainerP", "UICollectionViewLayout"]
 - ["So18UIContentContainerP", "UIStoryboardSegue"]
 - ["So18UIContentContainerP", ""]
@@ -1279,16 +1236,13 @@ depends-member:
 - ["So18UIContentContainerP", "viewForZoomingInScrollView"]
 - ["So18UIContentContainerP", "viewModel"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
-- ["So33UIContextMenuInteractionAnimatingP", ""]
 - ["So17UICoordinateSpaceP", "BrandInfo"]
 - ["So17UICoordinateSpaceP", "UIImageView"]
-- ["So17UICoordinateSpaceP", "UILabel"]
 - ["So17UICoordinateSpaceP", ""]
 - !private ["So17UICoordinateSpaceP", "bounds"]
 - ["So17UICoordinateSpaceP", "brandImage"]
 - ["So17UICoordinateSpaceP", "brandLabel"]
 - !private ["So17UICoordinateSpaceP", "dequeueReusableCell"]
-- !private ["So17UICoordinateSpaceP", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["So17UICoordinateSpaceP", "image"]
 - ["So17UICoordinateSpaceP", "init"]
 - !private ["So17UICoordinateSpaceP", "text"]
@@ -1297,13 +1251,11 @@ depends-member:
 - !private ["So23UIDataSourceTranslatingP", "dequeueReusableCell"]
 - ["So13UIDynamicItemP", "BrandInfo"]
 - ["So13UIDynamicItemP", "UIImageView"]
-- ["So13UIDynamicItemP", "UILabel"]
 - ["So13UIDynamicItemP", ""]
 - !private ["So13UIDynamicItemP", "bounds"]
 - ["So13UIDynamicItemP", "brandImage"]
 - ["So13UIDynamicItemP", "brandLabel"]
 - !private ["So13UIDynamicItemP", "dequeueReusableCell"]
-- !private ["So13UIDynamicItemP", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["So13UIDynamicItemP", "image"]
 - ["So13UIDynamicItemP", "init"]
 - !private ["So13UIDynamicItemP", "text"]
@@ -1313,17 +1265,13 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "BrandInfo"]
 - !private ["So18UIFocusEnvironmentP", "CGFloat"]
 - ["So18UIFocusEnvironmentP", "CGSize"]
-- ["So18UIFocusEnvironmentP", "IndexPath"]
-- ["So18UIFocusEnvironmentP", "Int"]
 - ["So18UIFocusEnvironmentP", "MainViewModel"]
 - !private ["So18UIFocusEnvironmentP", "ModelsViewController"]
 - !private ["So18UIFocusEnvironmentP", "SegueIdentifier"]
 - ["So18UIFocusEnvironmentP", "UIButton"]
-- ["So18UIFocusEnvironmentP", "UICollectionView"]
-- ["So18UIFocusEnvironmentP", "UICollectionViewCell"]
+- !private ["So18UIFocusEnvironmentP", "UICollectionViewCell"]
 - ["So18UIFocusEnvironmentP", "UICollectionViewLayout"]
 - ["So18UIFocusEnvironmentP", "UIImageView"]
-- ["So18UIFocusEnvironmentP", "UILabel"]
 - ["So18UIFocusEnvironmentP", "UIStoryboardSegue"]
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "bounds"]
@@ -1333,7 +1281,6 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "collectionViewDidEndMultipleSelectionInteraction"]
 - ["So18UIFocusEnvironmentP", "deinit"]
 - !private ["So18UIFocusEnvironmentP", "dequeueReusableCell"]
-- !private ["So18UIFocusEnvironmentP", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["So18UIFocusEnvironmentP", "image"]
 - ["So18UIFocusEnvironmentP", "indexPathForPreferredFocusedView"]
 - ["So18UIFocusEnvironmentP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1367,44 +1314,37 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "viewModel"]
 - ["So11UIFocusItemP", "BrandInfo"]
 - ["So11UIFocusItemP", "UIImageView"]
-- ["So11UIFocusItemP", "UILabel"]
 - ["So11UIFocusItemP", ""]
 - !private ["So11UIFocusItemP", "bounds"]
 - ["So11UIFocusItemP", "brandImage"]
 - ["So11UIFocusItemP", "brandLabel"]
 - !private ["So11UIFocusItemP", "dequeueReusableCell"]
-- !private ["So11UIFocusItemP", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["So11UIFocusItemP", "image"]
 - ["So11UIFocusItemP", "init"]
 - !private ["So11UIFocusItemP", "text"]
 - ["So11UIFocusItemP", "updateUI"]
 - ["So20UIFocusItemContainerP", "BrandInfo"]
 - ["So20UIFocusItemContainerP", "UIImageView"]
-- ["So20UIFocusItemContainerP", "UILabel"]
 - ["So20UIFocusItemContainerP", ""]
 - !private ["So20UIFocusItemContainerP", "bounds"]
 - ["So20UIFocusItemContainerP", "brandImage"]
 - ["So20UIFocusItemContainerP", "brandLabel"]
 - !private ["So20UIFocusItemContainerP", "dequeueReusableCell"]
-- !private ["So20UIFocusItemContainerP", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["So20UIFocusItemContainerP", "image"]
 - ["So20UIFocusItemContainerP", "init"]
 - !private ["So20UIFocusItemContainerP", "text"]
 - ["So20UIFocusItemContainerP", "updateUI"]
 - !private ["So30UIFocusItemScrollableContainerP", "bounds"]
 - !private ["So30UIFocusItemScrollableContainerP", "dequeueReusableCell"]
-- !private ["So30UIFocusItemScrollableContainerP", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["So11UIImageViewC", "image"]
 - !private ["So7UILabelC", "text"]
 - ["So24UILargeContentViewerItemP", "BrandInfo"]
 - ["So24UILargeContentViewerItemP", "UIImageView"]
-- ["So24UILargeContentViewerItemP", "UILabel"]
 - ["So24UILargeContentViewerItemP", ""]
 - !private ["So24UILargeContentViewerItemP", "bounds"]
 - ["So24UILargeContentViewerItemP", "brandImage"]
 - ["So24UILargeContentViewerItemP", "brandLabel"]
 - !private ["So24UILargeContentViewerItemP", "dequeueReusableCell"]
-- !private ["So24UILargeContentViewerItemP", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["So24UILargeContentViewerItemP", "image"]
 - ["So24UILargeContentViewerItemP", "init"]
 - !private ["So24UILargeContentViewerItemP", "text"]
@@ -1414,17 +1354,13 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "BrandInfo"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGFloat"]
 - ["So30UIPasteConfigurationSupportingP", "CGSize"]
-- ["So30UIPasteConfigurationSupportingP", "IndexPath"]
-- ["So30UIPasteConfigurationSupportingP", "Int"]
 - ["So30UIPasteConfigurationSupportingP", "MainViewModel"]
 - !private ["So30UIPasteConfigurationSupportingP", "ModelsViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "SegueIdentifier"]
 - ["So30UIPasteConfigurationSupportingP", "UIButton"]
-- ["So30UIPasteConfigurationSupportingP", "UICollectionView"]
-- ["So30UIPasteConfigurationSupportingP", "UICollectionViewCell"]
+- !private ["So30UIPasteConfigurationSupportingP", "UICollectionViewCell"]
 - ["So30UIPasteConfigurationSupportingP", "UICollectionViewLayout"]
 - ["So30UIPasteConfigurationSupportingP", "UIImageView"]
-- ["So30UIPasteConfigurationSupportingP", "UILabel"]
 - ["So30UIPasteConfigurationSupportingP", "UIStoryboardSegue"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "bounds"]
@@ -1434,7 +1370,6 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "collectionViewDidEndMultipleSelectionInteraction"]
 - ["So30UIPasteConfigurationSupportingP", "deinit"]
 - !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCell"]
-- !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["So30UIPasteConfigurationSupportingP", "image"]
 - ["So30UIPasteConfigurationSupportingP", "indexPathForPreferredFocusedView"]
 - ["So30UIPasteConfigurationSupportingP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1492,7 +1427,6 @@ depends-member:
 - ["So11UIResponderC", "collectionView"]
 - ["So11UIResponderC", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["So11UIResponderC", "dequeueReusableCell"]
-- !private ["So11UIResponderC", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["So11UIResponderC", "image"]
 - ["So11UIResponderC", "indexPathForPreferredFocusedView"]
 - ["So11UIResponderC", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1531,17 +1465,13 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "BrandInfo"]
 - !private ["So30UIResponderStandardEditActionsP", "CGFloat"]
 - ["So30UIResponderStandardEditActionsP", "CGSize"]
-- ["So30UIResponderStandardEditActionsP", "IndexPath"]
-- ["So30UIResponderStandardEditActionsP", "Int"]
 - ["So30UIResponderStandardEditActionsP", "MainViewModel"]
 - !private ["So30UIResponderStandardEditActionsP", "ModelsViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "SegueIdentifier"]
 - ["So30UIResponderStandardEditActionsP", "UIButton"]
-- ["So30UIResponderStandardEditActionsP", "UICollectionView"]
-- ["So30UIResponderStandardEditActionsP", "UICollectionViewCell"]
+- !private ["So30UIResponderStandardEditActionsP", "UICollectionViewCell"]
 - ["So30UIResponderStandardEditActionsP", "UICollectionViewLayout"]
 - ["So30UIResponderStandardEditActionsP", "UIImageView"]
-- ["So30UIResponderStandardEditActionsP", "UILabel"]
 - ["So30UIResponderStandardEditActionsP", "UIStoryboardSegue"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "bounds"]
@@ -1551,7 +1481,6 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "collectionViewDidEndMultipleSelectionInteraction"]
 - ["So30UIResponderStandardEditActionsP", "deinit"]
 - !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCell"]
-- !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["So30UIResponderStandardEditActionsP", "image"]
 - ["So30UIResponderStandardEditActionsP", "indexPathForPreferredFocusedView"]
 - ["So30UIResponderStandardEditActionsP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1588,7 +1517,6 @@ depends-member:
 - ["So12UIScrollViewC", ""]
 - !private ["So12UIScrollViewC", "bounds"]
 - !private ["So12UIScrollViewC", "dequeueReusableCell"]
-- !private ["So12UIScrollViewC", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["So20UIScrollViewDelegateP", "CGSize"]
 - ["So20UIScrollViewDelegateP", "MainViewModel"]
 - !private ["So20UIScrollViewDelegateP", "SegueIdentifier"]
@@ -1631,14 +1559,11 @@ depends-member:
 - !private ["So16UIStateRestoringP", "BrandCell"]
 - !private ["So16UIStateRestoringP", "CGFloat"]
 - ["So16UIStateRestoringP", "CGSize"]
-- ["So16UIStateRestoringP", "IndexPath"]
-- ["So16UIStateRestoringP", "Int"]
 - ["So16UIStateRestoringP", "MainViewModel"]
 - !private ["So16UIStateRestoringP", "ModelsViewController"]
 - !private ["So16UIStateRestoringP", "SegueIdentifier"]
 - ["So16UIStateRestoringP", "UIButton"]
-- ["So16UIStateRestoringP", "UICollectionView"]
-- ["So16UIStateRestoringP", "UICollectionViewCell"]
+- !private ["So16UIStateRestoringP", "UICollectionViewCell"]
 - ["So16UIStateRestoringP", "UICollectionViewLayout"]
 - ["So16UIStateRestoringP", "UIStoryboardSegue"]
 - ["So16UIStateRestoringP", ""]
@@ -1682,17 +1607,13 @@ depends-member:
 - ["So18UITraitEnvironmentP", "BrandInfo"]
 - !private ["So18UITraitEnvironmentP", "CGFloat"]
 - ["So18UITraitEnvironmentP", "CGSize"]
-- ["So18UITraitEnvironmentP", "IndexPath"]
-- ["So18UITraitEnvironmentP", "Int"]
 - ["So18UITraitEnvironmentP", "MainViewModel"]
 - !private ["So18UITraitEnvironmentP", "ModelsViewController"]
 - !private ["So18UITraitEnvironmentP", "SegueIdentifier"]
 - ["So18UITraitEnvironmentP", "UIButton"]
-- ["So18UITraitEnvironmentP", "UICollectionView"]
-- ["So18UITraitEnvironmentP", "UICollectionViewCell"]
+- !private ["So18UITraitEnvironmentP", "UICollectionViewCell"]
 - ["So18UITraitEnvironmentP", "UICollectionViewLayout"]
 - ["So18UITraitEnvironmentP", "UIImageView"]
-- ["So18UITraitEnvironmentP", "UILabel"]
 - ["So18UITraitEnvironmentP", "UIStoryboardSegue"]
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "bounds"]
@@ -1702,7 +1623,6 @@ depends-member:
 - ["So18UITraitEnvironmentP", "collectionViewDidEndMultipleSelectionInteraction"]
 - ["So18UITraitEnvironmentP", "deinit"]
 - !private ["So18UITraitEnvironmentP", "dequeueReusableCell"]
-- !private ["So18UITraitEnvironmentP", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["So18UITraitEnvironmentP", "image"]
 - ["So18UITraitEnvironmentP", "indexPathForPreferredFocusedView"]
 - ["So18UITraitEnvironmentP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1739,17 +1659,13 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "BrandInfo"]
 - !private ["So23UIUserActivityRestoringP", "CGFloat"]
 - ["So23UIUserActivityRestoringP", "CGSize"]
-- ["So23UIUserActivityRestoringP", "IndexPath"]
-- ["So23UIUserActivityRestoringP", "Int"]
 - ["So23UIUserActivityRestoringP", "MainViewModel"]
 - !private ["So23UIUserActivityRestoringP", "ModelsViewController"]
 - !private ["So23UIUserActivityRestoringP", "SegueIdentifier"]
 - ["So23UIUserActivityRestoringP", "UIButton"]
-- ["So23UIUserActivityRestoringP", "UICollectionView"]
-- ["So23UIUserActivityRestoringP", "UICollectionViewCell"]
+- !private ["So23UIUserActivityRestoringP", "UICollectionViewCell"]
 - ["So23UIUserActivityRestoringP", "UICollectionViewLayout"]
 - ["So23UIUserActivityRestoringP", "UIImageView"]
-- ["So23UIUserActivityRestoringP", "UILabel"]
 - ["So23UIUserActivityRestoringP", "UIStoryboardSegue"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "bounds"]
@@ -1759,7 +1675,6 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "collectionViewDidEndMultipleSelectionInteraction"]
 - ["So23UIUserActivityRestoringP", "deinit"]
 - !private ["So23UIUserActivityRestoringP", "dequeueReusableCell"]
-- !private ["So23UIUserActivityRestoringP", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["So23UIUserActivityRestoringP", "image"]
 - ["So23UIUserActivityRestoringP", "indexPathForPreferredFocusedView"]
 - ["So23UIUserActivityRestoringP", "indexPathForPreferredFocusedViewInCollectionView"]
@@ -1801,7 +1716,6 @@ depends-member:
 - ["So6UIViewC", "brandImage"]
 - ["So6UIViewC", "brandLabel"]
 - !private ["So6UIViewC", "dequeueReusableCell"]
-- !private ["So6UIViewC", "dequeueReusableCellWithReuseIdentifier"]
 - !private ["So6UIViewC", "image"]
 - ["So6UIViewC", "init"]
 - !private ["So6UIViewC", "text"]
@@ -1866,10 +1780,8 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "map"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
-- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
-- ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
 - !private ["s19_HasContiguousBytesP", "count"]
 - !private ["s19_HasContiguousBytesP", "map"]
 - !private ["s19_HasContiguousBytesP", "subscript"]
@@ -1994,10 +1906,9 @@ depends-member:
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "text"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "updateUI"]
 depends-nominal:
-- !private "s18AdditiveArithmeticP"
 - !private "Sa"
 - !private "s10ArraySliceV"
-- "SK"
+- !private "SK"
 - "7carTalk5BrandV"
 - "7carTalk14BrandCarModelsV"
 - "7carTalk9BrandCellC"
@@ -2008,8 +1919,8 @@ depends-nominal:
 - "s7CVarArgP"
 - "s9CodingKeyP"
 - "7carTalk5BrandV10CodingKeysO"
-- "Sl"
-- "SL"
+- !private "Sl"
+- !private "SL"
 - !private "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
@@ -2027,14 +1938,8 @@ depends-nominal:
 - "SQ"
 - "s25ExpressibleByArrayLiteralP"
 - !private "s30ExpressibleByDictionaryLiteralP"
-- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
-- !private "s25ExpressibleByFloatLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
-- "s32ExpressibleByStringInterpolationP"
-- "s26ExpressibleByStringLiteralP"
-- "s33ExpressibleByUnicodeScalarLiteralP"
-- !private "SF"
 - "SH"
 - !private "10Foundation9IndexPathV"
 - !private "10Foundation11JSONDecoderC"
@@ -2043,7 +1948,6 @@ depends-nominal:
 - !private "s30KeyedDecodingContainerProtocolP"
 - !private "s22KeyedEncodingContainerV"
 - !private "s30KeyedEncodingContainerProtocolP"
-- "s25LosslessStringConvertibleP"
 - "7carTalk18MainViewControllerC"
 - "7carTalk13MainViewModelC"
 - !private "7carTalk20ModelsViewControllerC"
@@ -2054,7 +1958,6 @@ depends-nominal:
 - "So26NSExtensionRequestHandlingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
-- !private "Sj"
 - !private "s9OptionSetP"
 - !private "Sq"
 - !private "Sk"
@@ -2062,12 +1965,8 @@ depends-nominal:
 - "SY"
 - !private "10Foundation20ReferenceConvertibleP"
 - "7carTalk15SegueIdentifierO"
-- "ST"
+- !private "ST"
 - !private "s10SetAlgebraP"
-- !private "s13SignedNumericP"
-- !private "Sx"
-- "s16TextOutputStreamP"
-- "s20TextOutputStreamableP"
 - !private "7Combine15TopLevelDecoderP"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - "So29UIAccessibilityIdentificationP"
@@ -2081,7 +1980,6 @@ depends-nominal:
 - "So34UICollectionViewDelegateFlowLayoutP"
 - "So18UIContentContainerP"
 - !private "So30UIContentSizeCategoryAdjustingP"
-- "So33UIContextMenuInteractionAnimatingP"
 - "So17UICoordinateSpaceP"
 - !private "So23UIDataSourceTranslatingP"
 - "So13UIDynamicItemP"
@@ -2110,10 +2008,8 @@ depends-nominal:
 - !private "s14_ArrayProtocolP"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
-- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
-- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s19_HasContiguousBytesP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"

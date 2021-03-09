@@ -283,6 +283,7 @@ SWIFT_CLASS("_TtC7carTalk20DetailViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified price;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified fuelType;
 - (IBAction)back:(id _Nonnull)sender;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -341,6 +342,38 @@ SWIFT_CLASS("_TtC7carTalk13SceneDelegate")
 - (void)sceneWillEnterForeground:(UIScene * _Nonnull)scene;
 - (void)sceneDidEnterBackground:(UIScene * _Nonnull)scene;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7carTalk17SpecificationCell")
+@interface SpecificationCell : UICollectionViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified trimName;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified trimPrice;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified engineType;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified displacement;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified fuelTypeDetail;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified maximumPower;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified maximumTorque;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified overallLength;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified overallWidth;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified overallHeight;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified wheelBase;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified curbWeight;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified occupancy;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified drivingSystem;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified transmission;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7carTalk27SpecificationViewController")
+@interface SpecificationViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #if __has_attribute(external_source_symbol)
