@@ -6,12 +6,33 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var pwTextField: UITextField!
+    
+    @IBOutlet weak var loginButton: UIButton!
+    @IBAction func loginButtonTouched(_ sender: Any) {
+        Auth.auth().signIn(withEmail: emailTextField.text!, password: pwTextField.text!){(user,error) in
+            
+            if user != nil{
+                print("login success")
+            }
+            else{
+                print("login failed")
+            }
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if let user = Auth.auth().currentUser {
+            emailTextField.placeholder = "이미 로그인 된 상태입니다."
+            pwTextField.placeholder = "이미 로그인 된 상태입니다."
+            loginButton.setTitle("이미 로그인 된 상태입니다.", for: .normal)
+        }
         // Do any additional setup after loading the view.
     }
     
