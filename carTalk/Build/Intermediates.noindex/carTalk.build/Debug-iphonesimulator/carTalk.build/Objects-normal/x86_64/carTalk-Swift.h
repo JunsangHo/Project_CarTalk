@@ -297,6 +297,7 @@ SWIFT_CLASS("_TtC7carTalk19LoginViewController")
 @interface LoginViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailTextField;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified pwTextField;
+- (IBAction)signUpTrigger:(id _Nonnull)sender;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified loginButton;
 - (IBAction)loginButtonTouched:(id _Nonnull)sender;
 - (void)viewDidLoad;
@@ -356,6 +357,17 @@ SWIFT_CLASS("_TtC7carTalk13SceneDelegate")
 - (void)sceneWillEnterForeground:(UIScene * _Nonnull)scene;
 - (void)sceneDidEnterBackground:(UIScene * _Nonnull)scene;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC7carTalk20SignUpViewController")
+@interface SignUpViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified pwTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailTextField;
+- (void)viewDidLoad;
+- (IBAction)registerButtonTouched:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
