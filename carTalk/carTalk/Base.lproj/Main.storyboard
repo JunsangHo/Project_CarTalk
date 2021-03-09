@@ -318,7 +318,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="1322"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CCi-AY-W4T">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1201.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1194.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XR2-Q5-WB1">
                                                 <rect key="frame" x="0.0" y="25" width="414" height="236.5"/>
@@ -446,6 +446,7 @@
                                             <constraint firstItem="rBn-qb-kLj" firstAttribute="top" secondItem="4zH-O9-TzE" secondAttribute="bottom" constant="12" id="XX1-wp-iI0"/>
                                             <constraint firstItem="Xa3-vO-0tt" firstAttribute="top" secondItem="sIg-iV-K6U" secondAttribute="bottom" constant="8" id="YCE-fM-tEh"/>
                                             <constraint firstItem="MqT-AO-RF8" firstAttribute="top" secondItem="OQK-yl-bTI" secondAttribute="bottom" constant="8" id="YZU-9o-N0z"/>
+                                            <constraint firstAttribute="bottom" secondItem="h6q-Y0-PA0" secondAttribute="bottom" constant="400" id="Ysf-Oc-472"/>
                                             <constraint firstItem="OQK-yl-bTI" firstAttribute="top" secondItem="rBn-qb-kLj" secondAttribute="bottom" constant="8" id="ciO-qy-Ovv"/>
                                             <constraint firstAttribute="trailing" secondItem="h6q-Y0-PA0" secondAttribute="trailing" constant="34" id="ecc-c0-BIy"/>
                                             <constraint firstItem="4zH-O9-TzE" firstAttribute="top" secondItem="XR2-Q5-WB1" secondAttribute="bottom" constant="26.5" id="gFb-7A-Ybc"/>
