@@ -233,6 +233,7 @@ depends-member:
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
 - !private ["s16TextOutputStreamP", "appendLiteral"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
+- ["So18UIFocusEnvironmentP", ""]
 - !private ["So7UIImageC", "init"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
@@ -271,6 +272,7 @@ depends-nominal:
 - !private "s27StringInterpolationProtocolP"
 - !private "s16TextOutputStreamP"
 - !private "So29UIAccessibilityIdentificationP"
+- "So18UIFocusEnvironmentP"
 - !private "So7UIImageC"
 - !private "So39UIItemProviderPresentationSizeProvidingP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"

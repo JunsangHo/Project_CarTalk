@@ -25,11 +25,9 @@ depends-member:
 - ["7carTalk13DetailCarInfoV", "power"]
 - ["7carTalk13DetailCarInfoV", "sale"]
 - ["7carTalk13DetailCarInfoV", "specificationURL"]
-- ["So8NSCodingP", ""]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 depends-nominal:
 - "7carTalk13DetailCarInfoV"
-- "So8NSCodingP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 depends-dynamic-lookup:
 depends-external:

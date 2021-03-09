@@ -15,6 +15,7 @@
 		7A22150925E630E300D17121 /* BrandCarModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22150825E630E300D17121 /* BrandCarModels.swift */; };
 		7A420A6A25E534AA0037FF4A /* DetailCarInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A420A6925E534AA0037FF4A /* DetailCarInfo.swift */; };
 		7A78096B25F763EC0030617F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A78096A25F763EC0030617F /* LoginViewController.swift */; };
+		7A780A3325F7B5C70030617F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A780A3225F7B5C70030617F /* SignUpViewController.swift */; };
 		7A7C93AA25DC54F800D26A9E /* BrandCarInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C93A925DC54F800D26A9E /* BrandCarInfo.swift */; };
 		7ABE398625D7ABAC00C47E54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE398525D7ABAC00C47E54 /* AppDelegate.swift */; };
 		7ABE398825D7ABAC00C47E54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE398725D7ABAC00C47E54 /* SceneDelegate.swift */; };
@@ -38,6 +39,7 @@
 		7A22150825E630E300D17121 /* BrandCarModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandCarModels.swift; sourceTree = "<group>"; };
 		7A420A6925E534AA0037FF4A /* DetailCarInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCarInfo.swift; sourceTree = "<group>"; };
 		7A78096A25F763EC0030617F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7A780A3225F7B5C70030617F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7A7C93A925DC54F800D26A9E /* BrandCarInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandCarInfo.swift; sourceTree = "<group>"; };
 		7ABE398225D7ABAC00C47E54 /* carTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ABE398525D7ABAC00C47E54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				7ABE399025D7ABB300C47E54 /* LaunchScreen.storyboard */,
 				7ABE399325D7ABB300C47E54 /* Info.plist */,
 				2D13512925DE433100E19B30 /* GoogleService-Info.plist */,
+				7A780A3225F7B5C70030617F /* SignUpViewController.swift */,
 			);
 			path = carTalk;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				7A22150925E630E300D17121 /* BrandCarModels.swift in Sources */,
 				7ABE398825D7ABAC00C47E54 /* SceneDelegate.swift in Sources */,
 				7A7C93AA25DC54F800D26A9E /* BrandCarInfo.swift in Sources */,
+				7A780A3325F7B5C70030617F /* SignUpViewController.swift in Sources */,
 				2DC68D8C25E3C47500105D47 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

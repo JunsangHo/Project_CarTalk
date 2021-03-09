@@ -13,6 +13,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var pwTextField: UITextField!
     
+    @IBAction func signUpTrigger(_ sender: Any) {
+        self.performSegue(withIdentifier:"signUp",sender:nil)
+    }
     @IBOutlet weak var loginButton: UIButton!
     @IBAction func loginButtonTouched(_ sender: Any) {
         Auth.auth().signIn(withEmail: emailTextField.text!, password: pwTextField.text!){(user,error) in

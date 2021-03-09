@@ -1,8 +1,8 @@
 version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
 options: "5e2055148bf3c9fe922f7bed75a0cb72"
-build_time: [1615281389, 421834000]
+build_time: [1615299658, 488350000]
 inputs:
-  "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/carTalk/LoginViewController.swift": [1615280906, 658498971]
+  "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/carTalk/LoginViewController.swift": [1615297960, 149342588]
   "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/carTalk/SpecificationViewController.swift": [1615275459, 465455141]
   "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/carTalk/MainViewController.swift": [1614179228, 0]
   "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/carTalk/BrandInfo.swift": [1614065490, 0]
@@ -13,4 +13,5 @@ inputs:
   "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/carTalk/BrandCarModels.swift": [1614154906, 597520127]
   "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/carTalk/SceneDelegate.swift": [1613198380, 747302366]
   "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/carTalk/BrandCarInfo.swift": [1614936566, 398857076]
+  "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/carTalk/SignUpViewController.swift": [1615298292, 31925782]
   "/Users/yongsangho/Desktop/Dev/carTalkProj/Project_CarTalk/carTalk/carTalk/DetailViewController.swift": [1615277258, 208225638]
