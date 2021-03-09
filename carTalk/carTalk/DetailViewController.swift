@@ -31,6 +31,11 @@ class DetailViewController: UIViewController {
             carSpecificationListViewController = destinationVC
             carSpecificationListViewController.viewModel.fetchItems()
         }
+//        else if segue.identifier == "login" {
+//            let dstVC = segue.destination as? LoginViewController
+//
+//
+//        }
     }
     
     override func viewDidLoad() {
@@ -40,7 +45,10 @@ class DetailViewController: UIViewController {
             print(temp)
         }
     }
-
+    @IBAction func login(_ sender: Any) {
+        self.performSegue(withIdentifier: "login", sender: nil)
+    }
+    
     func updateUI(){
         self.carImg.image = self.viewModel.detailCarInfo.carImg
         self.carName.text = self.viewModel.detailCarInfo.carName
