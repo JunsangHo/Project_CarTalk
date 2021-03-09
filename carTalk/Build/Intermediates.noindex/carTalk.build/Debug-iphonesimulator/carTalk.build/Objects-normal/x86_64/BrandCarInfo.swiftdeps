@@ -22,6 +22,7 @@ depends-top-level:
 - "UIImage"
 - !private "_findStringSwitchCase"
 - !private "address"
+- !private "detailAddress"
 - !private "englishName"
 - !private "era"
 - !private "name"
@@ -34,6 +35,7 @@ depends-member:
 - ["7carTalk12BrandCarInfoV", ""]
 - !private ["7carTalk12BrandCarInfoV", "_findStringSwitchCase"]
 - ["7carTalk12BrandCarInfoV", "address"]
+- ["7carTalk12BrandCarInfoV", "detailAddress"]
 - ["7carTalk12BrandCarInfoV", "encode"]
 - ["7carTalk12BrandCarInfoV", "englishName"]
 - ["7carTalk12BrandCarInfoV", "era"]
@@ -69,6 +71,7 @@ depends-member:
 - ["7carTalk12BrandCarInfoV10CodingKeysO", "address"]
 - ["7carTalk12BrandCarInfoV10CodingKeysO", "debugDescription"]
 - ["7carTalk12BrandCarInfoV10CodingKeysO", "description"]
+- ["7carTalk12BrandCarInfoV10CodingKeysO", "detailAddress"]
 - ["7carTalk12BrandCarInfoV10CodingKeysO", "englishName"]
 - ["7carTalk12BrandCarInfoV10CodingKeysO", "era"]
 - !private ["7carTalk12BrandCarInfoV10CodingKeysO", "findStringSwitchCase"]
@@ -118,6 +121,7 @@ depends-member:
 - ["Se", ""]
 - !private ["Se", "_findStringSwitchCase"]
 - !private ["Se", "address"]
+- !private ["Se", "detailAddress"]
 - ["Se", "encode"]
 - !private ["Se", "englishName"]
 - !private ["Se", "era"]
@@ -132,6 +136,7 @@ depends-member:
 - ["SE", ""]
 - !private ["SE", "_findStringSwitchCase"]
 - !private ["SE", "address"]
+- !private ["SE", "detailAddress"]
 - ["SE", "encode"]
 - !private ["SE", "englishName"]
 - !private ["SE", "era"]
@@ -357,4 +362,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "374bc6a47c521475f72da8ac147f5025"
+interface-hash: "059182dcc2b5f430d81fc308b93cc3da"

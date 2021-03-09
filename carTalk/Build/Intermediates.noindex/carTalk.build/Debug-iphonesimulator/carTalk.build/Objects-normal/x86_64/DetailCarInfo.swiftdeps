@@ -24,11 +24,10 @@ depends-member:
 - ["7carTalk13DetailCarInfoV", "init"]
 - ["7carTalk13DetailCarInfoV", "power"]
 - ["7carTalk13DetailCarInfoV", "sale"]
-- ["So8NSCodingP", ""]
+- ["7carTalk13DetailCarInfoV", "specificationURL"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 depends-nominal:
 - "7carTalk13DetailCarInfoV"
-- "So8NSCodingP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 depends-dynamic-lookup:
 depends-external:
@@ -112,4 +111,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "9753ad3eea30f1db052e8046aa46cd8a"
+interface-hash: "60a235b2c5f19c6856c5a9343a173c74"

@@ -71,7 +71,7 @@ depends-member:
 - !private ["s18AdditiveArithmeticP", ""]
 - !private ["Sa", "count"]
 - !private ["Sa", "subscript"]
-- !private ["SK", ""]
+- ["SK", ""]
 - !private ["SK", "attr"]
 - !private ["SK", "count"]
 - !private ["SK", "description"]
@@ -81,6 +81,7 @@ depends-member:
 - !private ["SK", "subscript"]
 - !private ["SK", "text"]
 - !private ["7carTalk12BrandCarInfoV", "address"]
+- !private ["7carTalk12BrandCarInfoV", "detailAddress"]
 - !private ["7carTalk12BrandCarInfoV", "englishName"]
 - !private ["7carTalk12BrandCarInfoV", "era"]
 - !private ["7carTalk12BrandCarInfoV", "name"]
@@ -219,7 +220,7 @@ depends-member:
 - ["7carTalk7CarCellC", "imgView"]
 - ["7carTalk7CarCellC", "init"]
 - ["7carTalk7CarCellC", "name"]
-- !private ["Sl", ""]
+- ["Sl", ""]
 - !private ["Sl", "_copyToContiguousArray"]
 - !private ["Sl", "attr"]
 - !private ["Sl", "count"]
@@ -230,7 +231,7 @@ depends-member:
 - !private ["Sl", "subscript"]
 - !private ["Sl", "text"]
 - !private ["Sl", "underestimatedCount"]
-- !private ["SL", ""]
+- ["SL", ""]
 - !private ["SL", "description"]
 - !private ["SL", "init"]
 - !private ["SL", "row"]
@@ -359,6 +360,7 @@ depends-member:
 - !private ["Se", "dataSource"]
 - !private ["Se", "delegate"]
 - !private ["Se", "description"]
+- !private ["Se", "detailAddress"]
 - !private ["Se", "englishName"]
 - !private ["Se", "era"]
 - !private ["Se", "image"]
@@ -378,6 +380,7 @@ depends-member:
 - !private ["7carTalk13DetailCarInfoV", "init"]
 - !private ["7carTalk13DetailCarInfoV", "power"]
 - !private ["7carTalk13DetailCarInfoV", "sale"]
+- !private ["7carTalk13DetailCarInfoV", "specificationURL"]
 - !private ["7carTalk20DetailViewControllerC", "viewModel"]
 - !private ["7carTalk15DetailViewModelC", "setDetail"]
 - !private ["9SwiftSoup8DocumentC", "select"]
@@ -392,6 +395,7 @@ depends-member:
 - !private ["SE", "dataSource"]
 - !private ["SE", "delegate"]
 - !private ["SE", "description"]
+- !private ["SE", "detailAddress"]
 - !private ["SE", "englishName"]
 - !private ["SE", "era"]
 - !private ["SE", "image"]
@@ -459,7 +463,7 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "row"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "description"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s25ExpressibleByFloatLiteralP", ""]
@@ -469,13 +473,13 @@ depends-member:
 - !private ["s23ExpressibleByNilLiteralP", "image"]
 - !private ["s23ExpressibleByNilLiteralP", "text"]
 - !private ["s32ExpressibleByStringInterpolationP", "StringInterpolation"]
-- !private ["s32ExpressibleByStringInterpolationP", ""]
+- ["s32ExpressibleByStringInterpolationP", ""]
 - !private ["s32ExpressibleByStringInterpolationP", "description"]
 - !private ["s32ExpressibleByStringInterpolationP", "init"]
-- !private ["s26ExpressibleByStringLiteralP", ""]
+- ["s26ExpressibleByStringLiteralP", ""]
 - !private ["s26ExpressibleByStringLiteralP", "description"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", ""]
+- ["s33ExpressibleByUnicodeScalarLiteralP", ""]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "description"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["SF", ""]
@@ -531,7 +535,7 @@ depends-member:
 - ["SH", "viewForZoomingInScrollView"]
 - !private ["SH", "viewModel"]
 - !private ["10Foundation9IndexPathV", "row"]
-- !private ["s25LosslessStringConvertibleP", ""]
+- ["s25LosslessStringConvertibleP", ""]
 - !private ["s25LosslessStringConvertibleP", "description"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "description"]
@@ -825,7 +829,7 @@ depends-member:
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
 - !private ["ST", "Element"]
 - !private ["ST", "Iterator"]
-- !private ["ST", ""]
+- ["ST", ""]
 - !private ["ST", "_copyContents"]
 - !private ["ST", "_copyToContiguousArray"]
 - !private ["ST", "_customContainsEquatableElement"]
@@ -849,12 +853,12 @@ depends-member:
 - !private ["s27StringInterpolationProtocolP", "init"]
 - !private ["Sy", "description"]
 - !private ["Sy", "init"]
-- !private ["s16TextOutputStreamP", ""]
+- ["s16TextOutputStreamP", ""]
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
 - !private ["s16TextOutputStreamP", "appendLiteral"]
 - !private ["s16TextOutputStreamP", "description"]
 - !private ["s16TextOutputStreamP", "init"]
-- !private ["s20TextOutputStreamableP", ""]
+- ["s20TextOutputStreamableP", ""]
 - !private ["s20TextOutputStreamableP", "description"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
@@ -1639,13 +1643,13 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "init"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "description"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "description"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "description"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
@@ -1777,7 +1781,7 @@ depends-member:
 depends-nominal:
 - !private "s18AdditiveArithmeticP"
 - !private "Sa"
-- !private "SK"
+- "SK"
 - !private "7carTalk12BrandCarInfoV"
 - !private "7carTalk14BrandCarModelsV"
 - "7carTalk19BrandViewControllerC"
@@ -1785,8 +1789,8 @@ depends-nominal:
 - "So15CALayerDelegateP"
 - "s7CVarArgP"
 - "7carTalk7CarCellC"
-- !private "Sl"
-- !private "SL"
+- "Sl"
+- "SL"
 - !private "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
@@ -1805,17 +1809,17 @@ depends-nominal:
 - !private "SS10FoundationE8EncodingV"
 - "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
-- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s25ExpressibleByFloatLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
-- !private "s32ExpressibleByStringInterpolationP"
-- !private "s26ExpressibleByStringLiteralP"
-- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s32ExpressibleByStringInterpolationP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "SF"
 - "SH"
 - !private "10Foundation9IndexPathV"
-- !private "s25LosslessStringConvertibleP"
+- "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
@@ -1836,14 +1840,14 @@ depends-nominal:
 - !private "Sm"
 - !private "SY"
 - !private "10Foundation20ReferenceConvertibleP"
-- !private "ST"
+- "ST"
 - !private "s13SignedNumericP"
 - !private "Sx"
 - !private "SS"
 - !private "s27StringInterpolationProtocolP"
 - !private "Sy"
-- !private "s16TextOutputStreamP"
-- !private "s20TextOutputStreamableP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - "So29UIAccessibilityIdentificationP"
 - "So12UIAppearanceP"
@@ -1885,10 +1889,10 @@ depends-nominal:
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
-- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
-- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s34_ExpressibleByFileReferenceLiteralP"
 - !private "s26_ExpressibleByImageLiteralP"
 - !private "s19_HasContiguousBytesP"
@@ -1979,4 +1983,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "303099910e978d74a2c0fe93b7dfe0ee"
+interface-hash: "c1a42c45d051096cf2e308a6a2691d8f"

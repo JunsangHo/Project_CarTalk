@@ -312,7 +312,7 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "overrideUserInterfaceStyle"]
 - !private ["So13UIDynamicItemP", "appearance"]
 - !private ["So13UIDynamicItemP", "overrideUserInterfaceStyle"]
-- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "appearance"]
 - !private ["So18UIFocusEnvironmentP", "overrideUserInterfaceStyle"]
 - !private ["So11UIFocusItemP", "appearance"]
@@ -452,7 +452,6 @@ depends-member:
 - !private ["So8UIWindowC", "overrideUserInterfaceStyle"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "init"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
-- ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "$main"]
@@ -549,7 +548,7 @@ depends-nominal:
 - "So21UIApplicationDelegateP"
 - !private "So17UICoordinateSpaceP"
 - !private "So13UIDynamicItemP"
-- "So18UIFocusEnvironmentP"
+- !private "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
 - !private "So20UIFocusItemContainerP"
 - !private "So24UILargeContentViewerItemP"
@@ -566,7 +565,6 @@ depends-nominal:
 - !private "So8UIWindowC"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "10Foundation27_KeyValueCodingAndObservingP"

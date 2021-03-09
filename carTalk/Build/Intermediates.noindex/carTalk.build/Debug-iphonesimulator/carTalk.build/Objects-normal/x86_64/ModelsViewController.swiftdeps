@@ -47,12 +47,14 @@ depends-top-level:
 - "UITableViewDelegate"
 - "UIViewController"
 - !private "brand"
+- !private "print"
 - !private "topBrandLogo"
 - !private "viewModel"
 depends-member:
+- !private ["s18AdditiveArithmeticP", ""]
 - !private ["Sa", "count"]
 - !private ["Sa", "subscript"]
-- !private ["SK", ""]
+- ["SK", ""]
 - !private ["SK", "count"]
 - !private ["SK", "init"]
 - !private ["SK", "row"]
@@ -62,6 +64,7 @@ depends-member:
 - !private ["7carTalk14BrandCarModelsV", "name"]
 - !private ["7carTalk19BrandViewControllerC", "viewModel"]
 - !private ["7carTalk14BrandViewModelC", "setModel"]
+- ["So15CALayerDelegateP", "UILabel"]
 - ["So15CALayerDelegateP", ""]
 - !private ["So15CALayerDelegateP", "dataSource"]
 - !private ["So15CALayerDelegateP", "delegate"]
@@ -93,6 +96,7 @@ depends-member:
 - ["s7CVarArgP", "numberOfSectionsInTableView"]
 - !private ["s7CVarArgP", "performSegue"]
 - !private ["s7CVarArgP", "prepare"]
+- !private ["s7CVarArgP", "print"]
 - ["s7CVarArgP", "scrollViewDidChangeAdjustedContentInset"]
 - ["s7CVarArgP", "scrollViewDidEndDecelerating"]
 - ["s7CVarArgP", "scrollViewDidEndDragging"]
@@ -117,12 +121,12 @@ depends-member:
 - ["s7CVarArgP", "viewForZooming"]
 - ["s7CVarArgP", "viewForZoomingInScrollView"]
 - !private ["s7CVarArgP", "viewModel"]
-- !private ["Sl", ""]
+- ["Sl", ""]
 - !private ["Sl", "count"]
 - !private ["Sl", "init"]
 - !private ["Sl", "row"]
 - !private ["Sl", "subscript"]
-- !private ["SL", ""]
+- ["SL", ""]
 - !private ["SL", "init"]
 - !private ["SL", "row"]
 - !private ["10Foundation15ContiguousBytesP", "count"]
@@ -149,6 +153,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "numberOfSectionsInTableView"]
 - !private ["s28CustomDebugStringConvertibleP", "performSegue"]
 - !private ["s28CustomDebugStringConvertibleP", "prepare"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
 - !private ["s28CustomDebugStringConvertibleP", "row"]
 - ["s28CustomDebugStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
 - ["s28CustomDebugStringConvertibleP", "scrollViewDidEndDecelerating"]
@@ -206,6 +211,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "numberOfSectionsInTableView"]
 - !private ["s23CustomStringConvertibleP", "performSegue"]
 - !private ["s23CustomStringConvertibleP", "prepare"]
+- !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "row"]
 - ["s23CustomStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
 - ["s23CustomStringConvertibleP", "scrollViewDidEndDecelerating"]
@@ -280,6 +286,7 @@ depends-member:
 - ["SQ", "numberOfSectionsInTableView"]
 - !private ["SQ", "performSegue"]
 - !private ["SQ", "prepare"]
+- !private ["SQ", "print"]
 - !private ["SQ", "row"]
 - ["SQ", "scrollViewDidChangeAdjustedContentInset"]
 - ["SQ", "scrollViewDidEndDecelerating"]
@@ -309,19 +316,22 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "row"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", ""]
+- !private ["s27ExpressibleByIntegerLiteralP", ""]
 - !private ["s23ExpressibleByNilLiteralP", "dataSource"]
 - !private ["s23ExpressibleByNilLiteralP", "delegate"]
 - !private ["s23ExpressibleByNilLiteralP", "image"]
 - !private ["s23ExpressibleByNilLiteralP", "text"]
 - !private ["s32ExpressibleByStringInterpolationP", "StringInterpolation"]
-- !private ["s32ExpressibleByStringInterpolationP", ""]
+- ["s32ExpressibleByStringInterpolationP", ""]
 - !private ["s32ExpressibleByStringInterpolationP", "init"]
-- !private ["s26ExpressibleByStringLiteralP", ""]
+- ["s26ExpressibleByStringLiteralP", ""]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", ""]
+- ["s33ExpressibleByUnicodeScalarLiteralP", ""]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SF", ""]
 - ["SH", "ModelsViewModel"]
 - !private ["SH", "String"]
 - !private ["SH", "UIImage"]
@@ -344,6 +354,7 @@ depends-member:
 - ["SH", "numberOfSectionsInTableView"]
 - !private ["SH", "performSegue"]
 - !private ["SH", "prepare"]
+- !private ["SH", "print"]
 - !private ["SH", "row"]
 - ["SH", "scrollViewDidChangeAdjustedContentInset"]
 - ["SH", "scrollViewDidEndDecelerating"]
@@ -370,7 +381,7 @@ depends-member:
 - ["SH", "viewForZoomingInScrollView"]
 - !private ["SH", "viewModel"]
 - !private ["10Foundation9IndexPathV", "row"]
-- !private ["s25LosslessStringConvertibleP", ""]
+- ["s25LosslessStringConvertibleP", ""]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - ["7carTalk9ModelCellC", "UILabel"]
@@ -400,6 +411,7 @@ depends-member:
 - ["7carTalk20ModelsViewControllerC", "numberOfSectionsInTableView"]
 - !private ["7carTalk20ModelsViewControllerC", "performSegue"]
 - ["7carTalk20ModelsViewControllerC", "prepare"]
+- !private ["7carTalk20ModelsViewControllerC", "print"]
 - ["7carTalk20ModelsViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
 - ["7carTalk20ModelsViewControllerC", "scrollViewDidEndDecelerating"]
 - ["7carTalk20ModelsViewControllerC", "scrollViewDidEndDragging"]
@@ -434,11 +446,15 @@ depends-member:
 - !private ["10Foundation19MutableDataProtocolP", "count"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
 - !private ["So8NSCodingP", "BrandViewController"]
+- ["So8NSCodingP", "IndexPath"]
+- ["So8NSCodingP", "Int"]
 - !private ["So8NSCodingP", "ModelCell"]
 - ["So8NSCodingP", "ModelsViewModel"]
 - !private ["So8NSCodingP", "String"]
 - !private ["So8NSCodingP", "UIImage"]
 - ["So8NSCodingP", "UIImageView"]
+- ["So8NSCodingP", "UILabel"]
+- ["So8NSCodingP", "UIStoryboardSegue"]
 - ["So8NSCodingP", "UITableView"]
 - ["So8NSCodingP", "UITableViewCell"]
 - ["So8NSCodingP", ""]
@@ -458,6 +474,7 @@ depends-member:
 - ["So8NSCodingP", "numberOfSectionsInTableView"]
 - !private ["So8NSCodingP", "performSegue"]
 - ["So8NSCodingP", "prepare"]
+- !private ["So8NSCodingP", "print"]
 - ["So8NSCodingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So8NSCodingP", "scrollViewDidEndDecelerating"]
 - ["So8NSCodingP", "scrollViewDidEndDragging"]
@@ -482,11 +499,14 @@ depends-member:
 - ["So8NSCodingP", "viewForZoomingInScrollView"]
 - ["So8NSCodingP", "viewModel"]
 - !private ["So26NSExtensionRequestHandlingP", "BrandViewController"]
+- ["So26NSExtensionRequestHandlingP", "IndexPath"]
+- ["So26NSExtensionRequestHandlingP", "Int"]
 - !private ["So26NSExtensionRequestHandlingP", "ModelCell"]
 - ["So26NSExtensionRequestHandlingP", "ModelsViewModel"]
 - !private ["So26NSExtensionRequestHandlingP", "String"]
 - !private ["So26NSExtensionRequestHandlingP", "UIImage"]
 - ["So26NSExtensionRequestHandlingP", "UIImageView"]
+- ["So26NSExtensionRequestHandlingP", "UIStoryboardSegue"]
 - ["So26NSExtensionRequestHandlingP", "UITableView"]
 - ["So26NSExtensionRequestHandlingP", "UITableViewCell"]
 - ["So26NSExtensionRequestHandlingP", ""]
@@ -500,6 +520,7 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "numberOfSectionsInTableView"]
 - !private ["So26NSExtensionRequestHandlingP", "performSegue"]
 - ["So26NSExtensionRequestHandlingP", "prepare"]
+- !private ["So26NSExtensionRequestHandlingP", "print"]
 - ["So26NSExtensionRequestHandlingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So26NSExtensionRequestHandlingP", "scrollViewDidEndDecelerating"]
 - ["So26NSExtensionRequestHandlingP", "scrollViewDidEndDragging"]
@@ -547,14 +568,24 @@ depends-member:
 - !private ["So8NSObjectC", "dismissViewControllerAnimated"]
 - !private ["So8NSObjectC", "identifier"]
 - !private ["So8NSObjectC", "image"]
+- !private ["So8NSObjectC", "imageNamed"]
+- !private ["So8NSObjectC", "imageWithCGImage"]
+- !private ["So8NSObjectC", "imageWithCIImage"]
+- !private ["So8NSObjectC", "imageWithContentsOfFile"]
+- !private ["So8NSObjectC", "imageWithData"]
 - ["So8NSObjectC", "indexPathForPreferredFocusedView"]
 - ["So8NSObjectC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "jpegData"]
 - ["So8NSObjectC", "modelName"]
 - ["So8NSObjectC", "numberOfSections"]
 - ["So8NSObjectC", "numberOfSectionsInTableView"]
 - !private ["So8NSObjectC", "performSegue"]
+- !private ["So8NSObjectC", "performSegueWithIdentifier"]
+- !private ["So8NSObjectC", "pngData"]
 - ["So8NSObjectC", "prepare"]
+- ["So8NSObjectC", "prepareForSegue"]
+- !private ["So8NSObjectC", "print"]
 - ["So8NSObjectC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So8NSObjectC", "scrollViewDidEndDecelerating"]
 - ["So8NSObjectC", "scrollViewDidEndDragging"]
@@ -570,6 +601,7 @@ depends-member:
 - ["So8NSObjectC", "scrollViewWillEndDragging"]
 - ["So8NSObjectC", "sectionIndexTitles"]
 - ["So8NSObjectC", "sectionIndexTitlesForTableView"]
+- !private ["So8NSObjectC", "systemImageNamed"]
 - ["So8NSObjectC", "tableView"]
 - ["So8NSObjectC", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["So8NSObjectC", "text"]
@@ -579,10 +611,15 @@ depends-member:
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
 - ["So8NSObjectC", "viewModel"]
 - !private ["So8NSObjectP", "BrandViewController"]
+- ["So8NSObjectP", "IndexPath"]
+- ["So8NSObjectP", "Int"]
 - !private ["So8NSObjectP", "ModelCell"]
 - ["So8NSObjectP", "ModelsViewModel"]
 - !private ["So8NSObjectP", "String"]
 - !private ["So8NSObjectP", "UIImage"]
+- ["So8NSObjectP", "UIImageView"]
+- ["So8NSObjectP", "UILabel"]
+- ["So8NSObjectP", "UIStoryboardSegue"]
 - ["So8NSObjectP", "UITableView"]
 - ["So8NSObjectP", "UITableViewCell"]
 - ["So8NSObjectP", ""]
@@ -597,14 +634,24 @@ depends-member:
 - !private ["So8NSObjectP", "dismissViewControllerAnimated"]
 - !private ["So8NSObjectP", "identifier"]
 - !private ["So8NSObjectP", "image"]
+- !private ["So8NSObjectP", "imageNamed"]
+- !private ["So8NSObjectP", "imageWithCGImage"]
+- !private ["So8NSObjectP", "imageWithCIImage"]
+- !private ["So8NSObjectP", "imageWithContentsOfFile"]
+- !private ["So8NSObjectP", "imageWithData"]
 - ["So8NSObjectP", "indexPathForPreferredFocusedView"]
 - ["So8NSObjectP", "indexPathForPreferredFocusedViewInTableView"]
 - ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "jpegData"]
 - ["So8NSObjectP", "modelName"]
 - ["So8NSObjectP", "numberOfSections"]
 - ["So8NSObjectP", "numberOfSectionsInTableView"]
 - !private ["So8NSObjectP", "performSegue"]
+- !private ["So8NSObjectP", "performSegueWithIdentifier"]
+- !private ["So8NSObjectP", "pngData"]
 - ["So8NSObjectP", "prepare"]
+- ["So8NSObjectP", "prepareForSegue"]
+- !private ["So8NSObjectP", "print"]
 - ["So8NSObjectP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So8NSObjectP", "scrollViewDidEndDecelerating"]
 - ["So8NSObjectP", "scrollViewDidEndDragging"]
@@ -620,6 +667,7 @@ depends-member:
 - ["So8NSObjectP", "scrollViewWillEndDragging"]
 - ["So8NSObjectP", "sectionIndexTitles"]
 - ["So8NSObjectP", "sectionIndexTitlesForTableView"]
+- !private ["So8NSObjectP", "systemImageNamed"]
 - ["So8NSObjectP", "tableView"]
 - ["So8NSObjectP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["So8NSObjectP", "text"]
@@ -629,6 +677,7 @@ depends-member:
 - ["So8NSObjectP", "viewForZoomingInScrollView"]
 - ["So8NSObjectP", "viewModel"]
 - !private ["So14NSSecureCodingP", "init"]
+- !private ["Sj", ""]
 - !private ["Sq", "dataSource"]
 - !private ["Sq", "delegate"]
 - !private ["Sq", "image"]
@@ -642,23 +691,26 @@ depends-member:
 - !private ["Sm", "init"]
 - !private ["Sm", "subscript"]
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
-- !private ["ST", ""]
+- ["ST", ""]
 - !private ["ST", "count"]
 - !private ["ST", "init"]
 - !private ["ST", "row"]
 - !private ["ST", "subscript"]
+- !private ["s13SignedNumericP", ""]
+- !private ["Sx", ""]
 - !private ["SS", "init"]
 - !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
 - !private ["s27StringInterpolationProtocolP", "appendLiteral"]
 - !private ["s27StringInterpolationProtocolP", "init"]
 - !private ["Sy", "init"]
-- !private ["s16TextOutputStreamP", ""]
+- ["s16TextOutputStreamP", ""]
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
 - !private ["s16TextOutputStreamP", "appendLiteral"]
 - !private ["s16TextOutputStreamP", "init"]
-- !private ["s20TextOutputStreamableP", ""]
+- ["s20TextOutputStreamableP", ""]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
+- ["So29UIAccessibilityIdentificationP", "UILabel"]
 - ["So29UIAccessibilityIdentificationP", ""]
 - !private ["So29UIAccessibilityIdentificationP", "dataSource"]
 - !private ["So29UIAccessibilityIdentificationP", "delegate"]
@@ -668,6 +720,7 @@ depends-member:
 - ["So29UIAccessibilityIdentificationP", "init"]
 - ["So29UIAccessibilityIdentificationP", "modelName"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
+- ["So12UIAppearanceP", "UILabel"]
 - ["So12UIAppearanceP", ""]
 - !private ["So12UIAppearanceP", "dataSource"]
 - !private ["So12UIAppearanceP", "delegate"]
@@ -678,11 +731,15 @@ depends-member:
 - ["So12UIAppearanceP", "modelName"]
 - !private ["So12UIAppearanceP", "text"]
 - !private ["So21UIAppearanceContainerP", "BrandViewController"]
+- ["So21UIAppearanceContainerP", "IndexPath"]
+- ["So21UIAppearanceContainerP", "Int"]
 - !private ["So21UIAppearanceContainerP", "ModelCell"]
 - ["So21UIAppearanceContainerP", "ModelsViewModel"]
 - !private ["So21UIAppearanceContainerP", "String"]
 - !private ["So21UIAppearanceContainerP", "UIImage"]
 - ["So21UIAppearanceContainerP", "UIImageView"]
+- ["So21UIAppearanceContainerP", "UILabel"]
+- ["So21UIAppearanceContainerP", "UIStoryboardSegue"]
 - ["So21UIAppearanceContainerP", "UITableView"]
 - ["So21UIAppearanceContainerP", "UITableViewCell"]
 - ["So21UIAppearanceContainerP", ""]
@@ -702,6 +759,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "numberOfSectionsInTableView"]
 - !private ["So21UIAppearanceContainerP", "performSegue"]
 - ["So21UIAppearanceContainerP", "prepare"]
+- !private ["So21UIAppearanceContainerP", "print"]
 - ["So21UIAppearanceContainerP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So21UIAppearanceContainerP", "scrollViewDidEndDecelerating"]
 - ["So21UIAppearanceContainerP", "scrollViewDidEndDragging"]
@@ -726,11 +784,14 @@ depends-member:
 - ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
 - ["So21UIAppearanceContainerP", "viewModel"]
 - !private ["So18UIContentContainerP", "BrandViewController"]
+- ["So18UIContentContainerP", "IndexPath"]
+- ["So18UIContentContainerP", "Int"]
 - !private ["So18UIContentContainerP", "ModelCell"]
 - ["So18UIContentContainerP", "ModelsViewModel"]
 - !private ["So18UIContentContainerP", "String"]
 - !private ["So18UIContentContainerP", "UIImage"]
 - ["So18UIContentContainerP", "UIImageView"]
+- ["So18UIContentContainerP", "UIStoryboardSegue"]
 - ["So18UIContentContainerP", "UITableView"]
 - ["So18UIContentContainerP", "UITableViewCell"]
 - ["So18UIContentContainerP", ""]
@@ -744,6 +805,7 @@ depends-member:
 - ["So18UIContentContainerP", "numberOfSectionsInTableView"]
 - !private ["So18UIContentContainerP", "performSegue"]
 - ["So18UIContentContainerP", "prepare"]
+- !private ["So18UIContentContainerP", "print"]
 - ["So18UIContentContainerP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So18UIContentContainerP", "scrollViewDidEndDecelerating"]
 - ["So18UIContentContainerP", "scrollViewDidEndDragging"]
@@ -768,6 +830,7 @@ depends-member:
 - ["So18UIContentContainerP", "viewModel"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - ["So33UIContextMenuInteractionAnimatingP", ""]
+- ["So17UICoordinateSpaceP", "UILabel"]
 - ["So17UICoordinateSpaceP", ""]
 - !private ["So17UICoordinateSpaceP", "dataSource"]
 - !private ["So17UICoordinateSpaceP", "delegate"]
@@ -780,6 +843,7 @@ depends-member:
 - !private ["So23UIDataSourceTranslatingP", "dataSource"]
 - !private ["So23UIDataSourceTranslatingP", "delegate"]
 - !private ["So23UIDataSourceTranslatingP", "dequeueReusableCell"]
+- ["So13UIDynamicItemP", "UILabel"]
 - ["So13UIDynamicItemP", ""]
 - !private ["So13UIDynamicItemP", "dataSource"]
 - !private ["So13UIDynamicItemP", "delegate"]
@@ -790,11 +854,15 @@ depends-member:
 - ["So13UIDynamicItemP", "modelName"]
 - !private ["So13UIDynamicItemP", "text"]
 - !private ["So18UIFocusEnvironmentP", "BrandViewController"]
+- ["So18UIFocusEnvironmentP", "IndexPath"]
+- ["So18UIFocusEnvironmentP", "Int"]
 - !private ["So18UIFocusEnvironmentP", "ModelCell"]
 - ["So18UIFocusEnvironmentP", "ModelsViewModel"]
 - !private ["So18UIFocusEnvironmentP", "String"]
 - !private ["So18UIFocusEnvironmentP", "UIImage"]
 - ["So18UIFocusEnvironmentP", "UIImageView"]
+- ["So18UIFocusEnvironmentP", "UILabel"]
+- ["So18UIFocusEnvironmentP", "UIStoryboardSegue"]
 - ["So18UIFocusEnvironmentP", "UITableView"]
 - ["So18UIFocusEnvironmentP", "UITableViewCell"]
 - ["So18UIFocusEnvironmentP", ""]
@@ -814,6 +882,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "numberOfSectionsInTableView"]
 - !private ["So18UIFocusEnvironmentP", "performSegue"]
 - ["So18UIFocusEnvironmentP", "prepare"]
+- !private ["So18UIFocusEnvironmentP", "print"]
 - ["So18UIFocusEnvironmentP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So18UIFocusEnvironmentP", "scrollViewDidEndDecelerating"]
 - ["So18UIFocusEnvironmentP", "scrollViewDidEndDragging"]
@@ -837,6 +906,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "viewForZooming"]
 - ["So18UIFocusEnvironmentP", "viewForZoomingInScrollView"]
 - ["So18UIFocusEnvironmentP", "viewModel"]
+- ["So11UIFocusItemP", "UILabel"]
 - ["So11UIFocusItemP", ""]
 - !private ["So11UIFocusItemP", "dataSource"]
 - !private ["So11UIFocusItemP", "delegate"]
@@ -846,6 +916,7 @@ depends-member:
 - ["So11UIFocusItemP", "init"]
 - ["So11UIFocusItemP", "modelName"]
 - !private ["So11UIFocusItemP", "text"]
+- ["So20UIFocusItemContainerP", "UILabel"]
 - ["So20UIFocusItemContainerP", ""]
 - !private ["So20UIFocusItemContainerP", "dataSource"]
 - !private ["So20UIFocusItemContainerP", "delegate"]
@@ -868,6 +939,7 @@ depends-member:
 - !private ["So11UIImageViewC", "image"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
 - !private ["So7UILabelC", "text"]
+- ["So24UILargeContentViewerItemP", "UILabel"]
 - ["So24UILargeContentViewerItemP", ""]
 - !private ["So24UILargeContentViewerItemP", "dataSource"]
 - !private ["So24UILargeContentViewerItemP", "delegate"]
@@ -878,10 +950,15 @@ depends-member:
 - ["So24UILargeContentViewerItemP", "modelName"]
 - !private ["So24UILargeContentViewerItemP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "BrandViewController"]
+- ["So30UIPasteConfigurationSupportingP", "IndexPath"]
+- ["So30UIPasteConfigurationSupportingP", "Int"]
 - !private ["So30UIPasteConfigurationSupportingP", "ModelCell"]
 - ["So30UIPasteConfigurationSupportingP", "ModelsViewModel"]
 - !private ["So30UIPasteConfigurationSupportingP", "String"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
+- ["So30UIPasteConfigurationSupportingP", "UIImageView"]
+- ["So30UIPasteConfigurationSupportingP", "UILabel"]
+- ["So30UIPasteConfigurationSupportingP", "UIStoryboardSegue"]
 - ["So30UIPasteConfigurationSupportingP", "UITableView"]
 - ["So30UIPasteConfigurationSupportingP", "UITableViewCell"]
 - ["So30UIPasteConfigurationSupportingP", ""]
@@ -901,7 +978,10 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "numberOfSections"]
 - ["So30UIPasteConfigurationSupportingP", "numberOfSectionsInTableView"]
 - !private ["So30UIPasteConfigurationSupportingP", "performSegue"]
+- !private ["So30UIPasteConfigurationSupportingP", "performSegueWithIdentifier"]
 - ["So30UIPasteConfigurationSupportingP", "prepare"]
+- ["So30UIPasteConfigurationSupportingP", "prepareForSegue"]
+- !private ["So30UIPasteConfigurationSupportingP", "print"]
 - ["So30UIPasteConfigurationSupportingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So30UIPasteConfigurationSupportingP", "scrollViewDidEndDecelerating"]
 - ["So30UIPasteConfigurationSupportingP", "scrollViewDidEndDragging"]
@@ -953,7 +1033,10 @@ depends-member:
 - ["So11UIResponderC", "numberOfSections"]
 - ["So11UIResponderC", "numberOfSectionsInTableView"]
 - !private ["So11UIResponderC", "performSegue"]
+- !private ["So11UIResponderC", "performSegueWithIdentifier"]
 - ["So11UIResponderC", "prepare"]
+- ["So11UIResponderC", "prepareForSegue"]
+- !private ["So11UIResponderC", "print"]
 - ["So11UIResponderC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So11UIResponderC", "scrollViewDidEndDecelerating"]
 - ["So11UIResponderC", "scrollViewDidEndDragging"]
@@ -978,10 +1061,15 @@ depends-member:
 - ["So11UIResponderC", "viewForZoomingInScrollView"]
 - ["So11UIResponderC", "viewModel"]
 - !private ["So30UIResponderStandardEditActionsP", "BrandViewController"]
+- ["So30UIResponderStandardEditActionsP", "IndexPath"]
+- ["So30UIResponderStandardEditActionsP", "Int"]
 - !private ["So30UIResponderStandardEditActionsP", "ModelCell"]
 - ["So30UIResponderStandardEditActionsP", "ModelsViewModel"]
 - !private ["So30UIResponderStandardEditActionsP", "String"]
 - !private ["So30UIResponderStandardEditActionsP", "UIImage"]
+- ["So30UIResponderStandardEditActionsP", "UIImageView"]
+- ["So30UIResponderStandardEditActionsP", "UILabel"]
+- ["So30UIResponderStandardEditActionsP", "UIStoryboardSegue"]
 - ["So30UIResponderStandardEditActionsP", "UITableView"]
 - ["So30UIResponderStandardEditActionsP", "UITableViewCell"]
 - ["So30UIResponderStandardEditActionsP", ""]
@@ -1001,7 +1089,10 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "numberOfSections"]
 - ["So30UIResponderStandardEditActionsP", "numberOfSectionsInTableView"]
 - !private ["So30UIResponderStandardEditActionsP", "performSegue"]
+- !private ["So30UIResponderStandardEditActionsP", "performSegueWithIdentifier"]
 - ["So30UIResponderStandardEditActionsP", "prepare"]
+- ["So30UIResponderStandardEditActionsP", "prepareForSegue"]
+- !private ["So30UIResponderStandardEditActionsP", "print"]
 - ["So30UIResponderStandardEditActionsP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So30UIResponderStandardEditActionsP", "scrollViewDidEndDecelerating"]
 - ["So30UIResponderStandardEditActionsP", "scrollViewDidEndDragging"]
@@ -1045,6 +1136,7 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "numberOfSectionsInTableView"]
 - !private ["So20UIScrollViewDelegateP", "performSegue"]
 - ["So20UIScrollViewDelegateP", "prepare"]
+- !private ["So20UIScrollViewDelegateP", "print"]
 - ["So20UIScrollViewDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So20UIScrollViewDelegateP", "scrollViewDidEndDecelerating"]
 - ["So20UIScrollViewDelegateP", "scrollViewDidEndDragging"]
@@ -1071,11 +1163,14 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "delegate"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "dequeueReusableCell"]
 - !private ["So16UIStateRestoringP", "BrandViewController"]
+- ["So16UIStateRestoringP", "IndexPath"]
+- ["So16UIStateRestoringP", "Int"]
 - !private ["So16UIStateRestoringP", "ModelCell"]
 - ["So16UIStateRestoringP", "ModelsViewModel"]
 - !private ["So16UIStateRestoringP", "String"]
 - !private ["So16UIStateRestoringP", "UIImage"]
 - ["So16UIStateRestoringP", "UIImageView"]
+- ["So16UIStateRestoringP", "UIStoryboardSegue"]
 - ["So16UIStateRestoringP", "UITableView"]
 - ["So16UIStateRestoringP", "UITableViewCell"]
 - ["So16UIStateRestoringP", ""]
@@ -1089,6 +1184,7 @@ depends-member:
 - ["So16UIStateRestoringP", "numberOfSectionsInTableView"]
 - !private ["So16UIStateRestoringP", "performSegue"]
 - ["So16UIStateRestoringP", "prepare"]
+- !private ["So16UIStateRestoringP", "print"]
 - ["So16UIStateRestoringP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So16UIStateRestoringP", "scrollViewDidEndDecelerating"]
 - ["So16UIStateRestoringP", "scrollViewDidEndDragging"]
@@ -1135,6 +1231,7 @@ depends-member:
 - ["So21UITableViewDataSourceP", "numberOfSectionsInTableView"]
 - !private ["So21UITableViewDataSourceP", "performSegue"]
 - ["So21UITableViewDataSourceP", "prepare"]
+- !private ["So21UITableViewDataSourceP", "print"]
 - ["So21UITableViewDataSourceP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So21UITableViewDataSourceP", "scrollViewDidEndDecelerating"]
 - ["So21UITableViewDataSourceP", "scrollViewDidEndDragging"]
@@ -1172,6 +1269,7 @@ depends-member:
 - ["So19UITableViewDelegateP", "numberOfSectionsInTableView"]
 - !private ["So19UITableViewDelegateP", "performSegue"]
 - ["So19UITableViewDelegateP", "prepare"]
+- !private ["So19UITableViewDelegateP", "print"]
 - ["So19UITableViewDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So19UITableViewDelegateP", "scrollViewDidEndDecelerating"]
 - ["So19UITableViewDelegateP", "scrollViewDidEndDragging"]
@@ -1195,11 +1293,15 @@ depends-member:
 - ["So19UITableViewDelegateP", "viewForZoomingInScrollView"]
 - ["So19UITableViewDelegateP", "viewModel"]
 - !private ["So18UITraitEnvironmentP", "BrandViewController"]
+- ["So18UITraitEnvironmentP", "IndexPath"]
+- ["So18UITraitEnvironmentP", "Int"]
 - !private ["So18UITraitEnvironmentP", "ModelCell"]
 - ["So18UITraitEnvironmentP", "ModelsViewModel"]
 - !private ["So18UITraitEnvironmentP", "String"]
 - !private ["So18UITraitEnvironmentP", "UIImage"]
 - ["So18UITraitEnvironmentP", "UIImageView"]
+- ["So18UITraitEnvironmentP", "UILabel"]
+- ["So18UITraitEnvironmentP", "UIStoryboardSegue"]
 - ["So18UITraitEnvironmentP", "UITableView"]
 - ["So18UITraitEnvironmentP", "UITableViewCell"]
 - ["So18UITraitEnvironmentP", ""]
@@ -1219,6 +1321,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "numberOfSectionsInTableView"]
 - !private ["So18UITraitEnvironmentP", "performSegue"]
 - ["So18UITraitEnvironmentP", "prepare"]
+- !private ["So18UITraitEnvironmentP", "print"]
 - ["So18UITraitEnvironmentP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So18UITraitEnvironmentP", "scrollViewDidEndDecelerating"]
 - ["So18UITraitEnvironmentP", "scrollViewDidEndDragging"]
@@ -1243,10 +1346,15 @@ depends-member:
 - ["So18UITraitEnvironmentP", "viewForZoomingInScrollView"]
 - ["So18UITraitEnvironmentP", "viewModel"]
 - !private ["So23UIUserActivityRestoringP", "BrandViewController"]
+- ["So23UIUserActivityRestoringP", "IndexPath"]
+- ["So23UIUserActivityRestoringP", "Int"]
 - !private ["So23UIUserActivityRestoringP", "ModelCell"]
 - ["So23UIUserActivityRestoringP", "ModelsViewModel"]
 - !private ["So23UIUserActivityRestoringP", "String"]
 - !private ["So23UIUserActivityRestoringP", "UIImage"]
+- ["So23UIUserActivityRestoringP", "UIImageView"]
+- ["So23UIUserActivityRestoringP", "UILabel"]
+- ["So23UIUserActivityRestoringP", "UIStoryboardSegue"]
 - ["So23UIUserActivityRestoringP", "UITableView"]
 - ["So23UIUserActivityRestoringP", "UITableViewCell"]
 - ["So23UIUserActivityRestoringP", ""]
@@ -1266,7 +1374,10 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "numberOfSections"]
 - ["So23UIUserActivityRestoringP", "numberOfSectionsInTableView"]
 - !private ["So23UIUserActivityRestoringP", "performSegue"]
+- !private ["So23UIUserActivityRestoringP", "performSegueWithIdentifier"]
 - ["So23UIUserActivityRestoringP", "prepare"]
+- ["So23UIUserActivityRestoringP", "prepareForSegue"]
+- !private ["So23UIUserActivityRestoringP", "print"]
 - ["So23UIUserActivityRestoringP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So23UIUserActivityRestoringP", "scrollViewDidEndDecelerating"]
 - ["So23UIUserActivityRestoringP", "scrollViewDidEndDragging"]
@@ -1321,6 +1432,7 @@ depends-member:
 - ["So16UIViewControllerC", "numberOfSectionsInTableView"]
 - !private ["So16UIViewControllerC", "performSegue"]
 - ["So16UIViewControllerC", "prepare"]
+- !private ["So16UIViewControllerC", "print"]
 - ["So16UIViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So16UIViewControllerC", "scrollViewDidEndDecelerating"]
 - ["So16UIViewControllerC", "scrollViewDidEndDragging"]
@@ -1349,11 +1461,11 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "init"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s26_ExpressibleByImageLiteralP", "init"]
 - !private ["s19_HasContiguousBytesP", "count"]
@@ -1382,6 +1494,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "numberOfSectionsInTableView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "performSegue"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "prepare"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidEndDecelerating"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidEndDragging"]
@@ -1426,6 +1539,7 @@ depends-member:
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "numberOfSectionsInTableView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "performSegue"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "prepare"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollViewDidEndDecelerating"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollViewDidEndDragging"]
@@ -1467,16 +1581,17 @@ depends-member:
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "modelName"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "text"]
 depends-nominal:
+- !private "s18AdditiveArithmeticP"
 - !private "Sa"
-- !private "SK"
+- "SK"
 - !private "7carTalk5BrandV"
 - !private "7carTalk14BrandCarModelsV"
 - !private "7carTalk19BrandViewControllerC"
 - !private "7carTalk14BrandViewModelC"
 - "So15CALayerDelegateP"
 - "s7CVarArgP"
-- !private "Sl"
-- !private "SL"
+- "Sl"
+- "SL"
 - !private "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
@@ -1487,14 +1602,17 @@ depends-nominal:
 - !private "SE"
 - "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
-- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
-- !private "s32ExpressibleByStringInterpolationP"
-- !private "s26ExpressibleByStringLiteralP"
-- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s32ExpressibleByStringInterpolationP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "SF"
 - "SH"
 - !private "10Foundation9IndexPathV"
-- !private "s25LosslessStringConvertibleP"
+- "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - "7carTalk9ModelCellC"
 - "7carTalk20ModelsViewControllerC"
@@ -1508,16 +1626,19 @@ depends-nominal:
 - "So8NSObjectC"
 - "So8NSObjectP"
 - !private "So14NSSecureCodingP"
+- !private "Sj"
 - !private "Sq"
 - !private "Sk"
 - !private "Sm"
 - !private "10Foundation20ReferenceConvertibleP"
-- !private "ST"
+- "ST"
+- !private "s13SignedNumericP"
+- !private "Sx"
 - !private "SS"
 - !private "s27StringInterpolationProtocolP"
 - !private "Sy"
-- !private "s16TextOutputStreamP"
-- !private "s20TextOutputStreamableP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - "So29UIAccessibilityIdentificationP"
 - "So12UIAppearanceP"
@@ -1558,10 +1679,10 @@ depends-nominal:
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
-- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
-- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByImageLiteralP"
 - !private "s19_HasContiguousBytesP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
