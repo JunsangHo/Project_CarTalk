@@ -418,17 +418,26 @@
                                                     </containerView>
                                                 </subviews>
                                             </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ced-hd-lRJ">
+                                                <rect key="frame" x="334" y="425" width="46" height="41"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="login:" destination="6n7-Ip-tG7" eventType="touchUpInside" id="gxf-IG-MiO"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="sIg-iV-K6U" firstAttribute="leading" secondItem="MqT-AO-RF8" secondAttribute="leading" id="34l-EE-59N"/>
                                             <constraint firstItem="vqI-5X-YrM" firstAttribute="top" secondItem="4zH-O9-TzE" secondAttribute="bottom" constant="12" id="4bb-Dt-ocE"/>
                                             <constraint firstItem="s2O-nE-rOr" firstAttribute="leading" secondItem="MqT-AO-RF8" secondAttribute="trailing" constant="12" id="762-fb-feu"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ced-hd-lRJ" secondAttribute="trailing" constant="34" id="7RN-JT-xxh"/>
                                             <constraint firstItem="C2F-m1-vAu" firstAttribute="leading" secondItem="OQK-yl-bTI" secondAttribute="trailing" constant="12" id="8Va-W0-8vn"/>
                                             <constraint firstItem="XR2-Q5-WB1" firstAttribute="top" secondItem="pvL-lr-AO4" secondAttribute="bottom" constant="6" id="8jv-0T-cWd"/>
                                             <constraint firstItem="OQK-yl-bTI" firstAttribute="leading" secondItem="4zH-O9-TzE" secondAttribute="leading" id="Ai4-YD-Bin"/>
                                             <constraint firstItem="Xa3-vO-0tt" firstAttribute="leading" secondItem="sIg-iV-K6U" secondAttribute="leading" id="D4X-ZZ-7kg"/>
                                             <constraint firstItem="1Ad-BW-zeg" firstAttribute="top" secondItem="1GL-G8-WOl" secondAttribute="bottom" constant="8" id="FR3-y5-ddQ"/>
+                                            <constraint firstItem="qMq-32-gqi" firstAttribute="top" secondItem="Ced-hd-lRJ" secondAttribute="bottom" constant="28.5" id="K0d-3c-As8"/>
                                             <constraint firstItem="1Ad-BW-zeg" firstAttribute="leading" secondItem="Xa3-vO-0tt" secondAttribute="trailing" constant="12" id="QLF-ar-yIk"/>
                                             <constraint firstItem="1GL-G8-WOl" firstAttribute="leading" secondItem="sIg-iV-K6U" secondAttribute="trailing" constant="12" id="RHu-al-aQf"/>
                                             <constraint firstItem="XR2-Q5-WB1" firstAttribute="top" secondItem="CCi-AY-W4T" secondAttribute="top" constant="25" id="S5B-kW-1Zr"/>
@@ -483,6 +492,7 @@
                         <outlet property="power" destination="1GL-G8-WOl" id="Nwc-cc-GaL"/>
                         <outlet property="price" destination="vqI-5X-YrM" id="XTg-QV-suH"/>
                         <outlet property="sale" destination="1Ad-BW-zeg" id="X3H-oZ-fk1"/>
+                        <segue destination="ee8-xO-nHp" kind="presentation" identifier="login" id="2ep-Kg-R7O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RH8-hy-utq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -799,7 +809,55 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g2W-38-NMC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2232.608695652174" y="84.375"/>
+            <point key="canvasLocation" x="2215" y="16"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="zPa-lA-TOS">
+            <objects>
+                <viewController id="ee8-xO-nHp" customClass="LoginViewController" customModule="carTalk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jcb-3R-zaQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일을 입력해주세요." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ANg-30-W9C">
+                                <rect key="frame" x="53" y="131" width="308" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호를 입력해주세요." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e3h-eb-raF">
+                                <rect key="frame" x="53" y="202" width="308" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHU-Wh-pgq">
+                                <rect key="frame" x="193.5" y="338" width="39" height="30"/>
+                                <state key="normal" title="로그인"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G5e-XU-cQK">
+                                <rect key="frame" x="187" y="411" width="52" height="30"/>
+                                <state key="normal" title="회원가입"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="owD-iN-PRn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="G5e-XU-cQK" firstAttribute="leading" secondItem="owD-iN-PRn" secondAttribute="leading" constant="187" id="FOI-JR-hee"/>
+                            <constraint firstItem="zHU-Wh-pgq" firstAttribute="top" secondItem="e3h-eb-raF" secondAttribute="bottom" constant="102" id="K8a-Ku-uuO"/>
+                            <constraint firstItem="zHU-Wh-pgq" firstAttribute="leading" secondItem="owD-iN-PRn" secondAttribute="leading" constant="193.5" id="LGe-Jj-ygx"/>
+                            <constraint firstItem="ANg-30-W9C" firstAttribute="top" secondItem="owD-iN-PRn" secondAttribute="top" constant="131" id="S1d-tV-pdO"/>
+                            <constraint firstItem="e3h-eb-raF" firstAttribute="leading" secondItem="owD-iN-PRn" secondAttribute="leading" constant="53" id="V4D-dN-eKS"/>
+                            <constraint firstItem="owD-iN-PRn" firstAttribute="trailing" secondItem="e3h-eb-raF" secondAttribute="trailing" constant="53" id="Zkc-0i-Llg"/>
+                            <constraint firstItem="ANg-30-W9C" firstAttribute="leading" secondItem="owD-iN-PRn" secondAttribute="leading" constant="53" id="aJR-qF-UII"/>
+                            <constraint firstItem="G5e-XU-cQK" firstAttribute="top" secondItem="zHU-Wh-pgq" secondAttribute="bottom" constant="43" id="hgc-9p-J2X"/>
+                            <constraint firstItem="owD-iN-PRn" firstAttribute="trailing" secondItem="ANg-30-W9C" secondAttribute="trailing" constant="53" id="lyN-Og-SQi"/>
+                            <constraint firstItem="e3h-eb-raF" firstAttribute="top" secondItem="ANg-30-W9C" secondAttribute="bottom" constant="37" id="vfV-yQ-2G7"/>
+                            <constraint firstItem="ANg-30-W9C" firstAttribute="centerX" secondItem="owD-iN-PRn" secondAttribute="centerX" id="xxJ-1M-Tsj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ZV-BF-plf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2213.04347826087" y="519.64285714285711"/>
         </scene>
     </scenes>
     <resources>

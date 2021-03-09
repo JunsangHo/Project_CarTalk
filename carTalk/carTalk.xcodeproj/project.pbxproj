@@ -14,6 +14,7 @@
 		7A22150625E630AD00D17121 /* ModelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22150525E630AD00D17121 /* ModelsViewController.swift */; };
 		7A22150925E630E300D17121 /* BrandCarModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22150825E630E300D17121 /* BrandCarModels.swift */; };
 		7A420A6A25E534AA0037FF4A /* DetailCarInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A420A6925E534AA0037FF4A /* DetailCarInfo.swift */; };
+		7A78096B25F763EC0030617F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A78096A25F763EC0030617F /* LoginViewController.swift */; };
 		7A7C93AA25DC54F800D26A9E /* BrandCarInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C93A925DC54F800D26A9E /* BrandCarInfo.swift */; };
 		7ABE398625D7ABAC00C47E54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE398525D7ABAC00C47E54 /* AppDelegate.swift */; };
 		7ABE398825D7ABAC00C47E54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABE398725D7ABAC00C47E54 /* SceneDelegate.swift */; };
@@ -36,6 +37,7 @@
 		7A22150525E630AD00D17121 /* ModelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsViewController.swift; sourceTree = "<group>"; };
 		7A22150825E630E300D17121 /* BrandCarModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandCarModels.swift; sourceTree = "<group>"; };
 		7A420A6925E534AA0037FF4A /* DetailCarInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCarInfo.swift; sourceTree = "<group>"; };
+		7A78096A25F763EC0030617F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7A7C93A925DC54F800D26A9E /* BrandCarInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandCarInfo.swift; sourceTree = "<group>"; };
 		7ABE398225D7ABAC00C47E54 /* carTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ABE398525D7ABAC00C47E54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				7ABE398925D7ABAC00C47E54 /* MainViewController.swift */,
 				7A22150825E630E300D17121 /* BrandCarModels.swift */,
 				2DC68D8B25E3C47500105D47 /* DetailViewController.swift */,
+				7A78096A25F763EC0030617F /* LoginViewController.swift */,
 				7ABE398B25D7ABAC00C47E54 /* Main.storyboard */,
 				2D8495C025ECDBFF00F1DF9B /* SpecificationViewController.swift */,
 				7ABE39A225D91C6B00C47E54 /* BrandViewController.swift */,
@@ -232,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A78096B25F763EC0030617F /* LoginViewController.swift in Sources */,
 				2D8495C125ECDBFF00F1DF9B /* SpecificationViewController.swift in Sources */,
 				7ABE398A25D7ABAC00C47E54 /* MainViewController.swift in Sources */,
 				2D13512725DCF62C00E19B30 /* BrandInfo.swift in Sources */,
