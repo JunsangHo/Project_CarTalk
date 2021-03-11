@@ -4,7 +4,7 @@
 //
 //  Created by 용상호 on 2021/03/09.
 //
-import Firebase
+import FirebaseUI
 import UIKit
 
 class SignUpViewController: UIViewController {

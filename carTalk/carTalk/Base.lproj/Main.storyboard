@@ -420,9 +420,18 @@
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ced-hd-lRJ">
                                                 <rect key="frame" x="334" y="425" width="46" height="41"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="로그인"/>
                                                 <connections>
                                                     <action selector="login:" destination="6n7-Ip-tG7" eventType="touchUpInside" id="gxf-IG-MiO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ir1-Uh-Mhw">
+                                                <rect key="frame" x="316" y="802" width="64" height="41"/>
+                                                <state key="normal" title="로그아웃"/>
+                                                <connections>
+                                                    <action selector="login:" destination="6n7-Ip-tG7" eventType="touchUpInside" id="nM3-gT-Pa4"/>
+                                                    <action selector="logoutButtonTouched:" destination="OCH-yg-qmm" eventType="touchUpInside" id="VaZ-Kb-wUY"/>
+                                                    <action selector="logoutButtonTouched:" destination="6n7-Ip-tG7" eventType="touchUpInside" id="jpj-Kb-lRv"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -448,6 +457,8 @@
                                             <constraint firstItem="MqT-AO-RF8" firstAttribute="top" secondItem="OQK-yl-bTI" secondAttribute="bottom" constant="8" id="YZU-9o-N0z"/>
                                             <constraint firstAttribute="bottom" secondItem="h6q-Y0-PA0" secondAttribute="bottom" constant="400" id="Ysf-Oc-472"/>
                                             <constraint firstItem="OQK-yl-bTI" firstAttribute="top" secondItem="rBn-qb-kLj" secondAttribute="bottom" constant="8" id="ciO-qy-Ovv"/>
+                                            <constraint firstAttribute="trailing" secondItem="ir1-Uh-Mhw" secondAttribute="trailing" constant="34" id="d69-Ql-LA1"/>
+                                            <constraint firstItem="ir1-Uh-Mhw" firstAttribute="top" secondItem="h6q-Y0-PA0" secondAttribute="bottom" constant="7.5" id="ebf-fi-peO"/>
                                             <constraint firstAttribute="trailing" secondItem="h6q-Y0-PA0" secondAttribute="trailing" constant="34" id="ecc-c0-BIy"/>
                                             <constraint firstItem="4zH-O9-TzE" firstAttribute="top" secondItem="XR2-Q5-WB1" secondAttribute="bottom" constant="26.5" id="gFb-7A-Ybc"/>
                                             <constraint firstItem="XR2-Q5-WB1" firstAttribute="leading" secondItem="CCi-AY-W4T" secondAttribute="leading" id="hNT-tw-Ynl"/>
@@ -497,6 +508,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RH8-hy-utq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="OCH-yg-qmm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1466.6666666666667" y="63.616071428571423"/>
         </scene>

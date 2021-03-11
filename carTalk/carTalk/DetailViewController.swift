@@ -8,6 +8,7 @@
 // 0309 1650
 import UIKit
 import SwiftSoup
+import FirebaseUI
 
 class DetailViewController: UIViewController {
 
@@ -47,6 +48,15 @@ class DetailViewController: UIViewController {
     }
     @IBAction func login(_ sender: Any) {
         self.performSegue(withIdentifier: "login", sender: nil)
+    }
+    
+    @IBAction func logoutButtonTouched(_ sender: UIButton) {
+        do {
+            try Auth.auth().signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+        self.dismiss(animated: true, completion: nil)
     }
     
     func updateUI(){
