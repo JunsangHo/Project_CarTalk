@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Firebase
+import FirebaseUI
 
 class LoginViewController: UIViewController {
 
@@ -28,6 +28,7 @@ class LoginViewController: UIViewController {
             }
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
