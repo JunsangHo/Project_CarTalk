@@ -7,6 +7,8 @@
 
 import UIKit
 import FirebaseUI
+import Firebase
+import GoogleSignIn
 
 class LoginViewController: UIViewController {
 
@@ -17,6 +19,8 @@ class LoginViewController: UIViewController {
         self.performSegue(withIdentifier:"signUp",sender:nil)
     }
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var googleSignInButton: GIDSignInButton!
+
     @IBAction func loginButtonTouched(_ sender: Any) {
         Auth.auth().signIn(withEmail: emailTextField.text!, password: pwTextField.text!){(user,error) in
             
@@ -31,6 +35,9 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        GIDSignIn.sharedInstance()?.presentingViewController = self
+        GIDSignIn.sharedInstance().signIn()
 
         if let user = Auth.auth().currentUser {
             emailTextField.placeholder = "이미 로그인 된 상태입니다."
