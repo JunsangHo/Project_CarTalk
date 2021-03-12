@@ -6,12 +6,12 @@ target 'carTalk' do
   use_frameworks!
 
   # Pods for carTalk
+  pod 'Firebase/Analytics'
   pod 'FirebaseUI'
   pod 'FirebaseUI/Auth'
-  pod 'FirebaseUI/Google'
-  pod 'FirebaseUI/OAuth'
   
-  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
   
   pod 'Firebase/Database'
   pod 'Firebase/Storage'

@@ -856,11 +856,19 @@
                                     <action selector="signUpTrigger:" destination="ee8-xO-nHp" eventType="touchUpInside" id="eP5-fL-s8h"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yh9-1Z-pGr" customClass="GIDSignInButton">
+                                <rect key="frame" x="87" y="484" width="240" height="48"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="kff-Yx-KbD"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="owD-iN-PRn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="G5e-XU-cQK" firstAttribute="leading" secondItem="owD-iN-PRn" secondAttribute="leading" constant="187" id="FOI-JR-hee"/>
+                            <constraint firstItem="Yh9-1Z-pGr" firstAttribute="leading" secondItem="owD-iN-PRn" secondAttribute="leading" constant="87" id="IQg-0v-0ZF"/>
                             <constraint firstItem="zHU-Wh-pgq" firstAttribute="top" secondItem="e3h-eb-raF" secondAttribute="bottom" constant="102" id="K8a-Ku-uuO"/>
                             <constraint firstItem="zHU-Wh-pgq" firstAttribute="leading" secondItem="owD-iN-PRn" secondAttribute="leading" constant="193.5" id="LGe-Jj-ygx"/>
                             <constraint firstItem="ANg-30-W9C" firstAttribute="top" secondItem="owD-iN-PRn" secondAttribute="top" constant="131" id="S1d-tV-pdO"/>
@@ -869,12 +877,15 @@
                             <constraint firstItem="ANg-30-W9C" firstAttribute="leading" secondItem="owD-iN-PRn" secondAttribute="leading" constant="53" id="aJR-qF-UII"/>
                             <constraint firstItem="G5e-XU-cQK" firstAttribute="top" secondItem="zHU-Wh-pgq" secondAttribute="bottom" constant="43" id="hgc-9p-J2X"/>
                             <constraint firstItem="owD-iN-PRn" firstAttribute="trailing" secondItem="ANg-30-W9C" secondAttribute="trailing" constant="53" id="lyN-Og-SQi"/>
+                            <constraint firstItem="Yh9-1Z-pGr" firstAttribute="top" secondItem="G5e-XU-cQK" secondAttribute="bottom" constant="43" id="q9b-eD-XPk"/>
+                            <constraint firstItem="Yh9-1Z-pGr" firstAttribute="centerX" secondItem="owD-iN-PRn" secondAttribute="centerX" id="qHm-eu-kj3"/>
                             <constraint firstItem="e3h-eb-raF" firstAttribute="top" secondItem="ANg-30-W9C" secondAttribute="bottom" constant="37" id="vfV-yQ-2G7"/>
                             <constraint firstItem="ANg-30-W9C" firstAttribute="centerX" secondItem="owD-iN-PRn" secondAttribute="centerX" id="xxJ-1M-Tsj"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="ANg-30-W9C" id="Sv8-pY-GF4"/>
+                        <outlet property="googleSignInButton" destination="Yh9-1Z-pGr" id="An3-1C-Mje"/>
                         <outlet property="loginButton" destination="zHU-Wh-pgq" id="91r-S7-EwB"/>
                         <outlet property="pwTextField" destination="e3h-eb-raF" id="AJh-UT-gXD"/>
                         <segue destination="heF-DE-NB5" kind="presentation" identifier="signUp" id="jM2-jw-BKf"/>
