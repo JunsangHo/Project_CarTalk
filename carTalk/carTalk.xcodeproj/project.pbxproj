@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2D13512725DCF62C00E19B30 /* BrandInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D13512625DCF62C00E19B30 /* BrandInfo.swift */; };
 		2D13512A25DE433100E19B30 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D13512925DE433100E19B30 /* GoogleService-Info.plist */; };
-		2D8495C125ECDBFF00F1DF9B /* SpecificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8495C025ECDBFF00F1DF9B /* SpecificationViewController.swift */; };
+		2D3D01DE2608697B00EEDDD2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3D01DD2608697B00EEDDD2 /* SearchViewController.swift */; };
 		2DC68D8C25E3C47500105D47 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC68D8B25E3C47500105D47 /* DetailViewController.swift */; };
 		7A22150625E630AD00D17121 /* ModelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22150525E630AD00D17121 /* ModelsViewController.swift */; };
 		7A22150925E630E300D17121 /* BrandCarModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22150825E630E300D17121 /* BrandCarModels.swift */; };
@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		2D13512625DCF62C00E19B30 /* BrandInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandInfo.swift; sourceTree = "<group>"; };
 		2D13512925DE433100E19B30 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		2D8495C025ECDBFF00F1DF9B /* SpecificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificationViewController.swift; sourceTree = "<group>"; };
+		2D3D01DD2608697B00EEDDD2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		2DC68D8B25E3C47500105D47 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		47F65D235C002B96D15765FE /* Pods-carTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-carTalk.debug.xcconfig"; path = "Target Support Files/Pods-carTalk/Pods-carTalk.debug.xcconfig"; sourceTree = "<group>"; };
 		6D7B34CBD8F76E3A6388976D /* Pods_carTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_carTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,7 +92,7 @@
 				2DC68D8B25E3C47500105D47 /* DetailViewController.swift */,
 				7A78096A25F763EC0030617F /* LoginViewController.swift */,
 				7ABE398B25D7ABAC00C47E54 /* Main.storyboard */,
-				2D8495C025ECDBFF00F1DF9B /* SpecificationViewController.swift */,
+				2D3D01DD2608697B00EEDDD2 /* SearchViewController.swift */,
 				7ABE39A225D91C6B00C47E54 /* BrandViewController.swift */,
 				7A22150525E630AD00D17121 /* ModelsViewController.swift */,
 				7A420A6925E534AA0037FF4A /* DetailCarInfo.swift */,
@@ -257,13 +257,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A78096B25F763EC0030617F /* LoginViewController.swift in Sources */,
-				2D8495C125ECDBFF00F1DF9B /* SpecificationViewController.swift in Sources */,
 				7ABE398A25D7ABAC00C47E54 /* MainViewController.swift in Sources */,
 				2D13512725DCF62C00E19B30 /* BrandInfo.swift in Sources */,
 				7A22150625E630AD00D17121 /* ModelsViewController.swift in Sources */,
 				7ABE398625D7ABAC00C47E54 /* AppDelegate.swift in Sources */,
 				7A420A6A25E534AA0037FF4A /* DetailCarInfo.swift in Sources */,
 				7ABE39A325D91C6B00C47E54 /* BrandViewController.swift in Sources */,
+				2D3D01DE2608697B00EEDDD2 /* SearchViewController.swift in Sources */,
 				7A22150925E630E300D17121 /* BrandCarModels.swift in Sources */,
 				7ABE398825D7ABAC00C47E54 /* SceneDelegate.swift in Sources */,
 				7A7C93AA25DC54F800D26A9E /* BrandCarInfo.swift in Sources */,
